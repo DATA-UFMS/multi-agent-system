@@ -55,11 +55,11 @@ def carregar_documentos(diretorio):
 
 def construir_ou_recarregar_indice(documentos):
     if os.path.exists(DIRETORIO_PERSISTENCIA):
-        print("Recarregando índice salvo...")
+        print("Recarregando índice salvo.")
         storage_context = StorageContext.from_defaults(persist_dir=DIRETORIO_PERSISTENCIA)
         indice = load_index_from_storage(storage_context, embed_model=embed_model)
     else:
-        print("Construindo índice pela primeira vez...")
+        print("Construindo índice pela primeira vez.")
         indice = VectorStoreIndex.from_documents(documentos, embed_model=embed_model)
         indice.storage_context.persist(persist_dir=DIRETORIO_PERSISTENCIA)
 
@@ -69,15 +69,15 @@ def criar_motor_de_consulta(indice):
     return indice.as_query_engine(llm=llm)
 
 async def configurar_rag_e_consultar(texto_consulta):
-    print("Carregando documentos...")
+    print("Carregando documentos.")
     documentos = carregar_documentos(BASE_CONHECIMENTO_DIR)
     print(f"Documentos carregados: {len(documentos)}")
 
-    print("Construindo ou recarregando o índice vetorial...")
+    print("Construindo ou recarregando o índice vetorial.")
     indice = construir_ou_recarregar_indice(documentos)
     print("Índice vetorial pronto.")
 
-    print("Criando motor de consulta...")
+    print("Criando motor de consulta.")
     motor = criar_motor_de_consulta(indice)
     print("Motor de consulta criado.")
 

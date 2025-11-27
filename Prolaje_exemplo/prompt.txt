@@ -1,0 +1,1 @@
+python .\orquestrador_principal.py --url "https://www.prolaje.com.br" --termo "lajes pré-moldadas" --prompt "Eles contrataram uma agência de marketing que não entrega muito resultado. Querem um direcionamento do que melhorar no marketing digital para aumentar branding e conseguir mais clientes" | Tee-Object -FilePath prolaje_completo.txt

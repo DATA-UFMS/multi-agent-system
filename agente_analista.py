@@ -204,7 +204,7 @@ class AgenteAnalista:
             Estrutura:
             1. RESUMO EXECUTIVO
             2. PROBLEMAS IDENTIFICADOS
-            3. OPORTUNIDADES
+            3. OPORTUNIDADES (Volume de anúncios)
             4. PLANO DE AÇÃO ESTRATÉGICO
 
             Dados:

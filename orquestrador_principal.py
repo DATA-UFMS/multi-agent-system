@@ -114,7 +114,7 @@ class OrquestradorPrincipal:
                 "agentes_utilizados": [
                     "Agente Intérprete",
                     "Agente Coletor Meta",
-                    "Agente Arquiteto Senior",
+                    "Agente Arquiteto",
                     "Agente Analista",
                     "Agente Estrategista"
                 ]

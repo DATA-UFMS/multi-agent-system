@@ -1,0 +1,22 @@
+# Dependências principais
+llama-index-core
+llama-index-llms-openai
+llama-index-embeddings-openai
+openai
+playwright
+beautifulsoup4
+pydantic # Necessário para o Llama-Index
+fpdf2 # Gerar relatório em PDF
+
+# Dependências para leitura de documentos (RAG)
+llama-index-readers-file
+pypdf # Para ler PDF
+python-docx # Para ler Docx
+epub-reader # Para ler Epub
+
+
+# Dependências assíncronas
+asyncio # Módulo padrão
+
+# INSTALAR 
+-- playwright install

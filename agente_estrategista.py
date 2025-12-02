@@ -39,18 +39,19 @@ embed_model = OpenAIEmbedding(
 def carregar_documentos(diretorio):
     documentos = []
 
-    for arquivo in os.listdir(diretorio):
-        caminho = os.path.join(diretorio, arquivo)
+    for raiz, _, arquivos in os.walk(diretorio):
+        for arquivo in arquivos:
+            caminho = os.path.join(raiz, arquivo)
 
-        if arquivo.endswith(".pdf"):
-            documentos.extend(PDFReader().load_data(file=caminho))
-        elif arquivo.endswith(".epub"):
-            documentos.extend(EpubReader().load_data(file=caminho))
-        elif arquivo.endswith(".docx"):
-            documentos.extend(DocxReader().load_data(file=caminho))
-        elif arquivo.endswith(".md") or arquivo.endswith(".txt"):
-            documentos.extend(MarkdownReader().load_data(file=caminho))
-
+            if arquivo.endswith(".pdf"):
+                documentos.extend(PDFReader().load_data(file=caminho))
+            elif arquivo.endswith(".epub"):
+                documentos.extend(EpubReader().load_data(file=caminho))
+            elif arquivo.endswith(".docx"):
+                documentos.extend(DocxReader().load_data(file=caminho))
+            elif arquivo.endswith(".md") or arquivo.endswith(".txt"):
+                documentos.extend(MarkdownReader().load_data(file=caminho))
+                
     return documentos
 
 def construir_ou_recarregar_indice(documentos):

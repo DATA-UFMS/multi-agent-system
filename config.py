@@ -46,10 +46,30 @@ def com_tentativas(func: Callable[[], T], tentativas: int = None, rotulo: str = 
         except Exception as e:  # noqa: BLE001 - queremos capturar qualquer falha de rede/API
             ultima = e
             if i < tentativas:
-                espera = 2 ** i
+                # Limite de requisições (429) merece espera maior, comum em modelos gratuitos.
+                espera = 10 * i if "429" in str(e) or "RateLimit" in type(e).__name__ else 2 ** i
                 print(f"{rotulo}: tentativa {i}/{tentativas} falhou ({type(e).__name__}: {e}). "
                       f"Nova tentativa em {espera}s.")
                 time.sleep(espera)
+    raise ultima
+
+
+async def com_tentativas_async(func, tentativas: int = None, rotulo: str = "LLM"):
+    """Versão assíncrona de com_tentativas: `func` é uma corrotina sem argumentos."""
+    import asyncio
+
+    tentativas = tentativas or LLM_MAX_TENTATIVAS
+    ultima = None
+    for i in range(1, tentativas + 1):
+        try:
+            return await func()
+        except Exception as e:  # noqa: BLE001
+            ultima = e
+            if i < tentativas:
+                espera = 10 * i if "429" in str(e) or "RateLimit" in type(e).__name__ else 2 ** i
+                print(f"{rotulo}: tentativa {i}/{tentativas} falhou ({type(e).__name__}: {e}). "
+                      f"Nova tentativa em {espera}s.")
+                await asyncio.sleep(espera)
     raise ultima
 
 

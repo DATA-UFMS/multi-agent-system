@@ -53,12 +53,22 @@ def montar_prompt(url: str, termo: str, prompt_usuario: str, dados: Dict[str, An
         ANÚNCIOS ATIVOS ENCONTRADOS PARA O TERMO:
         {json.dumps(anuncios, indent=2, ensure_ascii=False)}
 
-        Escreva um relatório em Markdown, em português, com exatamente estas seções:
+        Escreva um relatório em Markdown, em português, para um gestor sem formação em marketing,
+        com exatamente estas seções:
         {ESTRUTURA}
 
         Regras:
+        - Resumo executivo: 4–6 frases que respondam ao contexto informado, dizendo o que foi encontrado
+          e quais são as três ações prioritárias.
+        - Problemas: um item por problema que você identificar nos dados, com prioridade. Se não houver,
+          diga o que está adequado.
+        - Oportunidades: considere o volume e o perfil dos anúncios concorrentes.
+        - Plano de ação: cinco recomendações, uma subseção (### 4.x Título curto) cada, com exatamente
+          estes campos em negrito, cada um em 1–3 frases: **Ação:** **Evidência:** (qual dado ou parte do
+          contexto motiva a ação) **Como executar:** **Prioridade:** alta/média/baixa **Esforço:**
+          baixo/médio/alto **Fontes:** (referências em que se apoia, ou "não informadas").
         - Baseie-se nos dados acima e no contexto da empresa; não invente números.
-        - No plano de ação, apresente cinco recomendações estratégicas concretas.
+        - Linguagem direta, sem jargão não explicado.
     """).strip()
 
 

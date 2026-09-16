@@ -61,8 +61,11 @@ async def analisar_seo_on_page(url: str) -> dict:
             try:
                 await page.wait_for_load_state("networkidle", timeout=10000)
                 resultado["rede_ociosa"] = True
+                # Métrica usada na prova de conceito original (tempo até a rede ficar ociosa).
+                resultado["tempo_ate_rede_ociosa"] = round(asyncio.get_event_loop().time() - start_time, 2)
             except TimeoutError:
                 resultado["rede_ociosa"] = False
+                resultado["tempo_ate_rede_ociosa"] = None
             print(f"Página carregada (evento load) em {resultado['tempo_carregamento']} segundos; "
                   f"rede ociosa: {resultado['rede_ociosa']}.")
 

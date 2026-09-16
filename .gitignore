@@ -4,3 +4,4 @@ __pycache__/.*
 resultados/
 .venv/
 __pycache__/
+storage_v2/

@@ -1,9 +1,18 @@
 
 import asyncio
 import json
+import re
 from playwright.async_api import async_playwright, TimeoutError
 
 from config import HEADLESS
+
+def anonimizar(texto: str) -> str:
+    """Remove identificadores pessoais diretos dos textos de anúncios antes de armazená-los (LGPD)."""
+    texto = re.sub(r'@[\w.]+', '@[perfil]', texto)
+    texto = re.sub(r'\(?\b\d{2}\)?\s?\d{4,5}-?\d{4}\b', '[telefone]', texto)
+    texto = re.sub(r'[\w.+-]+@[\w-]+\.[\w.]+', '[email]', texto)
+    return texto
+
 
 async def coletar_anuncios_meta(termo_busca: str):
     """
@@ -65,7 +74,7 @@ async def coletar_anuncios_meta(termo_busca: str):
 
                     # Texto do Anúncio (Copy)
                     copy_element = await card.query_selector("div._7jyr._a25-")
-                    anuncio['texto'] = await copy_element.inner_text() if copy_element else "Não encontrado"
+                    anuncio['texto'] = anonimizar(await copy_element.inner_text()) if copy_element else "Não encontrado"
 
                     # Criativo
                     img_element = await card.query_selector("img.x15mokao")
@@ -81,7 +90,8 @@ async def coletar_anuncios_meta(termo_busca: str):
                         anuncio['tipo_criativo'] = "Não encontrado"
 
                     # Plataformas
-                    platform_container = await card.query_selector("div.x3nfvp2.x1e56ztr:has(span:text-is('Platforms'))")
+                    platform_container = (await card.query_selector("div.x3nfvp2.x1e56ztr:has(span:text-is('Platforms'))")
+                                          or await card.query_selector("div.x3nfvp2.x1e56ztr:has(span:text-is('Plataformas'))"))
                     if platform_container:
                          # Busca todas as imagens de ícones dentro do container de plataformas
                         platform_elements = await platform_container.query_selector_all("div.xtwfq29")
@@ -91,8 +101,13 @@ async def coletar_anuncios_meta(termo_busca: str):
 
 
                     # Data de Início
-                    date_element = await card.query_selector("span:has-text('Started running on')")
-                    anuncio['data_inicio'] = (await date_element.inner_text()).replace('Started running on ', '') if date_element else "Não encontrado"
+                    date_element = (await card.query_selector("span:has-text('Started running on')")
+                                    or await card.query_selector("span:has-text('Veiculação iniciada em')"))
+                    if date_element:
+                        txt = await date_element.inner_text()
+                        anuncio['data_inicio'] = re.sub(r'^(Started running on|Veiculação iniciada em)\s*', '', txt).strip()
+                    else:
+                        anuncio['data_inicio'] = "Não encontrado"
 
                     # Call-to-Action (CTA)
                     cta_element = await card.query_selector("div[role='button'] div[dir='auto']")

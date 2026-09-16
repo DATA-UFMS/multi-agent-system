@@ -64,16 +64,26 @@ def interpretar_prompt_usuario(prompt_usuario: str) -> Dict[str, Any]:
     try:
         # Falhas de rede/API são repetidas (com_tentativas); antes, uma única falha
         # fazia o fluxo seguir com as diretivas padrão.
-        response = com_tentativas(lambda: llm_client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[
-                {"role": "system", "content": prompt_sistema},
-                {"role": "user", "content": f"Prompt do Usuário: {prompt_usuario}"}
-            ],
-            response_format={"type": "json_object"},
-            temperature=0.0,
-            timeout=LLM_TIMEOUT
-        ), rotulo="Agente Intérprete")
+        def chamar(com_json_mode: bool):
+            extras = {"response_format": {"type": "json_object"}} if com_json_mode else {}
+            return llm_client.chat.completions.create(
+                model=LLM_MODEL,
+                messages=[
+                    {"role": "system", "content": prompt_sistema},
+                    {"role": "user", "content": f"Prompt do Usuário: {prompt_usuario}"}
+                ],
+                temperature=0.0,
+                timeout=LLM_TIMEOUT,
+                **extras,
+            )
+
+        # Nem todo modelo (sobretudo os gratuitos) aceita response_format=json_object;
+        # se a primeira chamada falhar, repete sem o parâmetro, extraindo o JSON do texto.
+        try:
+            response = chamar(True)
+        except Exception as e_json:  # noqa: BLE001
+            print(f"Agente Intérprete: modo JSON recusado ({type(e_json).__name__}); tentando sem response_format.")
+            response = com_tentativas(lambda: chamar(False), rotulo="Agente Intérprete")
 
         resposta_texto = response.choices[0].message.content.strip()
         match = re.search(r"\{.*\}", resposta_texto, re.DOTALL)

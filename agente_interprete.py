@@ -3,16 +3,7 @@ import json
 import re
 from typing import Dict, Any, List
 from pydantic import BaseModel, Field, ValidationError
-from openai import OpenAI as OpenAIClient
-from dotenv import load_dotenv
-
-load_dotenv()
-
-openrouter_key = os.getenv("OPENROUTER_API_KEY")
-
-if openrouter_key:
-    os.environ["OPENAI_API_KEY"] = openrouter_key
-    os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
+from config import LLM_MODEL, LLM_TIMEOUT, get_openai_client, com_tentativas
 
 DIRETIVAS_PADRAO = {
     "foco_analise": ["seo_geral", "anuncios_geral"],
@@ -35,11 +26,8 @@ class DiretivasUsuario(BaseModel):
 
 def get_llm_client():
     try:
-        client = OpenAIClient(
-            base_url=os.getenv("OPENAI_API_BASE", "https://openrouter.ai/api/v1"),
-            api_key=os.getenv("OPENAI_API_KEY"), 
-        )
-        print("Agente Intérprete: Conexão com o LLM OpenRouter estabelecida.")
+        client = get_openai_client()
+        print(f"Agente Intérprete: cliente OpenRouter pronto (modelo {LLM_MODEL}).")
         return client
     except Exception as e:
         print(f"Agente Intérprete: {e}")
@@ -74,16 +62,18 @@ def interpretar_prompt_usuario(prompt_usuario: str) -> Dict[str, Any]:
     """
 
     try:
-        response = llm_client.chat.completions.create(
-            model="openai/gpt-4-turbo-preview",
+        # Falhas de rede/API são repetidas (com_tentativas); antes, uma única falha
+        # fazia o fluxo seguir com as diretivas padrão.
+        response = com_tentativas(lambda: llm_client.chat.completions.create(
+            model=LLM_MODEL,
             messages=[
                 {"role": "system", "content": prompt_sistema},
                 {"role": "user", "content": f"Prompt do Usuário: {prompt_usuario}"}
             ],
             response_format={"type": "json_object"},
             temperature=0.0,
-            timeout=120.0
-        )
+            timeout=LLM_TIMEOUT
+        ), rotulo="Agente Intérprete")
 
         resposta_texto = response.choices[0].message.content.strip()
         match = re.search(r"\{.*\}", resposta_texto, re.DOTALL)
@@ -104,8 +94,8 @@ def interpretar_prompt_usuario(prompt_usuario: str) -> Dict[str, Any]:
         print(f"Agente Intérprete: ERRO - Falha ao decodificar JSON: {e}")
         return DIRETIVAS_PADRAO
     except Exception as e:
-        print(f"Agente Intérprete: ERRO - Falha geral: {e}")
-        return DIRETIVAS_PADRAO
+        print(f"Agente Intérprete: ERRO - Falha geral após tentativas: {e}")
+        return {**DIRETIVAS_PADRAO, "status": "falha_llm", "erro": str(e)}
 
 def main():
     # Validação se o prompt está sendo interpretado corretamente   

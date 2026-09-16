@@ -1,48 +1,42 @@
+"""
+Agente Estrategista (RAG): consulta a base de conhecimento curada e devolve a resposta
+acompanhada dos documentos recuperados (rastreabilidade das fontes).
+"""
+from __future__ import annotations
+
 import os
 import asyncio
-from dotenv import load_dotenv
+from typing import Any, Dict
+
 from llama_index.core import VectorStoreIndex, StorageContext, load_index_from_storage
 from llama_index.readers.file import PDFReader, EpubReader, DocxReader, MarkdownReader
-from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 
-load_dotenv()
+from config import (OPENROUTER_API_KEY, OPENROUTER_API_BASE, EMBED_MODEL, LLM_MODEL,
+                    get_llm, com_tentativas)
 
-BASE_CONHECIMENTO_DIR = "RAG"
-DIRETORIO_PERSISTENCIA = "./storage"
+BASE_CONHECIMENTO_DIR = os.getenv("RAG_DIR", "RAG")
+DIRETORIO_PERSISTENCIA = os.getenv("RAG_STORAGE", "./storage")
+TOP_K = int(os.getenv("RAG_TOP_K", "3"))
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
-
-os.environ["OPENAI_API_KEY"] = OPENROUTER_API_KEY
-os.environ["OPENAI_API_BASE"] = OPENROUTER_API_BASE
 os.environ["OPENAI_ORG_ID"] = "openrouter"
 
-print("API Key carregada:", "SIM" if OPENROUTER_API_KEY else "NÃO")
-print("Base da API:", OPENROUTER_API_BASE)
-
-# Modelo LLM
-llm = OpenAI(
-    model="gpt-4-turbo-preview",
+embed_model = OpenAIEmbedding(
+    model_name=EMBED_MODEL,
     api_base=OPENROUTER_API_BASE,
     api_key=OPENROUTER_API_KEY,
-    request_timeout=180.0
 )
 
-# Modelo de embeddings
-embed_model = OpenAIEmbedding(
-    model_name="mistralai/mistral-embed-2312",
-    api_base=OPENROUTER_API_BASE,
-    api_key=OPENROUTER_API_KEY
-)
+_indice = None
+_motor = None
+_n_documentos = 0
+
 
 def carregar_documentos(diretorio):
     documentos = []
-
     for raiz, _, arquivos in os.walk(diretorio):
         for arquivo in arquivos:
             caminho = os.path.join(raiz, arquivo)
-
             if arquivo.endswith(".pdf"):
                 documentos.extend(PDFReader().load_data(file=caminho))
             elif arquivo.endswith(".epub"):
@@ -51,46 +45,66 @@ def carregar_documentos(diretorio):
                 documentos.extend(DocxReader().load_data(file=caminho))
             elif arquivo.endswith(".md") or arquivo.endswith(".txt"):
                 documentos.extend(MarkdownReader().load_data(file=caminho))
-                
     return documentos
 
-def construir_ou_recarregar_indice(documentos):
+
+def construir_ou_recarregar_indice():
+    global _n_documentos
     if os.path.exists(DIRETORIO_PERSISTENCIA):
-        print("Recarregando índice salvo.")
+        print("Agente Estrategista: recarregando índice salvo.")
         storage_context = StorageContext.from_defaults(persist_dir=DIRETORIO_PERSISTENCIA)
         indice = load_index_from_storage(storage_context, embed_model=embed_model)
+        _n_documentos = len(indice.docstore.docs)
     else:
-        print("Construindo índice pela primeira vez.")
+        print("Agente Estrategista: construindo índice pela primeira vez.")
+        documentos = carregar_documentos(BASE_CONHECIMENTO_DIR)
+        _n_documentos = len(documentos)
+        print(f"Agente Estrategista: {_n_documentos} documentos carregados.")
         indice = VectorStoreIndex.from_documents(documentos, embed_model=embed_model)
         indice.storage_context.persist(persist_dir=DIRETORIO_PERSISTENCIA)
-
     return indice
 
-def criar_motor_de_consulta(indice):
-    return indice.as_query_engine(llm=llm)
 
-async def configurar_rag_e_consultar(texto_consulta):
-    print("Carregando documentos.")
-    documentos = carregar_documentos(BASE_CONHECIMENTO_DIR)
-    print(f"Documentos carregados: {len(documentos)}")
+def obter_motor():
+    """Constrói o índice e o motor uma única vez por processo (antes era refeito a cada pergunta)."""
+    global _indice, _motor
+    if _motor is None:
+        _indice = construir_ou_recarregar_indice()
+        _motor = _indice.as_query_engine(llm=get_llm(), similarity_top_k=TOP_K)
+        print(f"Agente Estrategista: motor de consulta pronto (modelo {LLM_MODEL}, top_k={TOP_K}).")
+    return _motor
 
-    print("Construindo ou recarregando o índice vetorial.")
-    indice = construir_ou_recarregar_indice(documentos)
-    print("Índice vetorial pronto.")
 
-    print("Criando motor de consulta.")
-    motor = criar_motor_de_consulta(indice)
-    print("Motor de consulta criado.")
+def _formatar_fontes(resposta) -> list:
+    fontes = []
+    for node in getattr(resposta, "source_nodes", []) or []:
+        meta = node.node.metadata or {}
+        fontes.append({
+            "arquivo": meta.get("file_name") or meta.get("filename") or meta.get("file_path", "desconhecido"),
+            "score": round(float(node.score), 4) if node.score is not None else None,
+            "trecho": node.node.get_content()[:300].replace("\n", " "),
+        })
+    return fontes
 
-    print(f"Realizando consulta: '{texto_consulta}'")
-    resposta = motor.query(texto_consulta)
 
-    return resposta
+async def configurar_rag_e_consultar(texto_consulta: str) -> Dict[str, Any]:
+    """
+    Consulta a base curada. Retorna:
+      {"texto": resposta gerada, "fontes": [{"arquivo", "score", "trecho"}, ...]}
+    """
+    motor = obter_motor()
+    print(f"Agente Estrategista: consultando '{texto_consulta[:90]}...'")
+    resposta = com_tentativas(lambda: motor.query(texto_consulta), rotulo="Agente Estrategista")
+    fontes = _formatar_fontes(resposta)
+    print(f"Agente Estrategista: {len(fontes)} documento(s) recuperado(s): "
+          f"{[f['arquivo'] for f in fontes]}")
+    return {"texto": str(resposta), "fontes": fontes}
+
 
 if __name__ == "__main__":
     async def main():
-        resposta = await configurar_rag_e_consultar("Me dê uma lista de citações sobre SEO")
-        print("\nResposta do RAG:")
-        print(resposta)
+        r = await configurar_rag_e_consultar("Como estruturar conteúdo para SEO local de uma clínica?")
+        print("\nResposta:\n", r["texto"])
+        print("\nFontes:", [f["arquivo"] for f in r["fontes"]])
 
     asyncio.run(main())

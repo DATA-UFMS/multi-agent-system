@@ -1,24 +1,21 @@
 import os
 import json
 from typing import Dict, List, Any, Tuple
-from llama_index.llms.openai import OpenAI
 import re
 import textwrap
 import asyncio
-from dotenv import load_dotenv
 
-load_dotenv()
-
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
-OPENROUTER_API_BASE = os.environ.get("OPENROUTER_API_BASE", "https://openrouter.ai/api/v1")
-
+from config import OPENROUTER_API_KEY, LLM_MODEL, get_llm, com_tentativas
 from agente_estrategista import configurar_rag_e_consultar
+
+N_PERGUNTAS = 5
 
 class AgenteAnalista:
     def __init__(self, rag_query_func):
         self.problemas_identificados = []
         self.oportunidades_identificadas = []
         self.recomendacoes_estrategicas = []
+        self.falhas = []  # falhas tratadas durante a análise (registradas, não silenciadas)
         self.rag_query_func = rag_query_func
         self.llm = self._setup_llm()
 
@@ -28,13 +25,8 @@ class AgenteAnalista:
             return None
 
         try:
-            llm = OpenAI(
-                model="gpt-4-turbo-preview",
-                api_base=OPENROUTER_API_BASE,
-                api_key=OPENROUTER_API_KEY,
-                request_timeout=180.0  # Configurado como 180 segundos
-            )
-            print("Agente Analista: Conexão LLM OpenRouter estabelecida.")
+            llm = get_llm()
+            print(f"Agente Analista: LLM pronto (modelo {LLM_MODEL}).")
             return llm
         except Exception as e:
             print(f"Agente Analista: ERRO - Falha ao conectar ao OpenRouter. Detalhe: {e}")
@@ -47,6 +39,7 @@ class AgenteAnalista:
         self.problemas_identificados = []
         self.oportunidades_identificadas = []
         self.recomendacoes_estrategicas = []
+        self.falhas = []
 
         self._analise_primaria_seo(dados_seo)
         self._analise_primaria_anuncios(dados_anuncios)
@@ -157,31 +150,39 @@ class AgenteAnalista:
 
         """)
 
-        try:
-            resposta_llm = self.llm.complete(prompt_template)
-            raw_text = str(resposta_llm).strip()
+        def gerar_perguntas():
+            raw_text = str(self.llm.complete(prompt_template)).strip()
             match = re.search(r"\[.*\]", raw_text, re.DOTALL)
-            json_string = match.group(0) if match else raw_text
-            perguntas_dinamicas = json.loads(json_string)
-            print(f"Agente Analista - Perguntas geradas: {perguntas_dinamicas}")
-        except json.JSONDecodeError as e:
-            print(f"Agente Analista - ERRO ao decodificar JSON: {e}")
-            perguntas_dinamicas = []
-        except Exception as e:
-            print(f"Agente Analista - ERRO inesperado ao gerar perguntas: {e}")
-            perguntas_dinamicas = []
+            perguntas = json.loads(match.group(0) if match else raw_text)
+            if not isinstance(perguntas, list) or not all(isinstance(p, str) for p in perguntas):
+                raise ValueError("resposta não é uma lista JSON de strings")
+            return perguntas[:N_PERGUNTAS]
 
-        if perguntas_dinamicas:
-            for pergunta in perguntas_dinamicas:
-                try:
-                    resposta_rag = await self.rag_query_func(pergunta)
-                    self.recomendacoes_estrategicas.append({
-                        "pergunta": pergunta,
-                        "recomendacao": str(resposta_rag),
-                        "fonte": "RAG (pergunta dinâmica)"
-                    })
-                except Exception as e:
-                    print(f"Agente Analista - ERRO ao consultar RAG para '{pergunta}': {e}")
+        try:
+            perguntas_dinamicas = com_tentativas(gerar_perguntas, rotulo="Agente Analista (perguntas)")
+            print(f"Agente Analista - {len(perguntas_dinamicas)} perguntas geradas: {perguntas_dinamicas}")
+        except Exception as e:
+            print(f"Agente Analista - ERRO ao gerar perguntas após tentativas: {e}")
+            perguntas_dinamicas = []
+            self.falhas.append({"etapa": "geracao_perguntas", "erro": str(e)})
+
+        for pergunta in perguntas_dinamicas:
+            try:
+                resposta_rag = await self.rag_query_func(pergunta)
+                # Compatível com a versão antiga (string) e a nova (dict com fontes).
+                if isinstance(resposta_rag, dict):
+                    texto, fontes = resposta_rag.get("texto", ""), resposta_rag.get("fontes", [])
+                else:
+                    texto, fontes = str(resposta_rag), []
+                self.recomendacoes_estrategicas.append({
+                    "pergunta": pergunta,
+                    "recomendacao": texto,
+                    "fontes": [f["arquivo"] for f in fontes],
+                    "fontes_detalhe": fontes,
+                })
+            except Exception as e:
+                print(f"Agente Analista - ERRO ao consultar RAG para '{pergunta}': {e}")
+                self.falhas.append({"etapa": "consulta_rag", "pergunta": pergunta, "erro": str(e)})
 
     def _gerar_relatorio_final(self) -> Dict[str, Any]:
         return {
@@ -189,6 +190,7 @@ class AgenteAnalista:
             "problemas_identificados": self.problemas_identificados,
             "oportunidades_identificadas": self.oportunidades_identificadas,
             "recomendacoes_estrategicas": self.recomendacoes_estrategicas,
+            "falhas_tratadas": self.falhas,
         }
 
     async def gerar_relatorio_formatado_txt(self) -> str:
@@ -197,22 +199,38 @@ class AgenteAnalista:
         if not self.llm:
             return "ERRO: Cliente LLM indisponível."
 
+        dados = self._gerar_relatorio_final()
+        dados_prompt = {
+            **dados,
+            "recomendacoes_estrategicas": [
+                {k: v for k, v in r.items() if k != "fontes_detalhe"} for r in dados["recomendacoes_estrategicas"]
+            ],
+        }
+        dados_prompt.pop("falhas_tratadas", None)
+
         prompt_relatorio = textwrap.dedent(f"""
             Você é um redator de relatórios de marketing digital.
-            Transforme o JSON abaixo em um relatório legível e profissional (TXT).
+            Transforme o JSON abaixo em um relatório legível e profissional em Markdown, em português.
 
-            Estrutura:
-            1. RESUMO EXECUTIVO
-            2. PROBLEMAS IDENTIFICADOS
-            3. OPORTUNIDADES (Volume de anúncios)
-            4. PLANO DE AÇÃO ESTRATÉGICO
+            Estrutura obrigatória (use exatamente estes títulos):
+            ## 1. RESUMO EXECUTIVO
+            ## 2. PROBLEMAS IDENTIFICADOS
+            ## 3. OPORTUNIDADES (Volume de anúncios)
+            ## 4. PLANO DE AÇÃO ESTRATÉGICO
+
+            Regras:
+            - Use somente as informações do JSON; não invente dados nem números.
+            - No plano de ação, cada recomendação deve terminar com a indicação das fontes da base
+              de conhecimento em que se apoia, no formato "(Fontes: nome-do-arquivo, ...)", usando o
+              campo "fontes". Se o campo estiver vazio, escreva "(Fontes: não recuperadas)".
 
             Dados:
-            {json.dumps(self._gerar_relatorio_final(), indent=2, ensure_ascii=False)}
+            {json.dumps(dados_prompt, indent=2, ensure_ascii=False)}
         """)
 
         try:
-            resposta_llm = self.llm.complete(prompt_relatorio)
+            resposta_llm = com_tentativas(lambda: self.llm.complete(prompt_relatorio),
+                                          rotulo="Agente Analista (relatório)")
             texto_relatorio = str(resposta_llm).strip()
             print("Agente Analista - Relatório formatado gerado.")
             return texto_relatorio

@@ -3,6 +3,8 @@ import asyncio
 import json
 from playwright.async_api import async_playwright, TimeoutError
 
+from config import HEADLESS
+
 async def coletar_anuncios_meta(termo_busca: str):
     """
     Coleta dados de anúncios ativos para um termo de busca na Biblioteca de Anúncios da Meta (Facebook e Instagram).
@@ -13,8 +15,8 @@ async def coletar_anuncios_meta(termo_busca: str):
     dados_anuncios = []
 
     async with async_playwright() as p:
-        # headless False para depurar e True para ver execução
-        browser = await p.chromium.launch(headless=False)
+        # HEADLESS=0 no .env abre a janela do navegador para depurar o seletor.
+        browser = await p.chromium.launch(headless=HEADLESS)
         context = await browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
             locale="pt-BR"
@@ -56,8 +58,10 @@ async def coletar_anuncios_meta(termo_busca: str):
                 anuncio = {}
                 try:
                     # ID do Anúncio
-                    id_element = await card.query_selector("span:has-text('Library ID:')")
-                    anuncio['id'] = (await id_element.inner_text()).replace('Library ID: ', '') if id_element else "Não encontrado"
+                    id_element = (await card.query_selector("span:has-text('Library ID:')")
+                                  or await card.query_selector("span:has-text('Identificação da biblioteca:')"))
+                    anuncio['id'] = ((await id_element.inner_text()).split(':', 1)[-1].strip()
+                                     if id_element else "Não encontrado")
 
                     # Texto do Anúncio (Copy)
                     copy_element = await card.query_selector("div._7jyr._a25-")

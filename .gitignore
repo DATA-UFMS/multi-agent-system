@@ -1,2 +1,6 @@
 .env
 .initiate.txt
+__pycache__/.*
+resultados/
+.venv/
+__pycache__/

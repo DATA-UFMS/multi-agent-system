@@ -2,6 +2,9 @@
 llama-index-core
 llama-index-llms-openai
 llama-index-embeddings-openai
+llama-index-llms-openai-like
+httpx
+python-dotenv
 openai
 playwright
 beautifulsoup4
@@ -16,7 +19,7 @@ epub-reader # Para ler Epub
 
 
 # Dependências assíncronas
-asyncio # Módulo padrão
+# asyncio é módulo padrão (não instalar do PyPI)
 
 # INSTALAR 
--- playwright install
+# Após instalar: playwright install chromium

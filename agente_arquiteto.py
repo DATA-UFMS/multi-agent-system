@@ -52,12 +52,19 @@ async def analisar_seo_on_page(url: str) -> dict:
 
         try:
             # Medir tempo de carregamento
+            # Espera o evento "load" (até 45 s). Sites com chat/analytics nunca atingem
+            # "networkidle", por isso ele é tentado depois, por no máximo 10 s, sem falhar.
             start_time = asyncio.get_event_loop().time()
-            await page.goto(url, wait_until="networkidle", timeout=30000)
+            await page.goto(url, wait_until="load", timeout=45000)
             end_time = asyncio.get_event_loop().time()
-
             resultado["tempo_carregamento"] = round(end_time - start_time, 2)
-            print(f"Página carregada em {resultado['tempo_carregamento']} segundos.")
+            try:
+                await page.wait_for_load_state("networkidle", timeout=10000)
+                resultado["rede_ociosa"] = True
+            except TimeoutError:
+                resultado["rede_ociosa"] = False
+            print(f"Página carregada (evento load) em {resultado['tempo_carregamento']} segundos; "
+                  f"rede ociosa: {resultado['rede_ociosa']}.")
 
             await page.wait_for_timeout(3000)
 

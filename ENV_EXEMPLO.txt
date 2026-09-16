@@ -1,0 +1,10 @@
+# Copie este conteúdo para um arquivo chamado .env na raiz do repositório
+OPENROUTER_API_KEY=coloque_sua_chave_aqui
+OPENROUTER_API_BASE=https://openrouter.ai/api/v1
+# Modelo dos agentes e do baseline (conferir identificadores em https://openrouter.ai/models)
+LLM_MODEL=openai/gpt-4.1
+# Não alterar sem reconstruir ./storage (o índice foi criado com este modelo)
+EMBED_MODEL=mistralai/mistral-embed-2312
+# Juízas: 3 famílias diferentes do gerador, separadas por vírgula
+JUDGE_MODELS=anthropic/claude-sonnet-4.5,google/gemini-2.5-pro,mistralai/mistral-large
+HEADLESS=1

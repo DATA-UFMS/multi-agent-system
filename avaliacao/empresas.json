@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A",
+    "setor": "Clínica de dermatologia (Harmonie)",
+    "url": "https://www.harmoniemed.com.br/",
+    "termo": "clinica dermatologica Brasilia",
+    "prompt": "A Empresa A é uma clínica dermatológica localizada em Brasília. Possuem um Instagram e fazem publicações de conteúdo, mas gostariam de avaliar outras estratégias com o intuito de atrair mais clientes. Embora melhorar o SEO seja algo que possuam interesse, a maior necessidade é de definir um plano de ação de marketing digital prático para aplicação."
+  },
+  {
+    "id": "B",
+    "setor": "Lajes pré-moldadas (Prolaje)",
+    "url": "https://www.prolaje.com.br",
+    "termo": "lajes pré-moldadas",
+    "prompt": "Eles contrataram uma agência de marketing, que funciona, mas faz um trabalho muito ruim. Querem um direcionamento do que melhorar no marketing digital para aumentar branding e conseguir mais clientes."
+  },
+  {
+    "id": "C",
+    "setor": "PREENCHER (ex.: restaurante local)",
+    "url": "https://PREENCHER",
+    "termo": "PREENCHER",
+    "prompt": "PREENCHER: contexto e necessidade em 2-4 frases, como um gestor escreveria."
+  },
+  {
+    "id": "D",
+    "setor": "PREENCHER (ex.: escritório de advocacia)",
+    "url": "https://PREENCHER",
+    "termo": "PREENCHER",
+    "prompt": "PREENCHER"
+  },
+  {
+    "id": "E",
+    "setor": "PREENCHER (ex.: loja de roupas / e-commerce pequeno)",
+    "url": "https://PREENCHER",
+    "termo": "PREENCHER",
+    "prompt": "PREENCHER"
+  },
+  {
+    "id": "F",
+    "setor": "PREENCHER (ex.: escola de idiomas / academia)",
+    "url": "https://PREENCHER",
+    "termo": "PREENCHER",
+    "prompt": "PREENCHER"
+  }
+]

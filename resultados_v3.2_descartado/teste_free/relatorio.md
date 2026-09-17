@@ -1,1 +1,0 @@
-ERRO ao gerar relatório: Connection error.

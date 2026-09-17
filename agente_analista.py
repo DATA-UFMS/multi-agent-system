@@ -100,9 +100,6 @@ class AgenteAnalista:
                            f"Não foi possível ler os metadados públicos do perfil: {dados_seo.get('status')}",
                            "crítica", "-")
             return
-        if not perfil.get("bio"):
-            self._problema("bio_ausente", "Conteúdo", "Perfil sem biografia legível nos metadados públicos.",
-                           "média", REF_CANAIS)
         pubs = perfil.get("publicacoes")
         if pubs is not None and pubs < 30:
             self._problema("poucas_publicacoes", "Conteúdo",

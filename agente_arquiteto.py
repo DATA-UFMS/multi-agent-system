@@ -81,9 +81,10 @@ async def analisar_perfil_instagram(url: str) -> dict:
             m_pub = re.search(r"([\d.,]+\s*(?:mil|k|m|mi)?)\s*(?:publica[çc][õo]es|posts)", texto, re.I)
             perfil["seguidores"] = _num_abreviado(m_seg.group(1)) if m_seg else None
             perfil["publicacoes"] = _num_abreviado(m_pub.group(1)) if m_pub else None
-            # bio: trecho após o "@usuario:" ou após as contagens, quando presente
-            m_bio = re.search(r"(?:@[\w.]+\s*(?:no Instagram)?:?\s*[\"“]?)(.+)$", texto)
-            perfil["bio"] = (m_bio.group(1).strip(' "”') if m_bio else "")
+            # Nome exibido: "... de Nome (@usuario)" / "... from Name (@user)". A bio não é exposta
+            # de forma confiável nos metadados públicos, por isso não é coletada nem avaliada.
+            m_nome = re.search(r"(?:Instagram de|Instagram from|from|de)\s+(.+?)\s*\(@", texto)
+            perfil["nome_exibido"] = m_nome.group(1).strip() if m_nome else ""
             perfil["contagens_encontradas"] = bool(m_seg or m_pub)
             if og or desc:
                 resultado["status"] = "Sucesso"

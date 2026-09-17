@@ -53,6 +53,9 @@ def montar_prompt(url: str, termo: str, prompt_usuario: str, dados: Dict[str, An
         ANÚNCIOS ATIVOS ENCONTRADOS PARA O TERMO:
         {json.dumps(anuncios, indent=2, ensure_ascii=False)}
 
+        PERFIL DO INSTAGRAM DA EMPRESA (metadados públicos; null se não coletado):
+        {json.dumps(((dados.get("perfil_instagram") or {}).get("perfil_social")), ensure_ascii=False)}
+
         PAGESPEED INSIGHTS / LIGHTHOUSE (notas 0-100 e Core Web Vitals; "campo" = usuários reais):
         {json.dumps({k: (dados.get("pagespeed") or {}).get(k) for k in ("status", "estrategia", "categorias", "laboratorio", "campo")}, indent=2, ensure_ascii=False)}
 

@@ -4,41 +4,47 @@
     "setor": "Clínica de dermatologia (Harmonie)",
     "url": "https://www.harmoniemed.com.br/",
     "termo": "clinica dermatologica Brasilia",
-    "prompt": "A Empresa A é uma clínica dermatológica localizada em Brasília. Possuem um Instagram e fazem publicações de conteúdo, mas gostariam de avaliar outras estratégias com o intuito de atrair mais clientes. Embora melhorar o SEO seja algo que possuam interesse, a maior necessidade é de definir um plano de ação de marketing digital prático para aplicação."
+    "prompt": "A Empresa A é uma clínica dermatológica localizada em Brasília. Possuem um Instagram e fazem publicações de conteúdo, mas gostariam de avaliar outras estratégias com o intuito de atrair mais clientes. Embora melhorar o SEO seja algo que possuam interesse, a maior necessidade é de definir um plano de ação de marketing digital prático para aplicação.",
+    "instagram": "https://www.instagram.com/harmonie.med/"
   },
   {
     "id": "B",
     "setor": "Lajes pré-moldadas (Prolaje)",
     "url": "https://www.prolaje.com.br",
     "termo": "lajes pré-moldadas",
-    "prompt": "Eles contrataram uma agência de marketing, que funciona, mas faz um trabalho muito ruim. Querem um direcionamento do que melhorar no marketing digital para aumentar branding e conseguir mais clientes."
+    "prompt": "Eles contrataram uma agência de marketing, que funciona, mas faz um trabalho muito ruim. Querem um direcionamento do que melhorar no marketing digital para aumentar branding e conseguir mais clientes.",
+    "instagram": "https://www.instagram.com/prolaje/"
   },
   {
     "id": "C",
-    "setor": "PREENCHER (ex.: restaurante local)",
-    "url": "https://PREENCHER",
-    "termo": "PREENCHER",
-    "prompt": "PREENCHER: contexto e necessidade em 2-4 frases, como um gestor escreveria."
+    "setor": "Escola particular (educação básica)",
+    "url": "https://escolagappe.com.br/",
+    "termo": "escola particular Campo Grande",
+    "prompt": "A Empresa C é uma escola particular de educação básica em Campo Grande. Divulga a rotina escolar no Instagram e recebe a maior parte das matrículas por indicação de famílias. Quer aumentar as matrículas para o próximo ano letivo, entender se o site ajuda ou atrapalha na decisão das famílias e definir ações de marketing digital que a equipe pequena da secretaria consiga executar.",
+    "instagram": "https://www.instagram.com/escola.gappe/"
   },
   {
     "id": "D",
-    "setor": "PREENCHER (ex.: escritório de advocacia)",
-    "url": "https://PREENCHER",
-    "termo": "PREENCHER",
-    "prompt": "PREENCHER"
+    "setor": "Consultório médico de profissional autônomo",
+    "url": "https://drfernandobezerra.com.br/",
+    "termo": "medico Campo Grande",
+    "prompt": "A Empresa D é o consultório de um médico que atende em Campo Grande e divulga conteúdo sobre a especialidade no Instagram. A agenda é preenchida sobretudo por indicação de pacientes e de outros profissionais. O consultório quer atrair novos pacientes de forma constante, sem depender de campanhas pontuais, e saber se o site e o perfil transmitem credibilidade e facilitam o agendamento. A equipe é pequena e precisa de ações simples de manter no dia a dia.",
+    "instagram": "https://www.instagram.com/dr.fernandobezerra/"
   },
   {
     "id": "E",
-    "setor": "PREENCHER (ex.: loja de roupas / e-commerce pequeno)",
-    "url": "https://PREENCHER",
-    "termo": "PREENCHER",
-    "prompt": "PREENCHER"
+    "setor": "Comércio especializado de animais exóticos (sem site próprio)",
+    "url": "https://www.instagram.com/proexotics.cg/",
+    "termo": "animais exoticos Campo Grande",
+    "prompt": "A Empresa E é um comércio especializado em animais exóticos e acessórios em Campo Grande. Toda a divulgação e a venda acontecem pelo Instagram e pelo WhatsApp; a empresa não tem site. Os clientes chegam por indicação e pelas publicações, mas a equipe sente que perde vendas de pessoas que procuram no Google e não encontram nada oficial. Querem saber se compensa criar um site, como aparecer para quem busca por esses produtos na cidade e que ações de marketing digital cabem em um negócio pequeno.",
+    "instagram": "https://www.instagram.com/proexotics.cg/"
   },
   {
     "id": "F",
-    "setor": "PREENCHER (ex.: escola de idiomas / academia)",
-    "url": "https://PREENCHER",
-    "termo": "PREENCHER",
-    "prompt": "PREENCHER"
+    "setor": "Academia / centro de treinamento",
+    "url": "https://workout365brasil.com.br/",
+    "termo": "academia Campo Grande",
+    "prompt": "A Empresa F é uma academia em Campo Grande que disputa alunos com redes maiores e com academias de bairro mais baratas. Publica treinos e resultados de alunos no Instagram, e a maior parte das matrículas vem de quem mora ou trabalha perto. Quer aumentar as matrículas e reduzir a evasão, entender se o site ajuda quem procura academia na região a escolher a unidade e definir ações de marketing digital que a equipe consiga manter na rotina.",
+    "instagram": "https://www.instagram.com/workout365gym/"
   }
 ]

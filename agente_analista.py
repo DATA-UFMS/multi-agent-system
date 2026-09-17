@@ -61,7 +61,8 @@ class AgenteAnalista:
     # ------------------------------------------------------------------ fluxo
     async def analisar_dados_marketing(self, dados_seo: Dict, dados_anuncios: List[Dict],
                                        diretivas_usuario: Dict, prompt_original: str,
-                                       termo_busca: str = "", dados_pagespeed: Dict = None) -> Dict[str, Any]:
+                                       termo_busca: str = "", dados_pagespeed: Dict = None,
+                                       perfil_instagram: Dict = None) -> Dict[str, Any]:
         print("\nAgente Analista")
         self.problemas_identificados, self.oportunidades_identificadas = [], []
         self.recomendacoes_estrategicas, self.falhas = [], []
@@ -73,8 +74,10 @@ class AgenteAnalista:
         }
 
         self.pagespeed = dados_pagespeed or {}
+        self.perfil_instagram = perfil_instagram or {}
         self._analise_primaria_seo(dados_seo)
         self._analise_pagespeed(self.pagespeed)
+        self._analise_instagram_complementar(self.perfil_instagram)
         self._analise_primaria_anuncios(dados_anuncios)
         await self._raciocinar_e_consultar_estrategista(dados_seo, dados_anuncios, diretivas_usuario, prompt_original)
 
@@ -198,6 +201,19 @@ class AgenteAnalista:
             self._problema("sem_viewport_mobile", "Usabilidade",
                            "Sem meta viewport (indício de página não adaptada a dispositivos móveis).", "alta", REF_CWV)
 
+    def _analise_instagram_complementar(self, ig: Dict):
+        """Perfil do Instagram de uma empresa que TEM site: dado complementar de presença social."""
+        if not ig or ig.get("status") != "Sucesso":
+            return
+        perfil = ig.get("perfil_social") or {}
+        pubs, seg = perfil.get("publicacoes"), perfil.get("seguidores")
+        if pubs is not None and pubs < 30:
+            self._problema("ig_poucas_publicacoes", "Redes sociais",
+                           f"Perfil no Instagram com {pubs} publicações; presença social pouco ativa.", "média", REF_CANAIS)
+        if seg is not None and seg < 500:
+            self._problema("ig_audiencia_pequena", "Redes sociais",
+                           f"Perfil no Instagram com {seg} seguidores; alcance orgânico limitado.", "baixa", REF_CANAIS)
+
     def _analise_pagespeed(self, ps: Dict):
         """Regras a partir do Lighthouse (laboratório) e do Chrome UX Report (campo), quando disponíveis."""
         if not ps or ps.get("status") != "Sucesso":
@@ -289,6 +305,7 @@ class AgenteAnalista:
             - URL analisada: {dados_seo.get('url')} (tipo de presença: {dados_seo.get('tipo_presenca', 'site')})
             - Perfil social lido (se aplicável): {dados_seo.get('perfil_social') or 'n/a'}
             - Redes/canais referenciados pelo site: {list((dados_seo.get('redes_sociais_no_site') or {}).keys()) or 'nenhum'}
+            - Perfil do Instagram da empresa: {json.dumps((self.perfil_instagram or {}).get('perfil_social') or 'não coletado', ensure_ascii=False)} ({(self.perfil_instagram or {}).get('origem', '')})
             - PageSpeed/Lighthouse: {json.dumps({k: self.pagespeed.get(k) for k in ('status', 'categorias', 'campo')}, ensure_ascii=False) if self.pagespeed else 'não coletado'}
             - Contexto informado pelo gestor: "{prompt_original}"
             - Foco identificado pelo Intérprete: {diretivas_usuario.get('foco_analise', [])}
@@ -377,6 +394,8 @@ class AgenteAnalista:
         dados_prompt = {k: v for k, v in dados.items() if k not in ("falhas_tratadas", "resumo_executivo")}
         if getattr(self, "pagespeed", None):
             dados_prompt["pagespeed"] = {k: self.pagespeed.get(k) for k in ("status", "estrategia", "categorias", "campo")}
+        if getattr(self, "perfil_instagram", None) and self.perfil_instagram.get("status") == "Sucesso":
+            dados_prompt["perfil_instagram"] = self.perfil_instagram.get("perfil_social")
         dados_prompt["recomendacoes_estrategicas"] = [
             {k: v for k, v in r.items() if k != "fontes_detalhe"} for r in dados["recomendacoes_estrategicas"]]
 
@@ -421,8 +440,9 @@ class AgenteAnalista:
 
 async def analisar_marketing_digital(dados_seo: Dict, dados_anuncios: List[Dict],
                                      diretivas_usuario: Dict, prompt_original: str,
-                                     termo_busca: str = "", dados_pagespeed: Dict = None) -> Tuple[Dict[str, Any], "AgenteAnalista"]:
+                                     termo_busca: str = "", dados_pagespeed: Dict = None,
+                                     perfil_instagram: Dict = None) -> Tuple[Dict[str, Any], "AgenteAnalista"]:
     analista = AgenteAnalista(rag_query_func=configurar_rag_e_consultar)
     resultado = await analista.analisar_dados_marketing(dados_seo, dados_anuncios, diretivas_usuario,
-                                                        prompt_original, termo_busca, dados_pagespeed)
+                                                        prompt_original, termo_busca, dados_pagespeed, perfil_instagram)
     return resultado, analista

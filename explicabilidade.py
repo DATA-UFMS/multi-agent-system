@@ -98,6 +98,11 @@ def fatos_da_execucao(exec_json: dict) -> dict:
     if "imagem" in tipos: chaves.add("imagem")
     if any(a.get("cta") not in (None, "", "Não encontrado") for a in anuncios): chaves.add("cta")
 
+    ig = (exec_json.get("dados_coletados", {}).get("perfil_instagram") or {}).get("perfil_social") or {}
+    for k in ("seguidores", "publicacoes"):
+        add_num(ig.get(k))
+    if ig:
+        chaves.update({"seguidores", "publicac", "instagram"})
     ps = exec_json.get("dados_coletados", {}).get("pagespeed", {}) or {}
     for v in (ps.get("categorias") or {}).values():
         add_num(v)

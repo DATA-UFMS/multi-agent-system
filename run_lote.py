@@ -65,7 +65,8 @@ async def main():
                 pasta = os.path.join(args.saida, emp_id, "sistema", f"rep{rep}")
                 try:
                     orq = OrquestradorPrincipal()
-                    resultado = await orq.executar_analise_completa(emp["url"], emp["termo"], emp["prompt"])
+                    resultado = await orq.executar_analise_completa(emp["url"], emp["termo"], emp["prompt"],
+                                                                    instagram=emp.get("instagram", ""))
                     salvar_resultado(resultado, pasta)
                     linhas.append(_linha_resumo(emp_id, "sistema", rep, resultado.get("execucao"), pasta))
                 except Exception as e:  # noqa: BLE001

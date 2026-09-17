@@ -11,7 +11,7 @@ from config import OPENROUTER_API_KEY, LLM_MODEL, EMBED_MODEL, uso_da_chave_usd
 from agente_interprete import interpretar_prompt_usuario
 from agente_analista import analisar_marketing_digital, AgenteAnalista
 from agente_coletor_meta import coletar_anuncios_meta
-from agente_arquiteto import analisar_seo_on_page
+from agente_arquiteto import analisar_seo_on_page, analisar_perfil_instagram
 from agente_pagespeed import coletar_pagespeed
 
 VERSAO_ORQUESTRADOR = "3.3"
@@ -48,7 +48,7 @@ class OrquestradorPrincipal:
         print(f"Diretivas geradas: {diretivas}")
         return diretivas
 
-    async def __coleta_dados(self, url: str, termo_busca: str):
+    async def __coleta_dados(self, url: str, termo_busca: str, instagram: str = ""):
         """Coordena a coleta de dados pelos agentes especializados."""
         print("\nCOLETA DE DADOS")
 
@@ -73,10 +73,23 @@ class OrquestradorPrincipal:
             print(f"Erro na coleta de anúncios: {dados_anuncios}")
             dados_anuncios = []
 
+        # Perfil do Instagram: informado explicitamente ou detectado nos links do site.
+        perfil_ig = None
+        url_ig = (instagram or "").strip() or (dados_seo.get("redes_sociais_no_site") or {}).get("instagram", "")
+        if url_ig and not eh_perfil_social:
+            if not url_ig.startswith("http"):
+                url_ig = f"https://www.instagram.com/{url_ig.lstrip('@')}/"
+            try:
+                perfil_ig = await analisar_perfil_instagram(url_ig)
+                perfil_ig["origem"] = "informado" if instagram else "detectado_no_site"
+            except Exception as e:  # noqa: BLE001
+                perfil_ig = {"status": f"Erro: {e}", "url": url_ig}
+
         self.dados_coletados = {
             "seo": dados_seo,
             "anuncios": dados_anuncios,
             "pagespeed": dados_pagespeed,
+            "perfil_instagram": perfil_ig,
         }
 
         print(f"Coleta concluída: SEO ({dados_seo.get('status', 'OK')}), "
@@ -93,7 +106,8 @@ class OrquestradorPrincipal:
                 diretivas_usuario=self.diretivas_usuario,
                 prompt_original=prompt_usuario,
                 termo_busca=termo_busca,
-                dados_pagespeed=self.dados_coletados.get("pagespeed", {})
+                dados_pagespeed=self.dados_coletados.get("pagespeed", {}),
+                perfil_instagram=self.dados_coletados.get("perfil_instagram") or {}
             )
             print("Análise concluída com sucesso.")
         except Exception as e:
@@ -148,6 +162,7 @@ class OrquestradorPrincipal:
             "seo_status": seo.get("status"),
             "pagespeed_status": (self.dados_coletados.get("pagespeed") or {}).get("status"),
             "pagespeed_campo": bool((self.dados_coletados.get("pagespeed") or {}).get("campo")),
+            "instagram_status": (self.dados_coletados.get("perfil_instagram") or {}).get("status"),
             "n_anuncios_coletados": len(anuncios) if isinstance(anuncios, list) else 0,
             "n_problemas": len(analise.get("problemas_identificados", [])),
             "n_oportunidades": len(analise.get("oportunidades_identificadas", [])),
@@ -169,7 +184,8 @@ class OrquestradorPrincipal:
         url: str,
         termo_busca: str,
         prompt_usuario: str = "",
-        salvar_arquivos: bool = True
+        salvar_arquivos: bool = True,
+        instagram: str = ""
     ) -> Dict[str, Any]:
         """Executa o fluxo completo de análise."""
         print(f"ANÁLISE DE MARKETING DIGITAL INICIADA")
@@ -185,7 +201,7 @@ class OrquestradorPrincipal:
             self.diretivas_usuario = self.__interpretacao(prompt_usuario)
             self.tempos["interpretacao"] = time.perf_counter() - t0
 
-            await self._cronometrar("coleta", self.__coleta_dados(url, termo_busca))
+            await self._cronometrar("coleta", self.__coleta_dados(url, termo_busca, instagram))
             await self._cronometrar("analise", self.__analise_(termo_busca, prompt_usuario))
             await self._cronometrar("relatorio", self.__relatorio_final(url, termo_busca, prompt_usuario))
             self.tempos["total"] = time.perf_counter() - inicio_total
@@ -216,6 +232,8 @@ async def main():
     parser.add_argument("--termo", type=str, required=True, help="Termo para busca de anúncios")
     parser.add_argument("--prompt", type=str, default="", help="Prompt opcional com observações do usuário")
     parser.add_argument("--salvar", action="store_true", help="Salvar arquivos intermediários")
+    parser.add_argument("--instagram", type=str, default="",
+                        help="Perfil do Instagram da empresa (URL ou @). Se omitido, usa o link detectado no site.")
     parser.add_argument("--saida", type=str, default="",
                         help="Pasta onde salvar execucao.json e relatorio.md (UTF-8)")
     args = parser.parse_args()
@@ -225,7 +243,8 @@ async def main():
         url=args.url,
         termo_busca=args.termo,
         prompt_usuario=args.prompt,
-        salvar_arquivos=args.salvar
+        salvar_arquivos=args.salvar,
+        instagram=args.instagram
     )
 
     if args.saida:

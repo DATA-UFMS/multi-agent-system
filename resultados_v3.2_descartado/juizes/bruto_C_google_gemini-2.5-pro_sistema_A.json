@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A incorpora detalhes específicos observados nos dados (menção a 'Cascavel (PR)') para recomendar ações de SEO local, alinhando-se perfeitamente a um contexto de PME regional. O Relatório B é mais genérico, mencionando 'temas regionais' sem a mesma especificidade, tornando suas recomendações menos personalizadas."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A se destaca por fornecer um 'Como executar' mais detalhado e técnico (ex: 'revisar configurações de DNS', 'utilizar Google Search Console'), além de classificar as ações por prioridade e esforço, o que é extremamente útil para uma PME. O Relatório B é acionável, mas suas instruções são ligeiramente mais genéricas."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 1,
+      "justificativa": "O Relatório A baseia suas conclusões estritamente nos dados: reconhece a falha de acesso como um problema em si e usa a análise de anúncios (78% vídeo) para guiar as recomendações. O Relatório B comete um erro grave ao tratar a ausência de dados (devido ao erro de acesso) como dados de ausência (afirmando que 'Não há título, meta description', etc.), o que invalida a fundamentação de várias de suas recomendações."
+    },
+    "correcao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 1,
+      "justificativa": "O Relatório A é tecnicamente impecável. Ele identifica corretamente o erro 'net::ERR_NAME_NOT_RESOLVED' como um problema de DNS/domínio e é honesto sobre a impossibilidade de analisar o SEO. O Relatório B está tecnicamente incorreto ao afirmar a ausência de elementos de SEO, o que é uma suposição impossível de ser feita a partir dos dados. Ele inventa problemas com base em uma falha de coleta."
+    },
+    "adequacao_pme": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "Ambos usam linguagem acessível, mas o Relatório A é superior por sua estrutura clara, priorização de ações com estimativa de esforço e foco em ferramentas e estratégias de alto impacto e baixo custo para PMEs (como o Google Business Profile). A incorreção técnica do Relatório B poderia levar o gestor a tomar decisões baseadas em premissas falsas."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A é indiscutivelmente superior. Sua principal virtude é a honestidade e a correção técnica: ele lida de forma exemplar com a falha na coleta de dados, transformando-a no principal ponto de ação, sem inventar informações. Em contraste, o Relatório B constrói parte de sua análise sobre uma premissa falsa, minando sua credibilidade. Além disso, o Relatório A extrai insights mais específicos dos dados de anúncios e apresenta um plano de ação mais detalhado, priorizado e contextualizado para as necessidades de uma PME."
+  }
+}

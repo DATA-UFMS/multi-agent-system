@@ -12,8 +12,9 @@ from agente_interprete import interpretar_prompt_usuario
 from agente_analista import analisar_marketing_digital, AgenteAnalista
 from agente_coletor_meta import coletar_anuncios_meta
 from agente_arquiteto import analisar_seo_on_page
+from agente_pagespeed import coletar_pagespeed
 
-VERSAO_ORQUESTRADOR = "3.2"
+VERSAO_ORQUESTRADOR = "3.3"
 
 if not OPENROUTER_API_KEY:
     raise EnvironmentError(
@@ -51,13 +52,18 @@ class OrquestradorPrincipal:
         """Coordena a coleta de dados pelos agentes especializados."""
         print("\nCOLETA DE DADOS")
 
+        eh_perfil_social = "instagram.com" in url.lower()
         resultados = await asyncio.gather(
             analisar_seo_on_page(url),
             coletar_anuncios_meta(termo_busca),
+            coletar_pagespeed(url) if not eh_perfil_social else asyncio.sleep(0, result={"status": "nao_aplicavel"}),
             return_exceptions=True
         )
 
-        dados_seo, dados_anuncios = resultados
+        dados_seo, dados_anuncios, dados_pagespeed = resultados
+        if isinstance(dados_pagespeed, Exception):
+            print(f"Erro na coleta PageSpeed: {dados_pagespeed}")
+            dados_pagespeed = {"status": f"Erro: {dados_pagespeed}"}
 
         if isinstance(dados_seo, Exception):
             print(f"Erro na coleta SEO: {dados_seo}")
@@ -69,7 +75,8 @@ class OrquestradorPrincipal:
 
         self.dados_coletados = {
             "seo": dados_seo,
-            "anuncios": dados_anuncios
+            "anuncios": dados_anuncios,
+            "pagespeed": dados_pagespeed,
         }
 
         print(f"Coleta concluída: SEO ({dados_seo.get('status', 'OK')}), "
@@ -85,7 +92,8 @@ class OrquestradorPrincipal:
                 dados_anuncios=self.dados_coletados.get("anuncios", []),
                 diretivas_usuario=self.diretivas_usuario,
                 prompt_original=prompt_usuario,
-                termo_busca=termo_busca
+                termo_busca=termo_busca,
+                dados_pagespeed=self.dados_coletados.get("pagespeed", {})
             )
             print("Análise concluída com sucesso.")
         except Exception as e:
@@ -116,6 +124,7 @@ class OrquestradorPrincipal:
                     "Agente Intérprete",
                     "Agente Coletor Meta",
                     "Agente Arquiteto",
+                    "Agente PageSpeed",
                     "Agente Analista",
                     "Agente Estrategista"
                 ]
@@ -137,6 +146,8 @@ class OrquestradorPrincipal:
             "tempos_s": {k: round(v, 2) for k, v in self.tempos.items()},
             "interprete_status": self.diretivas_usuario.get("status"),
             "seo_status": seo.get("status"),
+            "pagespeed_status": (self.dados_coletados.get("pagespeed") or {}).get("status"),
+            "pagespeed_campo": bool((self.dados_coletados.get("pagespeed") or {}).get("campo")),
             "n_anuncios_coletados": len(anuncios) if isinstance(anuncios, list) else 0,
             "n_problemas": len(analise.get("problemas_identificados", [])),
             "n_oportunidades": len(analise.get("oportunidades_identificadas", [])),

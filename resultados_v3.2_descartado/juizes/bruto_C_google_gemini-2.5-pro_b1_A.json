@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "B",
+      "nota_A": 2,
+      "nota_B": 4,
+      "justificativa": "O Relatório B, apesar de suas falhas, tenta conectar as recomendações ao contexto local (mencionando 'Cascavel (PR)' e 'SEO local'), o que é mais relevante para uma PME com atuação regional. O Relatório A é excessivamente genérico, aplicando-se a qualquer empresa em qualquer lugar, e falha em demonstrar que considerou a natureza do negócio."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "Ambos são acionáveis, mas o Relatório A se destaca por incluir a dimensão 'Esforço' (baixo/médio), que é crucial para uma PME priorizar ações com recursos limitados. Suas instruções 'Como executar' são diretas e focadas no problema imediato. O Relatório B é bom, mas um pouco menos pragmático na apresentação."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 1,
+      "justificativa": "O Relatório A baseia todas as suas conclusões estritamente nos dados fornecidos: o site está inacessível e há 77 anúncios. O Relatório B inventa dados que não estavam na coleta (ex: '78% utilizam o formato de vídeo', 'menção a Cascavel (PR)' nos textos dos anúncios), o que representa uma falha crítica e inaceitável de fundamentação."
+    },
+    "correcao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 1,
+      "justificativa": "O Relatório A é tecnicamente impecável. Ele diagnostica corretamente o problema a partir do erro 'net::ERR_NAME_NOT_RESOLVED' e se abstém de fazer afirmações sobre o que não pôde ser medido. O Relatório B comete o erro grave de apresentar dados fabricados como se fossem fatos coletados, invalidando sua credibilidade técnica."
+    },
+    "adequacao_pme": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A é exemplar para uma PME: é honesto sobre as limitações, usa linguagem clara e fornece um plano de ação priorizado e com estimativa de esforço. O Relatório B, ao usar dados falsos, poderia induzir o gestor a tomar decisões de investimento (ex: focar em vídeo) com base em premissas incorretas, o que é inadequado e arriscado para uma PME."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A é o vencedor indiscutível. Embora o Relatório B tente personalizar mais as recomendações, ele o faz com base em dados inventados, o que é uma falha fundamental e antiética para um trabalho de consultoria. O Relatório A demonstra integridade, transparência e rigor técnico. Ele reconhece honestamente a impossibilidade de uma análise completa devido ao erro no site e, a partir daí, constrói um plano de ação lógico, priorizado e perfeitamente adequado à realidade de uma PME: primeiro, consertar a base (o site), para depois construir o resto. É um relatório seguro, confiável e verdadeiramente útil."
+  }
+}

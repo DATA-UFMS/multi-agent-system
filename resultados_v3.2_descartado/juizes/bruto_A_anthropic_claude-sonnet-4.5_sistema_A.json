@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "B",
+      "nota_A": 3,
+      "nota_B": 5,
+      "justificativa": "O Relatório B demonstra aderência superior ao contexto, identificando a clínica pelo nome (Harmonie Medicina Integrada), reconhecendo explicitamente a dependência do Instagram mencionada pela empresa e focando na necessidade prioritária de 'definir um plano de ação prático'. O Relatório A trata a empresa genericamente como 'Empresa A' e dedica esforço desproporcional a problemas técnicos de SEO, quando a empresa deixou claro que SEO é secundário à necessidade de atrair clientes."
+    },
+    "acionabilidade": {
+      "vencedor": "B",
+      "nota_A": 3,
+      "nota_B": 5,
+      "justificativa": "O Relatório B oferece ações mais concretas e executáveis: 'segmentar mulheres de 25 a 55 anos em Brasília', 'adaptar vídeos do Instagram para YouTube Shorts', 'inserir formulários simples e oferecer e-book sobre prevenção do câncer de pele'. O Relatório A é mais vago: 'definir personas', 'escolher canais', 'selecionar palavras-chave relevantes' sem especificar quais ou como. As recomendações de B são imediatamente aplicáveis por uma PME."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 4,
+      "nota_B": 3,
+      "justificativa": "O Relatório A fundamenta melhor suas recomendações técnicas de SEO com referências específicas (Google Search Central, rel=canonical) e cita documentos da base de conhecimento. O Relatório B baseia-se mais em 'práticas de mercado' e 'experiência', com fontes genéricas (Moz, Neil Patel, HubSpot) sem conexão direta com os dados coletados. Contudo, A força problemas técnicos que não são prioridade declarada pela empresa."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 4,
+      "nota_B": 4,
+      "justificativa": "Ambos os relatórios apresentam correção técnica adequada. O Relatório A identifica corretamente problemas de SEO (URL canônica, tamanho de título/meta descrição) baseados nos dados. O Relatório B não inventa dados e suas afirmações sobre baixa concorrência em anúncios (2 anúncios ativos) estão corretas. Nenhum apresenta erros factuais graves, embora A superestime a importância de problemas técnicos para o contexto específico."
+    },
+    "adequacao_pme": {
+      "vencedor": "B",
+      "nota_A": 3,
+      "nota_B": 5,
+      "justificativa": "O Relatório B é significativamente mais adequado para uma PME: linguagem acessível, ações práticas de baixo a médio esforço, foco em resultados rápidos (anúncios pagos, captação de leads, aproveitamento de conteúdo existente). O Relatório A inicia com questões técnicas de SEO que exigem conhecimento especializado ('revisar código do site', 'corrigir tag rel=canonical'), menos prioritárias para uma clínica que busca atrair clientes rapidamente."
+    }
+  },
+  "geral": {
+    "vencedor": "B",
+    "justificativa": "O Relatório B vence por melhor compreensão e atendimento das necessidades declaradas pela empresa. Embora o Relatório A seja tecnicamente mais fundamentado em SEO, ele desalinha prioridades ao focar em correções técnicas quando a empresa explicitamente busca 'um plano de ação prático para atrair mais clientes' e considera SEO secundário. O Relatório B entrega exatamente o solicitado: ações concretas, priorizadas e executáveis (anúncios pagos, diversificação de canais, captação de leads) com linguagem acessível e esforço adequado a uma PME. A personalização (usar o nome da clínica, reconhecer a dependência do Instagram) e a especificidade das recomendações (público-alvo definido, formatos específicos, iscas digitais concretas) tornam B substancialmente mais útil para o gestor da clínica dermatológica."
+  }
+}

@@ -6,6 +6,102 @@ import re
 from urllib.parse import urljoin, urlparse
 
 
+REDES = {
+    "instagram": ("instagram.com/",),
+    "whatsapp": ("wa.me/", "api.whatsapp.com", "whatsapp.com/send", "web.whatsapp.com"),
+    "facebook": ("facebook.com/", "fb.com/"),
+    "youtube": ("youtube.com/", "youtu.be/"),
+    "linkedin": ("linkedin.com/",),
+    "tiktok": ("tiktok.com/",),
+}
+
+
+async def _existe(page, url_recurso: str) -> bool:
+    """Verifica se um recurso responde 200 (robots.txt, sitemap.xml)."""
+    try:
+        resp = await page.request.get(url_recurso, timeout=10000)
+        return resp.status == 200
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def _num_abreviado(texto: str):
+    """'12,5 mil' / '12.5K' / '1,2M' / '980' -> int."""
+    m = re.search(r"([\d.,]+)\s*(mil|k|m|mi)?", texto.lower())
+    if not m:
+        return None
+    n = m.group(1).replace(".", "").replace(",", ".") if m.group(2) else m.group(1).replace(".", "").replace(",", "")
+    try:
+        v = float(n)
+    except ValueError:
+        return None
+    suf = m.group(2) or ""
+    return int(v * (1000 if suf in ("mil", "k") else 1_000_000 if suf in ("m", "mi") else 1))
+
+
+async def analisar_perfil_instagram(url: str) -> dict:
+    """
+    Coleta mínima para empresas sem site: lê as meta tags públicas do perfil do Instagram
+    (og:title, og:description com seguidores/publicações). Não exige login; pode ser bloqueada.
+    """
+    resultado = {
+        "url": url, "status": "Erro", "tipo_presenca": "perfil_instagram",
+        "titulo": "", "meta_description": "", "meta_keywords": "", "tags_cabecalho": {},
+        "contagem_palavras": 0, "imagens_sem_alt": [], "links_internos": 0, "links_externos": 0,
+        "links_quebrados": [], "tempo_carregamento": 0, "mobile_friendly": True,
+        "structured_data": [], "canonical_url": "", "meta_robots": "", "open_graph": {},
+        "twitter_cards": {}, "performance_metrics": {}, "https": True,
+        "robots_txt": None, "sitemap_xml": None, "redes_sociais_no_site": {},
+        "perfil_social": {"rede": "instagram", "usuario": urlparse(url).path.strip("/").split("/")[0]},
+    }
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True, args=["--no-sandbox"])
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            locale="pt-BR")
+        page = await context.new_page()
+        try:
+            start = asyncio.get_event_loop().time()
+            await page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            resultado["tempo_carregamento"] = round(asyncio.get_event_loop().time() - start, 2)
+            await page.wait_for_timeout(2500)
+            og = {}
+            for el in await page.query_selector_all("meta[property^='og:']"):
+                prop, cont = await el.get_attribute("property"), await el.get_attribute("content")
+                if prop and cont:
+                    og[prop] = cont
+            desc_el = await page.query_selector("meta[name='description']")
+            desc = (await desc_el.get_attribute("content")) if desc_el else ""
+            resultado["open_graph"] = og
+            resultado["titulo"] = og.get("og:title", "")
+            resultado["meta_description"] = og.get("og:description", "") or desc or ""
+            texto = resultado["meta_description"]
+            perfil = resultado["perfil_social"]
+            m_seg = re.search(r"([\d.,]+\s*(?:mil|k|m|mi)?)\s*(?:seguidores|followers)", texto, re.I)
+            m_pub = re.search(r"([\d.,]+\s*(?:mil|k|m|mi)?)\s*(?:publica[çc][õo]es|posts)", texto, re.I)
+            perfil["seguidores"] = _num_abreviado(m_seg.group(1)) if m_seg else None
+            perfil["publicacoes"] = _num_abreviado(m_pub.group(1)) if m_pub else None
+            # bio: trecho após o "@usuario:" ou após as contagens, quando presente
+            m_bio = re.search(r"(?:@[\w.]+\s*(?:no Instagram)?:?\s*[\"“]?)(.+)$", texto)
+            perfil["bio"] = (m_bio.group(1).strip(' "”') if m_bio else "")
+            perfil["contagens_encontradas"] = bool(m_seg or m_pub)
+            if og or desc:
+                resultado["status"] = "Sucesso"
+                print(f"Agente Arquiteto - Perfil Instagram lido: {perfil}")
+            else:
+                resultado["status"] = "Erro: página do perfil sem metadados públicos (login exigido ou bloqueio)"
+                print("Agente Arquiteto - Perfil Instagram sem metadados públicos.")
+        except TimeoutError:
+            resultado["status"] = "Timeout"
+            print("Agente Arquiteto - Timeout no perfil Instagram")
+        except Exception as e:  # noqa: BLE001
+            resultado["status"] = f"Erro durante a análise: {e}"
+            print(f"Agente Arquiteto - Erro -> {e}")
+        finally:
+            await browser.close()
+    return resultado
+
+
 async def analisar_seo_on_page(url: str) -> dict:
     """
     Agente Arquiteto: Responsável por realizar uma análise de SEO do site fornecido.
@@ -13,6 +109,9 @@ async def analisar_seo_on_page(url: str) -> dict:
     """
 
     print("Agente Arquiteto - Iniciando execução")
+
+    if "instagram.com" in urlparse(url).netloc.lower():
+        return await analisar_perfil_instagram(url)
 
     resultado = {
         "url": url,
@@ -28,6 +127,12 @@ async def analisar_seo_on_page(url: str) -> dict:
         "links_quebrados": [],
         "tempo_carregamento": 0,
         "mobile_friendly": False,
+        "tipo_presenca": "site",          # "site" ou "perfil_instagram"
+        "https": url.lower().startswith("https://"),
+        "robots_txt": None,
+        "sitemap_xml": None,
+        "redes_sociais_no_site": {},
+        "perfil_social": {},
         "structured_data": [],
         "canonical_url": "",
         "meta_robots": "",
@@ -175,6 +280,22 @@ async def analisar_seo_on_page(url: str) -> dict:
 
             resultado["links_internos"] = links_internos
             resultado["links_externos"] = links_externos
+
+            # Redes sociais e canais de contato referenciados pelo site
+            redes = {}
+            for link in links:
+                href = (await link.get_attribute("href")) or ""
+                h = href.lower()
+                for chave, padroes in REDES.items():
+                    if chave not in redes and any(p in h for p in padroes):
+                        redes[chave] = href
+            resultado["redes_sociais_no_site"] = redes
+
+            # robots.txt e sitemap.xml (requisições simples na mesma origem)
+            origem = f"{parsed_url.scheme}://{parsed_url.netloc}"
+            resultado["robots_txt"] = await _existe(page, origem + "/robots.txt")
+            resultado["sitemap_xml"] = await _existe(page, origem + "/sitemap.xml")
+            resultado["https"] = page.url.lower().startswith("https://")
 
             # Mobile friendly
             viewport_meta = await page.query_selector("meta[name=\"viewport\"]")

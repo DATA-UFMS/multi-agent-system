@@ -98,6 +98,18 @@ def fatos_da_execucao(exec_json: dict) -> dict:
     if "imagem" in tipos: chaves.add("imagem")
     if any(a.get("cta") not in (None, "", "Não encontrado") for a in anuncios): chaves.add("cta")
 
+    ps = exec_json.get("dados_coletados", {}).get("pagespeed", {}) or {}
+    for v in (ps.get("categorias") or {}).values():
+        add_num(v)
+    for k, v in (ps.get("laboratorio") or {}).items():
+        if isinstance(v, (int, float)):
+            add_num(v); add_num(v / 1000)
+    for k, v in (ps.get("campo") or {}).items():
+        if isinstance(v, dict) and isinstance(v.get("p75"), (int, float)):
+            add_num(v["p75"]); add_num(v["p75"] / 1000)
+    if ps.get("status") == "Sucesso":
+        chaves.update({"lighthouse", "pagespeed", "lcp", "cls", "inp", "desempenho"})
+
     # diagnóstico do sistema (se houver): números e regras acionadas
     analise = exec_json.get("analise_completa", {}) or {}
     for p in analise.get("problemas_identificados", []):

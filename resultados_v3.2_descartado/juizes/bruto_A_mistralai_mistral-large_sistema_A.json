@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A demonstra maior aderência ao contexto específico da clínica dermatológica em Brasília, mencionando explicitamente a necessidade de priorizar ações práticas (além do Instagram) e destacando oportunidades locais (baixa concorrência em anúncios). O Relatório B também considera o contexto, mas de forma mais genérica, sem enfatizar tanto a localidade ou a urgência por ações práticas imediatas."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A apresenta recomendações mais específicas e detalhadas, com passos claros para execução (ex: como corrigir a URL canônica, quais CTAs testar). O Relatório B é acionável, mas algumas ações são menos detalhadas (ex: 'fortalecer conteúdo educativo' poderia ser mais específico sobre formatos ou frequência)."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A fundamenta todas as recomendações nos dados coletados (ex: problemas de SEO, baixa concorrência em anúncios) e cita fontes técnicas (Google Search Central). O Relatório B também usa os dados, mas algumas fundamentações são baseadas em 'experiência de mercado' ou 'práticas recomendadas', sem referências tão concretas."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 5,
+      "nota_B": 5,
+      "justificativa": "Ambos os relatórios apresentam afirmações técnicas corretas e coerentes com os dados coletados. Não há erros ou incoerências em nenhum dos dois."
+    },
+    "adequacao_pme": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 5,
+      "justificativa": "O Relatório B é mais acessível para uma PME, com linguagem simples e foco em ações de baixo a médio esforço (ex: captação de leads via WhatsApp, depoimentos). O Relatório A é técnico em alguns pontos (ex: 'URL canônica', 'rel=canonical'), o que pode exigir mais conhecimento do gestor."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A vence por sua maior aderência ao contexto, acionabilidade e fundamentação técnica, apesar de o Relatório B ser mais adequado para PMEs. A combinação de rigor técnico, priorização clara e foco em resultados práticos faz do Relatório A o mais completo para a necessidade da clínica, que busca um plano de ação imediato e executável."
+  }
+}

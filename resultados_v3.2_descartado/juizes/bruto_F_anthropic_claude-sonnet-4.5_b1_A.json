@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "empate",
+      "nota_A": 1,
+      "nota_B": 1,
+      "justificativa": "Ambos os relatórios falham completamente nesta dimensão. O contexto informado pela empresa está vazio ('PREENCHER'), e nenhum dos relatórios menciona ou questiona essa ausência. Não há referência a setor, necessidade específica ou localidade (embora B mencione Cascavel-PR, isso não consta nos dados fornecidos). Ambos oferecem conselhos genéricos sem aderência a um contexto empresarial real."
+    },
+    "acionabilidade": {
+      "vencedor": "B",
+      "nota_A": 3,
+      "nota_B": 4,
+      "justificativa": "Relatório B é mais específico e acionável. Enquanto A oferece recomendações genéricas ('corrigir DNS', 'monitorar concorrentes'), B detalha passos concretos: 'verifique configurações de DNS, renove domínio, corrija robots.txt, teste acessibilidade, solicite reindexação'. B também quantifica insights (78% vídeos vs 22% imagens) e sugere ações específicas como 'CTAs personalizados' e 'vídeos curtos autênticos'. A priorização é similar em ambos, mas B oferece mais clareza executiva."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 4,
+      "nota_B": 2,
+      "justificativa": "Relatório A fundamenta-se corretamente nos dados coletados: identifica o erro DNS, menciona os 77 anúncios ativos e reconhece a impossibilidade de análise SEO. Relatório B apresenta problemas graves: afirma '78% dos anúncios em vídeo' e '22% imagens' sem que esses dados constem na coleta (apenas 'n_anuncios_ativos_coletados: 77' sem detalhamento de formato). B também cita fontes externas (Keywords-Research.md, YouTube-Subscribers-Reflections.md) que não fazem parte dos dados fornecidos, inventando fundamentação."
+    },
+    "correcao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 2,
+      "justificativa": "Relatório A é tecnicamente correto: identifica corretamente o erro DNS (ERR_NAME_NOT_RESOLVED), reconhece a ausência de dados SEO e não inventa informações. Relatório B comete erros graves: apresenta estatísticas detalhadas (78% vídeos) não presentes nos dados coletados, menciona 'Cascavel (PR)' sem fonte nos dados fornecidos, e cita documentos externos como se fossem parte da análise. B inventa dados para compensar a falta de informação real."
+    },
+    "adequacao_pme": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 4,
+      "justificativa": "Empate técnico. Ambos usam linguagem acessível e propõem ações viáveis para PMEs. A classifica esforço (baixo/médio) e prioridade de forma clara. B também categoriza prioridade e esforço, com instruções mais detalhadas ('teste CTAs', 'incentive avaliações'). Ambos evitam jargão excessivo e estruturam recomendações de forma compreensível. A diferença é marginal, mas B oferece ligeiramente mais orientação prática, embora baseada em dados questionáveis."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "Relatório A vence por correção técnica e fundamentação nos dados reais. Embora B seja mais detalhado e acionável, comete o erro crítico de inventar dados (estatísticas de formato de anúncios, localização geográfica) não presentes na coleta. Para uma PME, receber recomendações baseadas em informações fabricadas é mais prejudicial que receber análise honesta sobre limitações dos dados. A reconhece corretamente as restrições ('não foi possível coletar'), enquanto B mascara a falta de dados com estatísticas inventadas. Em consultoria, integridade dos dados supera sofisticação narrativa."
+  }
+}

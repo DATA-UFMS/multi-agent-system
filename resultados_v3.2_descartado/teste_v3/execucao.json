@@ -1,0 +1,607 @@
+{
+  "metadados": {
+    "url_analisada": "https://www.harmoniemed.com.br/",
+    "termo_busca": "clinica dermatologica Brasilia",
+    "prompt_usuario": "A Empresa A é uma clínica dermatológica localizada em Brasília. Possuem um Instagram e fazem publicações de conteúdo, mas gostariam de avaliar outras estratégias com o intuito de atrair mais clientes. Embora melhorar o SEO seja algo que possuam interesse, a maior necessidade é de definir um plano de ação de marketing digital prático para aplicação.",
+    "diretivas_interpretadas": {
+      "foco_analise": [
+        "conteudo",
+        "seo_geral",
+        "anuncios_geral",
+        "analise_cta",
+        "analise_criativos"
+      ],
+      "hipoteses_usuario": [
+        "Como atrair mais clientes além do Instagram?",
+        "Quais estratégias de marketing digital podem ser aplicadas de forma prática?",
+        "Melhorar o SEO pode ajudar, mas não é a prioridade principal no momento."
+      ],
+      "status": "sucesso_llm"
+    },
+    "timestamp_analise": "2026-09-16T14:26:37.420222",
+    "versao_orquestrador": "3.2",
+    "modelo_llm": "openai/gpt-4.1",
+    "modelo_embeddings": "mistralai/mistral-embed-2312",
+    "agentes_utilizados": [
+      "Agente Intérprete",
+      "Agente Coletor Meta",
+      "Agente Arquiteto",
+      "Agente Analista",
+      "Agente Estrategista"
+    ]
+  },
+  "analise_completa": {
+    "resumo_executivo": "Análise concluída. 4 problema(s), 2 oportunidade(s) e 5 recomendação(ões).",
+    "contexto": {
+      "prompt_original": "A Empresa A é uma clínica dermatológica localizada em Brasília. Possuem um Instagram e fazem publicações de conteúdo, mas gostariam de avaliar outras estratégias com o intuito de atrair mais clientes. Embora melhorar o SEO seja algo que possuam interesse, a maior necessidade é de definir um plano de ação de marketing digital prático para aplicação.",
+      "termo_busca": "clinica dermatologica Brasilia",
+      "foco_analise": [
+        "conteudo",
+        "seo_geral",
+        "anuncios_geral",
+        "analise_cta",
+        "analise_criativos"
+      ],
+      "hipoteses_usuario": [
+        "Como atrair mais clientes além do Instagram?",
+        "Quais estratégias de marketing digital podem ser aplicadas de forma prática?",
+        "Melhorar o SEO pode ajudar, mas não é a prioridade principal no momento."
+      ]
+    },
+    "problemas_identificados": [
+      {
+        "regra": "titulo_tamanho",
+        "categoria": "SEO",
+        "problema": "Título com 85 caracteres (faixa recomendada: 30–60).",
+        "prioridade": "média",
+        "referencia": "Google Search Central: title links e snippets"
+      },
+      {
+        "regra": "meta_description_tamanho",
+        "categoria": "SEO",
+        "problema": "Meta descrição com 197 caracteres (faixa recomendada: 70–160).",
+        "prioridade": "média",
+        "referencia": "Google Search Central: title links e snippets"
+      },
+      {
+        "regra": "canonical_outro_dominio",
+        "categoria": "SEO",
+        "problema": "URL canônica aponta para outro domínio (harmoniemed.lovable.app); o site pode ceder a indexação a ele.",
+        "prioridade": "alta",
+        "referencia": "Google Search Central: rel=canonical"
+      },
+      {
+        "regra": "fcp_lento",
+        "categoria": "Performance",
+        "problema": "First Contentful Paint de 1.9 s (limiar 'bom': 1,8 s).",
+        "prioridade": "alta",
+        "referencia": "Google Core Web Vitals / Lighthouse"
+      }
+    ],
+    "oportunidades_identificadas": [
+      {
+        "categoria": "Publicidade",
+        "oportunidade": "Baixa concorrência no recorte (2 anúncios ativos, limiar 25); espaço para se destacar.",
+        "potencial": "alto"
+      },
+      {
+        "categoria": "Criativos",
+        "oportunidade": "2 de 2 anúncios concorrentes usam vídeo; o formato é a norma no recorte.",
+        "potencial": "médio"
+      }
+    ],
+    "panorama_anuncios": {
+      "total_coletado": 2,
+      "criativos": {
+        "Vídeo": 2
+      },
+      "proporcao_video": 1.0,
+      "ctas_mais_comuns": [],
+      "anuncios_com_data_inicio": 2,
+      "amostra_textos": [
+        "Você faz careta durante o treino? 👇- @[perfil]  O vídeo da atriz Cláudia Raia treinando com o rosto totalmente relaxado chamou a atenção da internet. E ela está coberta de razão, sabia?  Muitas mulher",
+        "Cada pele é única, e o seu tratamento também deve ser.  A Curadoria de Identidade de Pele, conduzida pelo Dr. Wesley Ferreira, já faz parte dos atendimentos da Nomos. Uma abordagem personalizada para "
+      ],
+      "observacao": "Recorte da Biblioteca de Anúncios da Meta para o termo informado; não representa todo o setor."
+    },
+    "recomendacoes_estrategicas": [
+      {
+        "pergunta": "Quais canais digitais, além do Instagram, têm maior potencial de atrair pacientes para clínicas dermatológicas em Brasília, considerando o baixo volume de anúncios concorrentes na região?",
+        "recomendacao": "Além do Instagram, canais digitais com grande potencial para atrair pacientes para clínicas dermatológicas em Brasília incluem plataformas de anúncios de busca paga, como o Google Ads, onde é possível exibir anúncios no momento em que usuários buscam por serviços dermatológicos específicos. Esse tipo de publicidade aproveita a intenção ativa do público, aumentando as chances de conversão. \n\nOutra opção relevante são as redes sociais pagas como Facebook, que permitem segmentação detalhada por dados demográficos, interesses e comportamento de compra, facilitando o alcance de públicos específicos da região. O uso de formatos variados de anúncios, como display e vídeo, também pode ampliar o reconhecimento da clínica em diferentes pontos de contato online, especialmente em canais onde há menor concorrência de anúncios. \n\nPor fim, analisar o comportamento online e criar campanhas personalizadas em plataformas onde o público-alvo está presente, ajustando as mensagens para aumentar a relevância, pode gerar melhores resultados e engajamento.",
+        "fontes": [
+          "Estrategias-Social-Media-Sprout-Social.md",
+          "Insights-Mercado-Social-Media.md",
+          "Marketing-Digital-Strategy.md",
+          "Online-Adversiting.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8273,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Publicidade Online: Redes Sociais Pagas (Paid Social) Redes sociais são um dos principais locais onde os usuários passam seu tempo, e a publicidade paga nessas plataformas permite que anunciantes alcancem usuários de forma segmentada. - Permite segme"
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.82,
+            "trecho": "Estratégia de Marketing Digital 1️⃣ Publicidade Baseada em Intenção Este guia resume os principais conceitos e práticas de marketing digital voltados para publicidade paga e geração de tráfego qualificado. --- **O que é:** Exposição de anúncios pagos no momento exato em que usuários buscam produtos "
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8195,
+            "trecho": "Estratégia de Marketing Digital 2️⃣ Tipos de Campanhas e Formatos de Anúncio **O que é:** Diferentes formatos de anúncios (busca, display, shopping, vídeo) para atingir o público em múltiplos pontos de contato online. **Por que é importante:** Diversificar formatos permite engajar usuários em difere"
+          },
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.8189,
+            "trecho": "Estratégias de Social Media Engajamento com a Audiência - Monitoramento de comentários, mensagens e menções para respostas rápidas e contextualizadas. - Uso de dados para personalizar interações e aumentar fidelização. - Estratégias de storytelling para engajar a comunidade e gerar compartilhamentos"
+          },
+          {
+            "arquivo": "Insights-Mercado-Social-Media.md",
+            "score": 0.818,
+            "trecho": "Insights de Mercado em Social Media Segmentação e Comportamento do Público - Analise interesses, demografia e comportamento online do público-alvo. - Crie perfis de clientes ideais baseados em dados reais. - Ajuste mensagens e campanhas para aumentar relevância e engajamento."
+          }
+        ]
+      },
+      {
+        "pergunta": "Quais formatos de anúncios (imagem, vídeo, carrossel) e CTAs têm apresentado melhor desempenho para clínicas de dermatologia em Brasília, dado que todos os concorrentes locais utilizam vídeos?",
+        "recomendacao": "Para clínicas de dermatologia em Brasília, considerando que os concorrentes locais já utilizam vídeos, é recomendável diversificar os formatos de anúncios para se destacar e engajar o público em diferentes contextos. Formatos como carrossel e imagem podem complementar o uso de vídeos, permitindo apresentar múltiplos tratamentos, depoimentos de pacientes ou resultados antes e depois, o que aumenta o engajamento e o alcance.\n\nEm relação aos CTAs (chamadas para ação), aqueles que incentivam a interação direta, como “Agende sua avaliação”, “Saiba mais sobre nossos tratamentos” ou “Veja resultados reais”, tendem a apresentar melhor desempenho, pois facilitam a conversão e estimulam o contato imediato com a clínica. O uso de diferentes formatos aliado a CTAs claros e direcionados contribui para melhores taxas de clique (CTR) e conversões, além de fortalecer o reconhecimento da marca no ambiente digital.",
+        "fontes": [
+          "Estrategias-Social-Media-Sprout-Social.md",
+          "Marketing-Digital-Strategy.md",
+          "Online-Adversiting.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8516,
+            "trecho": "Estratégia de Marketing Digital 2️⃣ Tipos de Campanhas e Formatos de Anúncio **O que é:** Diferentes formatos de anúncios (busca, display, shopping, vídeo) para atingir o público em múltiplos pontos de contato online. **Por que é importante:** Diversificar formatos permite engajar usuários em difere"
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8279,
+            "trecho": "Estratégia de Marketing Digital 8️⃣ Métricas Estratégicas de Performance **O que é:** Monitoramento de CTR (click-through rate), CPC, posição do anúncio, impressões e conversões. **Por que é importante:** Fornece dados concretos para tomadas de decisão, permitindo ajustes estratégicos e mensuração c"
+          },
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.823,
+            "trecho": "Métricas e ROI em Social Media Medição de Desempenho - Análise de métricas essenciais: alcance, impressões, engajamento, CTR. - Avaliação do desempenho de diferentes tipos de conteúdo (vídeo, carrossel, imagem). - Medição de sentimento e percepção de marca nas interações sociais. - Comparação de res"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8162,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Publicidade Online: Redes Sociais Pagas (Paid Social) Redes sociais são um dos principais locais onde os usuários passam seu tempo, e a publicidade paga nessas plataformas permite que anunciantes alcancem usuários de forma segmentada. - Permite segme"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8148,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Elementos de uma Campanha de Publicidade Online Analytics - Monitoramento do desempenho da campanha. - Métricas importantes: taxa de clique (CTR), custo por conversão, participação de impressões, entre outras. - Ferramentas de analytics ajudam a ente"
+          }
+        ]
+      },
+      {
+        "pergunta": "Como a clínica pode corrigir a configuração da URL canônica para evitar perda de indexação e garantir que o site principal (harmoniemed.com.br) seja priorizado pelo Google?",
+        "recomendacao": "Para corrigir a configuração da URL canônica e garantir que o site principal (harmoniemed.com.br) seja priorizado pelo Google, é necessário definir corretamente a canonicalização das páginas. Isso pode ser feito inserindo a tag canonical (rel=\"canonical\") no cabeçalho HTTP de cada página, apontando sempre para a versão preferida da URL, que deve ser a do domínio principal. É importante revisar todo o site para garantir que cada página tenha a tag canonical apontando para si mesma (quando for a versão principal) e que nenhuma página aponte para a homepage, a menos que realmente seja o conteúdo principal. Dessa forma, evita-se problemas de conteúdo duplicado e se indica claramente ao Google qual versão deve ser indexada e exibida nos resultados de busca. Recomenda-se também testar e validar a implementação para garantir que não haja erros.",
+        "fontes": [
+          "Keywords-Agrupamento.md",
+          "SEO-on-Mobile.md",
+          "website-audit.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8077,
+            "trecho": "O Google continua a incentivar os chamados resultados ricos — muitas vezes impulsionados por dados estruturados — que são mais evidentes no mobile. Pesquisar voos, eventos, empregos, filmes, música, produtos e até fatos simples acionará um resultado rico do Google. Isso se tornará cada vez mais comu"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8027,
+            "trecho": "O update Page Experience introduz experiência do usuário como fator de SEO, além da velocidade de site. Core Web Vitals ajuda a priorizar melhorias. Como melhorar o SEO móvel SEO móvel, como o SEO regular, exige que seu site seja rastreadorável e encontrado, além de ter alto desempenho, ótimo conteú"
+          },
+          {
+            "arquivo": "website-audit.md",
+            "score": 0.7928,
+            "trecho": "Running a Website Audit? I Talked to SEO Pros to Help You Make the Most of It Download Free **4\\. Technical Assessment** **Are you defining the canonicalization of content?** The  canonicalization  of your website content is your final major technical consideration. To gain more control over how you"
+          },
+          {
+            "arquivo": "Keywords-Agrupamento.md",
+            "score": 0.7924,
+            "trecho": "Agrupamento de Palavras-Chave: Como Organizar Suas Palavras-Chave 3️⃣ Otimizar seus grupos de palavras-chave Alguns ajustes podem melhorar o desempenho das campanhas: - **Plurais e derivações:** Inclua no grupo pai, sem criar subgrupos separados. - **Erros de digitação:** Não precisam de grupos sepa"
+          }
+        ]
+      },
+      {
+        "pergunta": "Quais ações práticas de marketing digital, de rápida implementação e baixo custo, podem ser aplicadas por uma PME do setor de saúde estética para gerar leads além das postagens orgânicas no Instagram?",
+        "recomendacao": "Uma PME do setor de saúde estética pode adotar ações práticas de marketing digital de rápida implementação e baixo custo, como:\n\n- Utilizar anúncios pagos em redes sociais com segmentação detalhada por dados demográficos e interesses, focando em públicos que buscam serviços de estética.\n- Criar campanhas de publicidade baseada em intenção, exibindo anúncios para usuários que pesquisam ativamente por procedimentos ou tratamentos específicos.\n- Monitorar comentários, mensagens e menções nas redes sociais para responder rapidamente e criar relacionamentos, incentivando o contato direto e a solicitação de orçamentos.\n- Implementar estratégias de storytelling em conteúdos patrocinados, compartilhando histórias de clientes ou resultados para aumentar o engajamento e atrair novos leads.\n- Utilizar personas de comprador para personalizar as mensagens dos anúncios, tornando-os mais relevantes e aumentando a taxa de conversão.\n- Acompanhar métricas como CTR e conversões para ajustar rapidamente as campanhas e otimizar o investimento.\n\nEssas ações podem ser implementadas rapidamente, exigem baixo investimento inicial e potencializam a geração de leads além das postagens orgânicas.",
+        "fontes": [
+          "Estrategias-Social-Media-Sprout-Social.md",
+          "Marketing-Digital-Strategy.md",
+          "Online-Adversiting.md",
+          "Social-Media-Strategy-Sprout-Social.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.8535,
+            "trecho": "Estratégias de Social Media Engajamento com a Audiência - Monitoramento de comentários, mensagens e menções para respostas rápidas e contextualizadas. - Uso de dados para personalizar interações e aumentar fidelização. - Estratégias de storytelling para engajar a comunidade e gerar compartilhamentos"
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8499,
+            "trecho": "Estratégia de Marketing Digital 1️⃣ Publicidade Baseada em Intenção Este guia resume os principais conceitos e práticas de marketing digital voltados para publicidade paga e geração de tráfego qualificado. --- **O que é:** Exposição de anúncios pagos no momento exato em que usuários buscam produtos "
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8429,
+            "trecho": "Estratégia de Marketing Digital 8️⃣ Métricas Estratégicas de Performance **O que é:** Monitoramento de CTR (click-through rate), CPC, posição do anúncio, impressões e conversões. **Por que é importante:** Fornece dados concretos para tomadas de decisão, permitindo ajustes estratégicos e mensuração c"
+          },
+          {
+            "arquivo": "Social-Media-Strategy-Sprout-Social.md",
+            "score": 0.841,
+            "trecho": "Estratégias de Social Media Gestão de Redes Sociais - Estruture e organize a presença da marca em múltiplas plataformas sociais. - Planeje, crie e publique conteúdo de forma consistente para manter engajamento. - Utilize fluxos de trabalho claros para coordenar postagens, campanhas e interações."
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8401,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Publicidade Online: Redes Sociais Pagas (Paid Social) Redes sociais são um dos principais locais onde os usuários passam seu tempo, e a publicidade paga nessas plataformas permite que anunciantes alcancem usuários de forma segmentada. - Permite segme"
+          }
+        ]
+      },
+      {
+        "pergunta": "Considerando o interesse em SEO, quais ajustes imediatos e de fácil execução podem ser feitos nos títulos e meta descrições do site para melhorar a performance sem demandar grandes recursos?",
+        "recomendacao": "Alguns ajustes imediatos e simples que podem ser feitos nos títulos e meta descrições para melhorar a performance do site incluem:\n\n- Tornar títulos e descrições mais curtos e objetivos, já que no mobile o espaço é limitado.\n- Garantir que cada título e meta descrição seja único e reflita com precisão o conteúdo da página.\n- Incluir palavras-chave relevantes, especialmente aquelas que usuários móveis costumam pesquisar.\n- Usar frases claras, diretas e que incentivem o clique, destacando benefícios ou diferenciais.\n- Priorizar informações importantes no início do título e da descrição, pois podem ser cortados em telas pequenas.\n- Adaptar o texto para leitura rápida, evitando termos complexos ou frases longas.\n- Testar diferentes versões para identificar quais geram maior taxa de cliques (CTR).\n\nEssas ações não exigem grandes recursos e podem ser implementadas rapidamente, trazendo impacto positivo na visibilidade e no desempenho do site nos resultados de busca, especialmente em dispositivos móveis.",
+        "fontes": [
+          "Keywords-Agrupamento.md",
+          "Quality-Score.md",
+          "SEO-on-Mobile.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8543,
+            "trecho": "O Google continua a incentivar os chamados resultados ricos — muitas vezes impulsionados por dados estruturados — que são mais evidentes no mobile. Pesquisar voos, eventos, empregos, filmes, música, produtos e até fatos simples acionará um resultado rico do Google. Isso se tornará cada vez mais comu"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8539,
+            "trecho": "O update Page Experience introduz experiência do usuário como fator de SEO, além da velocidade de site. Core Web Vitals ajuda a priorizar melhorias. Como melhorar o SEO móvel SEO móvel, como o SEO regular, exige que seu site seja rastreadorável e encontrado, além de ter alto desempenho, ótimo conteú"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8486,
+            "trecho": "O que é SEO móvel? SEO móvel significa otimização para motores de busca em dispositivos móveis. SEO móvel trata de oferecer uma experiência excepcional aos visitantes do seu site móvel. Isso inclui fazer seu site carregar rapidamente, sem problemas, e apresentar conteúdo de qualidade que corresponda"
+          },
+          {
+            "arquivo": "Quality-Score.md",
+            "score": 0.8344,
+            "trecho": "O que é Quality Score e Como Ele Afeta os Anúncios do Google Como Aumentar o Quality Score no Google Ads Para melhorar o Quality Score, concentre-se nos seguintes pontos: 1. **Pesquisa de palavras-chave** - Descubra palavras-chave relevantes, incluindo oportunidades de long-tail. 2. **Organização de"
+          },
+          {
+            "arquivo": "Keywords-Agrupamento.md",
+            "score": 0.8326,
+            "trecho": "Agrupamento de Palavras-Chave: Como Organizar Suas Palavras-Chave 3️⃣ Otimizar seus grupos de palavras-chave Alguns ajustes podem melhorar o desempenho das campanhas: - **Plurais e derivações:** Inclua no grupo pai, sem criar subgrupos separados. - **Erros de digitação:** Não precisam de grupos sepa"
+          }
+        ]
+      }
+    ],
+    "falhas_tratadas": []
+  },
+  "dados_coletados": {
+    "seo": {
+      "url": "https://www.harmoniemed.com.br/",
+      "status": "Sucesso",
+      "titulo": "Harmonie Medicina Integrada | Dermatologia Clínica, Oncológica e Estética em Brasília",
+      "meta_description": "Clínica de dermatologia em Brasília especializada em prevenção ao câncer de pele, mapeamento corporal digital, laser íntimo e estética avançada. Dra. Clarissa Borges e equipe. Agende pelo WhatsApp.",
+      "meta_keywords": "dermatologia brasília, dermatologista asa norte, câncer de pele, mapeamento corporal, fotofinder, laser íntimo, bioestimulador, botox, preenchimento, dra clarissa borges, harmonie medicina, clínica dermatológica brasília, oncologia cutânea, melanoma, estética facial",
+      "tags_cabecalho": {
+        "h1": [
+          "Referência em Estética\ne Saúde"
+        ],
+        "h2": [
+          "Nosso Corpo Clínico de Excelência",
+          "O que você quer transformar?",
+          "Nossas Tecnologias",
+          "Você na sua melhor versão",
+          "Nossos Vídeos",
+          "Histórias que nos inspiram",
+          "Agende sua consulta"
+        ],
+        "h3": [
+          "Quem cuida de você",
+          "Dra. Fábia Vasconcellos",
+          "Dra. Clarissa Borges",
+          "Dra. Victória Gontijo",
+          "Encontre o tratamento ideal",
+          "Papada",
+          "Rugas",
+          "Manchas na Pele",
+          "Prevenção de Doenças",
+          "Queda de Cabelo",
+          "Poros Dilatados",
+          "Laser Íntimo",
+          "FotoFinder",
+          "ATRIA II",
+          "Plataforma Etherea",
+          "Lavieen",
+          "Punto DEKA",
+          "Accent",
+          "T-Sculptor",
+          "Mapeamento Corporal Digital",
+          "Laser Íntimo",
+          "Clube do Botox",
+          "Clube do Colágeno",
+          "Endereço",
+          "Horário de Atendimento",
+          "WhatsApp"
+        ],
+        "h4": [
+          "NAVEGAÇÃO",
+          "CONTATO"
+        ]
+      },
+      "contagem_palavras": 1086,
+      "imagens_sem_alt": [],
+      "links_internos": 24,
+      "links_externos": 15,
+      "links_quebrados": [],
+      "tempo_carregamento": 1.8,
+      "mobile_friendly": true,
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "MedicalClinic",
+          "name": "Harmonie Medicina Integrada",
+          "description": "Clínica de dermatologia especializada em prevenção ao câncer de pele, mapeamento corporal digital, laser íntimo e estética avançada em Brasília.",
+          "url": "https://harmoniemed.lovable.app",
+          "logo": "https://harmoniemed.lovable.app/logo-harmonie.png",
+          "image": "https://harmoniemed.lovable.app/og-image.jpg",
+          "telephone": "+55-61-99379-7092",
+          "email": "contato@harmoniemed.com.br",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "SMHN Quadra 2, Bloco A, Edifício de Clínicas II",
+            "addressLocality": "Brasília",
+            "addressRegion": "DF",
+            "postalCode": "70710-904",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -15.793478,
+            "longitude": -47.883778
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "08:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://instagram.com/harmonie.med",
+            "https://instagram.com/clarissaborgesdermato"
+          ],
+          "medicalSpecialty": [
+            "Dermatology",
+            "Cosmetic Dermatology",
+            "Dermatologic Surgery"
+          ],
+          "availableService": [
+            {
+              "@type": "MedicalProcedure",
+              "name": "Mapeamento Corporal Digital",
+              "description": "Exame completo com FotoFinder para diagnóstico precoce do câncer de pele"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Dermatoscopia Digital",
+              "description": "Análise detalhada de lesões cutâneas com ampliação de 20x"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Laser Íntimo",
+              "description": "Tratamento para saúde íntima feminina com Laser Etherea"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Bioestimuladores de Colágeno",
+              "description": "Tratamento para rejuvenescimento e estímulo natural de colágeno"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Toxina Botulínica",
+              "description": "Tratamento para rugas e linhas de expressão"
+            }
+          ],
+          "priceRange": "$$$"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Physician",
+          "name": "Dra. Clarissa Borges",
+          "description": "Dermatologista especializada em Oncologia Cutânea, Dermatologia Clínica e Estética. Médica responsável pela Harmonie Medicina Integrada.",
+          "url": "https://harmoniemed.lovable.app/dra-clarissa-borges",
+          "image": "https://harmoniemed.lovable.app/dra-clarissa.jpg",
+          "telephone": "+55-61-99379-7092",
+          "medicalSpecialty": {
+            "@type": "MedicalSpecialty",
+            "name": "Dermatology"
+          },
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universidade Federal de Santa Catarina (UFSC)"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Hospital Albert Einstein"
+            }
+          ],
+          "memberOf": [
+            {
+              "@type": "Organization",
+              "name": "Sociedade Brasileira de Dermatologia (SBD)"
+            },
+            {
+              "@type": "Organization",
+              "name": "Associação de Dermatologia do Distrito Federal (ADD)"
+            }
+          ],
+          "worksFor": {
+            "@type": "MedicalClinic",
+            "name": "Harmonie Medicina Integrada"
+          },
+          "sameAs": [
+            "https://instagram.com/clarissaborgesdermato"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://harmoniemed.lovable.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Corpo Clínico",
+              "item": "https://harmoniemed.lovable.app/#sobre"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Procedimentos",
+              "item": "https://harmoniemed.lovable.app/#procedimentos"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Contato",
+              "item": "https://harmoniemed.lovable.app/#contato"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O que é o Mapeamento Corporal Digital?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Mapeamento Corporal Digital é um exame completo que analisa todas as lesões do corpo utilizando o FotoFinder, tecnologia alemã com lentes de ampliação mínima de 20x. Gera um laudo detalhado para acompanhamento ao longo do tempo, sendo essencial para a prevenção do câncer de pele."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre Mapeamento Corporal e Dermatoscopia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Mapeamento Corporal Digital analisa TODAS as lesões do corpo com registro fotográfico para comparação temporal. Já a Dermatoscopia Digital é uma análise pontual de até 5 lesões específicas. Ambos são importantes para o diagnóstico precoce do câncer de pele."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é o Laser Íntimo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Laser Íntimo é um procedimento realizado com o Laser Etherea para tratar condições como incontinência urinária leve, síndrome geniturinária da menopausa, atrofia vaginal e melhora da lubrificação. É um tratamento minimamente invasivo para a saúde íntima feminina."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quem são as médicas da Harmonie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A Harmonie conta com três especialistas: Dra. Clarissa Borges (Dermatologia Clínica, Oncológica e Estética), Dra. Fábia Vasconcellos (Oncologia Cutânea e Mapeamento Corporal) e Dra. Victória Gontijo (Ginecologia e Saúde Íntima)."
+              }
+            }
+          ]
+        }
+      ],
+      "canonical_url": "https://harmoniemed.lovable.app/",
+      "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "open_graph": {
+        "og:type": "website",
+        "og:url": "https://harmoniemed.lovable.app/",
+        "og:title": "Harmonie Medicina Integrada | Dermatologia em Brasília",
+        "og:description": "Referência em estética e saúde da pele. Prevenção ao câncer de pele, mapeamento corporal digital com FotoFinder, laser íntimo e procedimentos estéticos avançados.",
+        "og:image": "https://harmoniemed.lovable.app/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Harmonie Medicina Integrada - Clínica de Dermatologia em Brasília",
+        "og:locale": "pt_BR",
+        "og:site_name": "Harmonie Medicina Integrada"
+      },
+      "twitter_cards": {
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://harmoniemed.lovable.app/",
+        "twitter:title": "Harmonie Medicina Integrada | Dermatologia em Brasília",
+        "twitter:description": "Referência em estética e saúde da pele. Prevenção ao câncer de pele, mapeamento corporal digital e procedimentos estéticos avançados.",
+        "twitter:image": "https://harmoniemed.lovable.app/og-image.jpg",
+        "twitter:site": "@harmoniemed",
+        "twitter:creator": "@harmoniemed"
+      },
+      "performance_metrics": {
+        "dom_content_loaded": 0,
+        "load_complete": 0,
+        "first_paint": 828,
+        "first_contentful_paint": 1868
+      },
+      "rede_ociosa": false,
+      "tempo_ate_rede_ociosa": null
+    },
+    "anuncios": [
+      {
+        "id": "1401406484724386",
+        "texto": "Você faz careta durante o treino? 👇- @[perfil]\n\nO vídeo da atriz Cláudia Raia treinando com o rosto totalmente relaxado chamou a atenção da internet. E ela está coberta de razão, sabia?\n\nMuitas mulheres treinam pesado, mas descarregam toda a força no pescoço e no rosto, contraindo toda a musculatura.\n\nEu afirmo com total segurança: essa tensão facial reduz a durabilidade dos seus procedimentos estéticos.\n\nQuando você faz careta levantando peso, você acelera o consumo do seu Botox e do seu preenchimento.\n\nAlém disso, você desgasta o seu próprio banco de colágeno, forçando a criação de rugas dinâmicas que logo se tornam marcas estáticas e profundas.\n\nO segredo que eu sempre ensino no consultório é concentrar a força na sua respiração e no abdômen (core), blindando a sua face.\n\nAtividades de alto gasto metabólico, como a corrida, são maravilhosas para a saúde, mas também exigem um estímulo de colágeno ainda maior.\n\nPara que os seus resultados estéticos durem, você precisa dormir bem, bater a sua meta diária de proteínas, ter uma alimentação balanceada e fazer uma manutenção dermatológica adequada.\n\nAqui na minha clínica, eu realizo o planejamento contínuo da sua pele para que a sua beleza acompanhe o seu ritmo e estilo de vida.\n\nVocê não precisa parar de treinar. Você só precisa da estratégia médica certa e de hábitos inteligentes.\n\nVocê quer alinhar a qualidade da sua pele à sua rotina esportiva e envelhecer com um rosto mais firme, elegante e descansado?\n\n👉 Digite a palavra “QUERO” aqui nos comentários.\n\nEu vou te enviar um link exclusivo no direct para agendarmos a sua consulta.\n\n🔸 Dra. Fernanda Duran\nMédica Dermatologista em Brasília\nCRM-DF 22199 | RQE 15123\n.\n.\n.\n#botoxbrasilia #rejuvenescimentofacial #treino #famosos #claudiaraia",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQNYxZ0BfvFF-9fUOmCGBAkpj9MtZNsdOdzHegdvECrCwfWgBRPVK_cydVS5FBIT9czWeJHtqRelvWDMT7VbDVT4FIuobsRENqk6l1L9nw.mp4?_nc_cat=108&_nc_oc=AdrNflkFfb2NgWPVgM3l9BozF6kVWCqvYmQ9uU-0sLBCVOM6uJJaa3uQp-cz-sEdeA8&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=93dobaZg3gcQ7kNvwEjEE_N&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNjM1OTAwMzQ0OTIwNzc5LCJhc3NldF9hZ2VfZGF5cyI6NiwidmlfdXNlY2FzZV9pZCI6MTIzNzQsImR1cmF0aW9uX3MiOjk4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=2D6WvsYAckqb7mNftfSOEw&_nc_ss=78289&_nc_zt=28&oh=00_AQLdzRB6dYkZlsi27MeJwxuXnuR8OCP6v6vEuij3TLfQVQ&oe=6AB0BEE6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "10 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1701107220992990",
+        "texto": "Cada pele é única, e o seu tratamento também deve ser.\n\nA Curadoria de Identidade de Pele, conduzida pelo Dr. Wesley Ferreira, já faz parte dos atendimentos da Nomos. Uma abordagem personalizada para compreender as necessidades da sua pele e indicar o melhor caminho para resultados naturais e duradouros.\n\n📍 Nomos Medicina Avançada\nAv. Nove de Julho, 4984 – Jardim Europa\n\nAgende sua avaliação pelo link da bio.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMwbtvOyWI3E8lLB0bpFnIxpMVQuXnPiw1JjHbjPZ7tjXUhFkM7pK0CnowMr-uQL3_HlrUwA3OSVb7xzvWmyyeTf0afLYxWvmjC00BJ6Q.mp4?_nc_cat=105&_nc_oc=AdrAEjxtjHa31zefJ2IqeV8nakUBBfZU1FNmMbc59K3WTFV3ZhsYLVPc0rtJ3XrgwRA&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=MoTm62yfJrQQ7kNvwEdE3t-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6ODg0ODkyMDk0NTU5MTI2LCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjQzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=2D6WvsYAckqb7mNftfSOEw&_nc_ss=78289&_nc_zt=28&oh=00_AQKLBj6CxYm2ewvQH1xLfKywFhV90qUidyE-snG1tW5Dmg&oe=6AB0CD35",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "15 de set de 2026 · Tempo total ativo: 21h",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      }
+    ]
+  },
+  "relatorio_formatado": "## 1. RESUMO EXECUTIVO\n\nA análise do marketing digital da Empresa A, clínica dermatológica em Brasília, identificou pontos de melhoria tanto em SEO quanto em estratégias de captação de clientes além do Instagram. O cenário de anúncios pagos na região apresenta baixa concorrência, abrindo espaço para a clínica se destacar rapidamente. Os principais problemas encontrados envolvem ajustes técnicos no site e oportunidades de diversificação de formatos de anúncios. As três ações prioritárias são: corrigir a configuração da URL canônica do site, iniciar campanhas de anúncios pagos em canais de baixa concorrência (Google e Facebook), e ajustar títulos e descrições do site para melhor performance em buscas. Essas medidas são práticas e podem ser implementadas com baixo a médio esforço.\n\n## 2. PROBLEMAS IDENTIFICADOS\n\n- **Alta prioridade:** URL canônica aponta para outro domínio, o que pode prejudicar a indexação do site principal. (Referência: Google Search Central: rel=canonical)\n- **Alta prioridade:** Tempo de carregamento inicial (First Contentful Paint) está acima do recomendado, impactando a experiência do usuário. (Referência: Google Core Web Vitals / Lighthouse)\n- **Média prioridade:** Título do site excede o tamanho recomendado, podendo ser cortado nos resultados de busca. (Referência: Google Search Central: title links e snippets)\n- **Média prioridade:** Meta descrição está acima do limite ideal, o que pode prejudicar a exibição nos buscadores. (Referência: Google Search Central: title links e snippets)\n\n## 3. OPORTUNIDADES (Volume de anúncios)\n\nO volume de anúncios pagos para clínicas dermatológicas em Brasília é muito baixo (apenas 2 anúncios ativos no recorte analisado), indicando grande espaço para a clínica se destacar rapidamente. Todos os concorrentes utilizam vídeos como formato principal, sugerindo que este é o padrão do setor local. Não foram identificadas CTAs (chamadas para ação) predominantes nos anúncios analisados, o que representa uma oportunidade para a clínica testar diferentes abordagens, como “Agende sua avaliação” ou “Saiba mais”. A diversificação de formatos (imagem, carrossel) pode ser uma vantagem competitiva, já que o mercado local ainda não explora essas opções.\n\n## 4. PLANO DE AÇÃO ESTRATÉGICO\n\n### 4.1 Corrigir a URL Canônica do Site\n**Ação:** Ajustar a configuração da URL canônica para garantir que o domínio principal seja priorizado pelo Google.  \n**Evidência:** O diagnóstico apontou que a URL canônica está direcionando para outro domínio, o que pode prejudicar a indexação.  \n**Como executar:** Revisar e atualizar a tag rel=\"canonical\" em todas as páginas do site, apontando para o domínio correto (harmoniemed.com.br). Validar a implementação usando ferramentas de auditoria de SEO.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** Keywords-Agrupamento.md, SEO-on-Mobile.md, website-audit.md\n\n### 4.2 Iniciar Campanhas de Anúncios Pagos em Canais de Baixa Concorrência\n**Ação:** Lançar campanhas de anúncios pagos no Google Ads e Facebook, aproveitando o baixo volume de concorrentes.  \n**Evidência:** O panorama mostra apenas 2 anúncios ativos no segmento, indicando espaço para destaque rápido.  \n**Como executar:** Criar campanhas segmentadas por localização e interesse, utilizando formatos de vídeo, imagem e carrossel. Monitorar resultados e ajustar conforme o desempenho.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** Estrategias-Social-Media-Sprout-Social.md, Insights-Mercado-Social-Media.md, Marketing-Digital-Strategy.md, Online-Adversiting.md\n\n### 4.3 Ajustar Títulos e Meta Descrições do Site\n**Ação:** Reduzir e otimizar os títulos e meta descrições das páginas do site.  \n**Evidência:** Os textos atuais estão acima do tamanho recomendado, o que pode prejudicar a exibição nos resultados de busca.  \n**Como executar:** Editar títulos para ficarem entre 30 e 60 caracteres e meta descrições entre 70 e 160 caracteres, incluindo palavras-chave relevantes e chamadas claras.  \n**Prioridade:** Média  \n**Esforço:** Baixo  \n**Fontes:** Keywords-Agrupamento.md, Quality-Score.md, SEO-on-Mobile.md\n\n### 4.4 Diversificar Formatos e CTAs nos Anúncios\n**Ação:** Testar diferentes formatos de anúncios (imagem, carrossel) e CTAs para aumentar o engajamento.  \n**Evidência:** Todos os concorrentes usam apenas vídeos e não há CTAs predominantes, abrindo espaço para diferenciação.  \n**Como executar:** Produzir anúncios em formatos variados e testar CTAs como “Agende sua avaliação” ou “Veja resultados reais”. Avaliar o desempenho de cada formato e mensagem.  \n**Prioridade:** Média  \n**Esforço:** Médio  \n**Fontes:** Estrategias-Social-Media-Sprout-Social.md, Marketing-Digital-Strategy.md, Online-Adversiting.md\n\n### 4.5 Melhorar a Performance de Carregamento do Site\n**Ação:** Otimizar o tempo de carregamento inicial do site para atingir o padrão recomendado.  \n**Evidência:** O First Contentful Paint está acima do ideal, impactando a experiência do usuário.  \n**Como executar:** Reduzir o tamanho de imagens, otimizar scripts e utilizar ferramentas de análise de performance para identificar gargalos.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** website-audit.md, SEO-on-Mobile.md\n\n### 4.6 Implementar Ações Práticas de Baixo Custo para Geração de Leads\n**Ação:** Adotar estratégias rápidas e acessíveis para captar leads além do Instagram.  \n**Evidência:** O contexto e as recomendações apontam para a necessidade de diversificar canais e ações de baixo custo.  \n**Como executar:** Utilizar anúncios segmentados, responder rapidamente a interações nas redes sociais, aplicar storytelling em conteúdos patrocinados e personalizar mensagens para diferentes perfis de clientes.  \n**Prioridade:** Média  \n**Esforço:** Baixo  \n**Fontes:** Estrategias-Social-Media-Sprout-Social.md, Marketing-Digital-Strategy.md, Online-Adversiting.md, Social-Media-Strategy-Sprout-Social.md",
+  "execucao": {
+    "tempos_s": {
+      "interpretacao": 5.28,
+      "coleta": 19.24,
+      "analise": 47.3,
+      "relatorio": 16.17,
+      "total": 87.99
+    },
+    "interprete_status": "sucesso_llm",
+    "seo_status": "Sucesso",
+    "n_anuncios_coletados": 2,
+    "n_problemas": 4,
+    "n_oportunidades": 2,
+    "n_recomendacoes": 5,
+    "n_recomendacoes_com_fontes": 5,
+    "falhas_tratadas": [],
+    "custo_usd": 0.0049
+  }
+}

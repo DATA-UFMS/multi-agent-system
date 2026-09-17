@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A demonstra maior aderência ao contexto ao vincular explicitamente a falha técnica do site à necessidade de restauração da visibilidade online e ao destacar a predominância de vídeos no setor como oportunidade de diferenciação. O Relatório B aborda o contexto de forma mais genérica, sem explorar nuances do setor ou localidade, focando mais na estrutura básica do site."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A apresenta recomendações mais concretas e priorizadas, com passos claros para execução (ex.: verificação de DNS, uso do Google Search Console) e esforço estimado. O Relatório B também é acionável, mas algumas ações são mais genéricas (ex.: 'adicionar conteúdo relevante') e menos detalhadas em como implementar."
+    },
+    "fundamentacao": {
+      "vencedor": "empate",
+      "nota_A": 5,
+      "nota_B": 5,
+      "justificativa": "Ambos os relatórios fundamentam suas recomendações nos dados coletados (erro de acesso e volume de anúncios). O Relatório A explora melhor os dados dos anúncios (78% de vídeos), enquanto o B detalha mais as lacunas de SEO, mas ambos são consistentes com os dados fornecidos."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 5,
+      "nota_B": 5,
+      "justificativa": "Os dois relatórios são tecnicamente corretos e não apresentam dados inventados. Ambos interpretam corretamente o erro de acesso e as implicações para SEO/anúncios, além de não fazerem afirmações incoerentes com os dados coletados."
+    },
+    "adequacao_pme": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 5,
+      "justificativa": "O Relatório B é mais adequado para PMEs por usar linguagem mais simples e direta, além de focar em ações básicas e viáveis (ex.: corrigir DNS, implementar SEO básico). O Relatório A, embora claro, inclui termos como 'dados estruturados' e 'NAP consistente', que podem ser menos compreensíveis para gestores sem formação em marketing."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A se destaca pela maior aderência ao contexto, acionabilidade e profundidade na análise dos dados de anúncios, apesar de ser ligeiramente menos acessível para PMEs. O Relatório B é mais simples e direto, mas perde em especificidade e priorização estratégica. O empate em fundamentação e correção reforça a qualidade técnica de ambos, mas o A oferece um plano de ação mais robusto e alinhado ao cenário competitivo."
+  }
+}

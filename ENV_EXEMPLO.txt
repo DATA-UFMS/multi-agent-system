@@ -8,3 +8,7 @@ EMBED_MODEL=mistralai/mistral-embed-2312
 # Juízas: 3 famílias diferentes do gerador, separadas por vírgula
 JUDGE_MODELS=anthropic/claude-sonnet-4.5,google/gemini-2.5-pro,mistralai/mistral-large
 HEADLESS=1
+
+# PageSpeed Insights API (Google Cloud > APIs e serviços > Credenciais). Opcional; sem chave o coletor é ignorado.
+PAGESPEED_API_KEY=
+PAGESPEED_ESTRATEGIA=mobile

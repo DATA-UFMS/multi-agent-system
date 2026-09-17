@@ -123,13 +123,20 @@ def executar_julgamentos(pasta_resultados, modelos, saida, seed=42):
             for ordem in (primeira_ordem, "b1_A" if primeira_ordem == "sistema_A" else "sistema_A"):
                 rel_a, rel_b = (rel_sis, rel_b1) if ordem == "sistema_A" else (rel_b1, rel_sis)
                 mapa = {"A": "sistema", "B": "b1"} if ordem == "sistema_A" else {"A": "b1", "B": "sistema"}
-                print(f"{emp_id} | {modelo} | ordem {ordem}")
-                try:
-                    j = julgar(client, modelo, montar_prompt(contexto, dados, rel_a, rel_b))
-                except Exception as e:  # noqa: BLE001
-                    print(f"  falha: {e}")
-                    linhas.append({"empresa": emp_id, "juiza": modelo, "ordem": ordem, "erro": str(e)})
-                    continue
+                caminho_bruto = os.path.join(saida, f"bruto_{emp_id}_{modelo.replace('/', '_')}_{ordem}.json")
+                if os.path.exists(caminho_bruto):
+                    # Retomada: julgamento já salvo em execução anterior (interrompida ou repetida).
+                    with open(caminho_bruto, encoding="utf-8") as f:
+                        j = json.load(f)
+                    print(f"{emp_id} | {modelo} | ordem {ordem} (reaproveitado)")
+                else:
+                    print(f"{emp_id} | {modelo} | ordem {ordem}")
+                    try:
+                        j = julgar(client, modelo, montar_prompt(contexto, dados, rel_a, rel_b))
+                    except Exception as e:  # noqa: BLE001
+                        print(f"  falha: {e}")
+                        linhas.append({"empresa": emp_id, "juiza": modelo, "ordem": ordem, "erro": str(e)})
+                        continue
                 for dim in list(DIMENSOES) + ["geral"]:
                     item = j.get("dimensoes", {}).get(dim) if dim != "geral" else j.get("geral", {})
                     if not item:
@@ -143,15 +150,20 @@ def executar_julgamentos(pasta_resultados, modelos, saida, seed=42):
                         "nota_b1": item.get("nota_A" if mapa["A"] == "b1" else "nota_B"),
                         "justificativa": (item.get("justificativa") or "").replace("\n", " "),
                     })
-                with open(os.path.join(saida, f"bruto_{emp_id}_{modelo.replace('/', '_')}_{ordem}.json"),
-                          "w", encoding="utf-8") as f:
+                with open(caminho_bruto, "w", encoding="utf-8") as f:
                     json.dump(j, f, ensure_ascii=False, indent=2)
+                # CSV parcial gravado a cada julgamento: uma interrupção não perde o que já foi feito.
+                _gravar_csv(saida, linhas)
+    _gravar_csv(saida, linhas)
+    return linhas
+
+
+def _gravar_csv(saida, linhas):
     campos = ["empresa", "juiza", "ordem", "dimensao", "vencedor", "nota_sistema", "nota_b1", "justificativa", "erro"]
     with open(os.path.join(saida, "julgamentos.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=campos)
         w.writeheader()
         w.writerows(linhas)
-    return linhas
 
 
 # ----------------------------- análise -----------------------------

@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "empate",
+      "nota_A": 1,
+      "nota_B": 1,
+      "justificativa": "Nenhum dos relatórios demonstra aderência ao contexto porque o campo 'PREENCHER' não foi substituído por informações reais da empresa. Ambos oferecem conselhos genéricos sem considerar setor, localidade ou necessidade específica informada pelo gestor. O Relatório B menciona Cascavel (PR) extraído dos anúncios, mas isso não constitui uso do contexto fornecido pela empresa."
+    },
+    "acionabilidade": {
+      "vencedor": "B",
+      "nota_A": 3,
+      "nota_B": 4,
+      "justificativa": "Ambos apresentam ações estruturadas com prioridade e esforço. O Relatório B é ligeiramente superior por detalhar melhor o 'como executar' (ex: 'criar personas regionais', 'testar diferentes CTAs', 'aplicar remarketing'), enquanto o A mantém descrições mais genéricas (ex: 'revisar configurações', 'definir palavras-chave'). B também prioriza melhor ao separar ações de alta prioridade técnica das de média prioridade criativa."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 3,
+      "nota_B": 2,
+      "justificativa": "O Relatório A fundamenta melhor suas recomendações nos dados coletados: cita explicitamente o erro de acesso, a ausência de SEO, mobile_friendly=false, e os 77 anúncios. O Relatório B comete um erro grave ao afirmar '78% dos anúncios utilizam vídeo' sem que os dados forneçam essa informação (apenas há 'n_anuncios_ativos_coletados: 77' sem detalhamento de formato). B também cita fontes externas (SEO-on-Mobile.md, Keywords-Research.md) que não constam nos dados fornecidos."
+    },
+    "correcao": {
+      "vencedor": "A",
+      "nota_A": 4,
+      "nota_B": 2,
+      "justificativa": "O Relatório A mantém correção técnica ao não inventar dados. O Relatório B comete erro crítico ao afirmar que '78% dos anúncios utilizam vídeo' e '22% imagem' - estatísticas não presentes nos dados coletados. Também menciona 'exemplos de textos coletados' e 'menção a Cascavel (PR)' sem que esses detalhes constem no resumo de dados. Essas invenções comprometem seriamente a credibilidade técnica."
+    },
+    "adequacao_pme": {
+      "vencedor": "empate",
+      "nota_A": 4,
+      "nota_B": 4,
+      "justificativa": "Ambos utilizam linguagem acessível e propõem ações viáveis para PMEs. A classifica esforços como baixo/médio e prioridades de forma clara. B faz o mesmo e adiciona detalhes práticos ('gravar com recursos acessíveis', 'roteiros simples'). Ambos evitam jargão excessivo e estruturam recomendações de forma compreensível para gestores sem formação técnica."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A vence por manter correção técnica e fundamentação adequada aos dados fornecidos, ainda que ambos falhem em aderir ao contexto (não preenchido). O erro crítico do Relatório B ao inventar estatísticas detalhadas sobre formatos de anúncios (78% vídeo, 22% imagem) e mencionar conteúdos específicos não presentes nos dados compromete gravemente sua credibilidade. Para uma PME, receber informações fabricadas é mais prejudicial do que recomendações genéricas porém corretas. A ligeira vantagem de B em acionabilidade não compensa a falha em correção e fundamentação."
+  }
+}

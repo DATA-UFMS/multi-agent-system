@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "empate",
+      "nota_A": 4,
+      "nota_B": 4,
+      "justificativa": "Ambos os relatórios reconhecem a falha crítica de acesso ao site e o volume de anúncios concorrentes, alinhando-se ao contexto de uma PME com problemas técnicos e necessidade de competitividade. O Relatório A menciona tendências de mercado (vídeos) de forma mais explícita, enquanto o B foca em correções técnicas básicas, mas ambos são aderentes ao contexto informado."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A detalha ações com passos claros (ex.: 'Corrigir configurações de DNS, testar acessibilidade, revisar robots.txt'), prioriza tarefas e especifica esforço. O B também é acionável, mas algumas recomendações (ex.: 'implementar dados estruturados') são menos detalhadas para uma PME sem expertise técnica."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A fundamenta suas recomendações nos dados (ex.: 76% dos anúncios são vídeos) e cita fontes específicas. O B menciona dados (67 anúncios), mas não quantifica formatos ou CTAs, e algumas afirmações (ex.: 'ausência de SEO') são genéricas, sem correlação direta com os dados coletados (que não puderam ser analisados)."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 5,
+      "nota_B": 5,
+      "justificativa": "Ambos interpretam corretamente o erro de DNS e a ausência de dados SEO. O A evita especular sobre o que não foi coletado (ex.: não inventa problemas de SEO), enquanto o B lista possíveis falhas técnicas, mas sem dados para confirmá-las. Nenhum comete erros técnicos."
+    },
+    "adequacao_pme": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A equilibra profundidade e simplicidade, com linguagem acessível e recomendações viáveis (ex.: 'produção enxuta de vídeos'). O B é claro, mas algumas ações (ex.: 'implementar Open Graph') podem exigir conhecimento técnico não trivial para uma PME. O A também prioriza melhor os esforços (ex.: 'controlar investimento em vídeos')."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A se destaca pela acionabilidade, fundamentação sólida e adequação às limitações de uma PME, sem sacrificar rigor técnico. Embora o B seja competente, especialmente na correção técnica, o A oferece um plano mais estratégico, priorizado e executável, com foco em recuperação de tráfego e competitividade imediata."
+  }
+}

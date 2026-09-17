@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 5,
+      "justificativa": "O Relatório B demonstra maior aderência ao contexto específico da Prolaje, mencionando explicitamente o setor de construção civil, a competitividade do mercado de lajes pré-moldadas e a necessidade de diferenciação clara. O Relatório A aborda o contexto de forma mais genérica, sem destacar nuances do segmento ou localidade."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A é mais acionável, com recomendações detalhadas, priorizadas (alta/média/baixa), esforço estimado e passos claros de execução (ex: 'inserir descrições claras nos atributos alt'). O Relatório B também é acionável, mas algumas ações são menos específicas (ex: 'melhorar a navegação interna' sem detalhes)."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A fundamenta todas as recomendações nos dados coletados (ex: FCP lento, imagens sem alt, ausência de Open Graph) e cita referências técnicas (Google Core Web Vitals, WCAG). O Relatório B também usa os dados, mas algumas afirmações são genéricas (ex: 'conteúdo raso' sem métrica clara) e faltam fontes específicas para algumas recomendações."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 5,
+      "nota_B": 5,
+      "justificativa": "Ambos os relatórios são tecnicamente corretos e coerentes com os dados. O Relatório A detalha métricas como FCP e tamanho do título, enquanto o Relatório B aponta problemas como links externos excessivos e falta de CTAs, ambos alinhados aos dados. Nenhum apresenta erros ou incoerências."
+    },
+    "adequacao_pme": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 5,
+      "justificativa": "O Relatório B é mais adequado para PMEs, com linguagem simples e foco em ações viáveis com recursos limitados (ex: 'formulários curtos', 'botões de WhatsApp'). O Relatório A é técnico em alguns pontos (ex: 'minificar arquivos', 'Schema'), o que pode exigir conhecimento adicional ou suporte externo."
+    }
+  },
+  "geral": {
+    "vencedor": "empate",
+    "justificativa": "Os relatórios se complementam: o A é mais técnico, acionável e fundamentado, ideal para execução imediata, enquanto o B é mais contextualizado, estratégico e acessível para gestores de PMEs. A escolha dependeria do perfil da empresa: se prioriza execução rápida (A) ou visão estratégica de longo prazo (B)."
+  }
+}

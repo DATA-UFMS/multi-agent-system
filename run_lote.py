@@ -19,6 +19,7 @@ import traceback
 
 from orquestrador_principal import OrquestradorPrincipal, salvar_resultado
 from baseline_b1 import executar_baseline
+from config import uso_da_chave_usd
 
 
 def _linha_resumo(emp_id, condicao, rep, execucao, caminho):
@@ -30,6 +31,7 @@ def _linha_resumo(emp_id, condicao, rep, execucao, caminho):
         "tempo_coleta_s": t.get("coleta"), "tempo_analise_s": t.get("analise"),
         "tempo_relatorio_s": t.get("relatorio"), "custo_usd": e.get("custo_usd"),
         "interprete_status": e.get("interprete_status"), "seo_status": e.get("seo_status"),
+        "pagespeed_status": e.get("pagespeed_status"), "pagespeed_campo": e.get("pagespeed_campo"),
         "n_anuncios": e.get("n_anuncios_coletados"), "n_problemas": e.get("n_problemas"),
         "n_oportunidades": e.get("n_oportunidades"), "n_recomendacoes": e.get("n_recomendacoes"),
         "n_recomendacoes_com_fontes": e.get("n_recomendacoes_com_fontes"),
@@ -48,7 +50,11 @@ async def main():
 
     with open(args.empresas, encoding="utf-8") as f:
         empresas = json.load(f)
+    pendentes = [e["id"] for e in empresas if "PREENCHER" in json.dumps(e)]
+    if pendentes:
+        raise SystemExit(f"empresas.json ainda tem campos PREENCHER nas empresas {pendentes}; preencha antes de rodar.")
 
+    custo_inicial = uso_da_chave_usd()
     linhas = []
     for emp in empresas:
         emp_id = emp["id"]
@@ -85,6 +91,16 @@ async def main():
                 linhas.append({**_linha_resumo(emp_id, "b1", 1, None, pasta_b1), "erro": str(e)})
         else:
             print(f"Sem execução do sistema para {emp_id}; B1 não executado.")
+
+    custo_final = uso_da_chave_usd()
+    if custo_inicial is not None and custo_final is not None:
+        total = round(custo_final - custo_inicial, 4)
+        n = len(linhas) or 1
+        print(f"\nCusto total do lote (contador da chave): US$ {total} em {n} execuções "
+              f"(média US$ {total / n:.4f}). O custo por execução no CSV é aproximado: o contador da plataforma "
+              f"atualiza com atraso; use o total do lote no artigo.")
+        with open(os.path.join(args.saida, "custo_lote.json"), "w", encoding="utf-8") as f:
+            json.dump({"custo_total_usd": total, "n_execucoes": n, "custo_medio_usd": round(total / n, 4)}, f, indent=2)
 
     os.makedirs(args.saida, exist_ok=True)
     caminho_csv = os.path.join(args.saida, "resumo.csv")

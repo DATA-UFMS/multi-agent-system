@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "Ambos consideram o setor (dermatologia), localidade (Brasília) e necessidade de plano prático. O Relatório A demonstra melhor aderência ao contexto ao reconhecer explicitamente que 'embora melhorar o SEO seja algo que possuam interesse, a maior necessidade é de definir um plano de ação de marketing digital prático', priorizando ações de atração imediata (anúncios pagos, captação de leads). O Relatório B prioriza correções técnicas de SEO como ação #1 de alta prioridade, desalinhando-se ligeiramente da necessidade principal declarada."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A oferece recomendações mais específicas e executáveis: 'segmentando para mulheres de 25 a 55 anos em Brasília', 'adaptar vídeos e posts do Instagram para YouTube Shorts', 'e-book sobre prevenção do câncer de pele'. O Relatório B é concreto em aspectos técnicos (corrigir canonical, ajustar caracteres), mas menos específico em execução de campanhas ('Definir personas, escolher canais'). Ambos são acionáveis, mas A fornece mais direcionamento prático."
+    },
+    "fundamentacao": {
+      "vencedor": "B",
+      "nota_A": 3,
+      "nota_B": 5,
+      "justificativa": "O Relatório B fundamenta suas recomendações diretamente nos dados coletados: identifica problema específico da URL canônica, menciona os 85 caracteres do título e 197 da meta descrição (verificáveis nos dados), e cita fontes técnicas. O Relatório A faz afirmações genéricas ('SEO em estágio inicial', 'captação passiva de leads') sem evidências claras nos dados fornecidos - não há informação sobre formulários, iscas digitais ou performance de SEO nos dados coletados."
+    },
+    "correcao": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 5,
+      "justificativa": "O Relatório B identifica corretamente problemas técnicos verificáveis (título com 85 caracteres está nos dados, meta descrição com 197 caracteres também). O Relatório A afirma 'SEO em estágio inicial' sem dados que comprovem isso - o site tem mobile_friendly: true, tempo de carregamento bom (0.52s), estrutura de H1-H4 adequada. Ambos acertam sobre baixa concorrência em anúncios (2 ativos), mas B é mais preciso tecnicamente."
+    },
+    "adequacao_pme": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "O Relatório A usa linguagem mais acessível e estrutura mais clara para PME: classifica esforço (baixo/médio), prioridades claras, e explica 'como executar' de forma didática. O Relatório B, embora claro, usa mais jargão técnico ('URL canônica', 'rel=canonical', 'Quality-Score.md') que pode ser menos compreensível para gestor sem formação em marketing. Ambos são viáveis com recursos limitados, mas A comunica melhor para o público-alvo."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A vence por melhor alinhamento ao contexto e necessidade declarada pela empresa (plano prático de atração, não apenas SEO), maior acionabilidade com recomendações específicas e executáveis, e linguagem mais adequada para PME. Embora o Relatório B seja superior em fundamentação técnica e correção (identificando problemas reais de SEO nos dados), ele prioriza correções técnicas sobre ações de atração imediata, desalinhando-se da necessidade principal. Para uma clínica que quer 'atrair mais clientes' e tem como 'maior necessidade um plano de ação prático', o Relatório A entrega valor mais direto e aplicável, mesmo com fundamentação menos rigorosa."
+  }
+}

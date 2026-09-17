@@ -1,0 +1,1049 @@
+{
+  "metadados": {
+    "url_analisada": "https://PREENCHER",
+    "termo_busca": "PREENCHER",
+    "prompt_usuario": "PREENCHER",
+    "diretivas_interpretadas": {
+      "foco_analise": [],
+      "hipoteses_usuario": [],
+      "status": "sucesso_llm"
+    },
+    "timestamp_analise": "2026-09-16T16:31:29.729605",
+    "versao_orquestrador": "3.2",
+    "modelo_llm": "openai/gpt-4.1",
+    "modelo_embeddings": "mistralai/mistral-embed-2312",
+    "agentes_utilizados": [
+      "Agente Intérprete",
+      "Agente Coletor Meta",
+      "Agente Arquiteto",
+      "Agente Analista",
+      "Agente Estrategista"
+    ]
+  },
+  "analise_completa": {
+    "resumo_executivo": "Análise concluída. 1 problema(s), 1 oportunidade(s) e 5 recomendação(ões).",
+    "contexto": {
+      "prompt_original": "PREENCHER",
+      "termo_busca": "PREENCHER",
+      "foco_analise": [],
+      "hipoteses_usuario": []
+    },
+    "problemas_identificados": [
+      {
+        "regra": "coleta_seo",
+        "categoria": "SEO",
+        "problema": "Falha na coleta de dados SEO: Erro durante a análise: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://preencher/\nCall log:\n  - navigating to \"https://preencher/\", waiting until \"load\"\n",
+        "prioridade": "crítica",
+        "referencia": "-"
+      }
+    ],
+    "oportunidades_identificadas": [
+      {
+        "categoria": "Criativos",
+        "oportunidade": "59 de 76 anúncios concorrentes usam vídeo; o formato é a norma no recorte.",
+        "potencial": "médio"
+      }
+    ],
+    "panorama_anuncios": {
+      "total_coletado": 76,
+      "criativos": {
+        "Vídeo": 59,
+        "Imagem": 17
+      },
+      "proporcao_video": 0.78,
+      "ctas_mais_comuns": [],
+      "anuncios_com_data_inicio": 76,
+      "amostra_textos": [
+        "Não encontrado",
+        "Não encontrado",
+        "Preencha o QUIZZ e veja se trabalhar na Petrobras é para você",
+        "Seguindo exatamente o mesmo modelo de fluxo contínuo (evergreen) focado em cadastro online, adaptamos os textos para a região de Cascavel (PR) com o novo valor de remuneração de R$ 3.285,00.  O destaq",
+        "Top 5 creatinas mais puras do mercado, você toma? Creatina é um suplemento que vai ajudar em energia, ganho de massa muscular, saúde cerebral, saúde óssea e até no metabolismo.  👇Escreva #creatina par"
+      ],
+      "observacao": "Recorte da Biblioteca de Anúncios da Meta para o termo informado; não representa todo o setor."
+    },
+    "recomendacoes_estrategicas": [
+      {
+        "pergunta": "Quais são as melhores práticas de SEO local para empresas de pequeno porte em Cascavel (PR), considerando que a página analisada apresenta falha crítica de indexação?",
+        "recomendacao": "Para empresas de pequeno porte em Cascavel (PR) que enfrentam falhas críticas de indexação, é fundamental garantir que o site seja facilmente rastreável e compreendido pelos mecanismos de busca. Algumas das melhores práticas de SEO local incluem:\n\n1. **Corrigir problemas de indexação:** Verifique se não há bloqueios no robots.txt, scripts lentos ou outros obstáculos que impeçam o Googlebot de acessar e renderizar suas páginas. Utilize ferramentas como o Google Search Console para identificar e resolver esses problemas.\n\n2. **Google Business Profile:** Crie e otimize o perfil da empresa no Google Business Profile, incluindo informações completas e atualizadas como endereço, telefone, horário de funcionamento, fotos e categorias relevantes.\n\n3. **Conteúdo local:** Produza conteúdo direcionado para o público de Cascavel, mencionando bairros, pontos de referência e eventos locais. Isso aumenta a relevância para buscas “perto de mim”.\n\n4. **Dados estruturados:** Implemente dados estruturados (Schema) com informações de NAP (nome, endereço, telefone), produtos e avaliações para destacar o site nos resultados de busca e facilitar a compreensão pelo Google.\n\n5. **Links locais:** Busque parcerias e obtenha links de outros sites e portais locais, como associações comerciais, blogs regionais e diretórios de Cascavel.\n\n6. **Avaliações e fotos:** Incentive clientes a deixarem avaliações e adicionarem fotos no Google Business Profile, pois isso aumenta a confiança e a visibilidade local.\n\n7. **Velocidade e experiência móvel:** Garanta que o site seja rápido, responsivo e ofereça uma navegação simples, já que muitos usuários acessam via dispositivos móveis.\n\n8. **Palavras-chave locais:** Utilize palavras-chave específicas para Cascavel e região, incluindo modificadores como “perto de mim” e nomes de bairros, para atrair buscas locais relevantes.\n\n9. **Monitoramento constante:** Use ferramentas como Google Search Console e PageSpeed Insights para acompanhar o desempenho, identificar novos problemas e oportunidades de melhoria.\n\nSeguindo essas práticas, a empresa pode melhorar sua presença local, corrigir falhas de indexação e aumentar as chances de atrair clientes em Cascavel.",
+        "fontes": [
+          "Keywords-Research.md",
+          "SEO-on-Mobile.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8638,
+            "trecho": "O update Page Experience introduz experiência do usuário como fator de SEO, além da velocidade de site. Core Web Vitals ajuda a priorizar melhorias. Como melhorar o SEO móvel SEO móvel, como o SEO regular, exige que seu site seja rastreadorável e encontrado, além de ter alto desempenho, ótimo conteú"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8527,
+            "trecho": "O que é SEO móvel? SEO móvel significa otimização para motores de busca em dispositivos móveis. SEO móvel trata de oferecer uma experiência excepcional aos visitantes do seu site móvel. Isso inclui fazer seu site carregar rapidamente, sem problemas, e apresentar conteúdo de qualidade que corresponda"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8493,
+            "trecho": "O Google continua a incentivar os chamados resultados ricos — muitas vezes impulsionados por dados estruturados — que são mais evidentes no mobile. Pesquisar voos, eventos, empregos, filmes, música, produtos e até fatos simples acionará um resultado rico do Google. Isso se tornará cada vez mais comu"
+          },
+          {
+            "arquivo": "Keywords-Research.md",
+            "score": 0.8124,
+            "trecho": "Pesquisa de Palavras-Chave: O Guia Completo Quando fazer pesquisa de palavras-chave? 1️⃣ SEO A pesquisa de palavras-chave é crucial em três áreas principais: A pesquisa de palavras-chave é fundamental para otimização de sites (SEO), ajudando os mecanismos de busca a indexar seu conteúdo de forma rel"
+          },
+          {
+            "arquivo": "Keywords-Research.md",
+            "score": 0.808,
+            "trecho": "Pesquisa de Palavras-Chave: O Guia Completo Como começar a pesquisa de palavras-chave Passo 2: Encontrar palavras-chave específicas - Coloque-se no lugar do cliente e pense como ele buscaria seus produtos. - Inclua modificadores como ocasiões, sabores e localização (“perto de mim”). - Use ferramenta"
+          }
+        ]
+      },
+      {
+        "pergunta": "Diante da predominância de anúncios em vídeo (78%) entre concorrentes locais, quais formatos e temas de vídeo têm gerado maior engajamento e conversão especificamente nesse nicho?",
+        "recomendacao": "Formatos de vídeo que têm gerado maior engajamento e conversão nesse nicho incluem vídeos que exploram storytelling para criar conexão com a audiência, além de conteúdos que incentivam a interação, como perguntas, enquetes e chamadas para ação claras. Temas que apresentam estudos de caso, depoimentos de clientes e demonstrações práticas de produtos ou serviços também se destacam, pois mostram resultados reais e facilitam a identificação do público com a marca. Métricas detalhadas de campanhas bem-sucedidas indicam que vídeos focados em resolver dúvidas frequentes, apresentar diferenciais competitivos e mostrar bastidores ou processos internos contribuem para aumentar tanto o engajamento quanto a taxa de conversão.",
+        "fontes": [
+          "Estrategias-Social-Media-Sprout-Social.md",
+          "Marketing-Digital-Strategy.md",
+          "YouTube-Subscribers-Reflections.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8678,
+            "trecho": "Estratégia de Marketing Digital 2️⃣ Tipos de Campanhas e Formatos de Anúncio **O que é:** Diferentes formatos de anúncios (busca, display, shopping, vídeo) para atingir o público em múltiplos pontos de contato online. **Por que é importante:** Diversificar formatos permite engajar usuários em difere"
+          },
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.8409,
+            "trecho": "Insights e Tendências de Mercado Estudos de Caso - Exemplos de campanhas bem-sucedidas que geraram alto engajamento ou conversão. - Lições aprendidas de estratégias que não performaram. - Métricas detalhadas para replicar ou adaptar táticas a diferentes segmentos."
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8399,
+            "trecho": "Estratégia de Marketing Digital 1️⃣ Publicidade Baseada em Intenção Este guia resume os principais conceitos e práticas de marketing digital voltados para publicidade paga e geração de tráfego qualificado. --- **O que é:** Exposição de anúncios pagos no momento exato em que usuários buscam produtos "
+          },
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.8393,
+            "trecho": "Estratégias de Social Media Engajamento com a Audiência - Monitoramento de comentários, mensagens e menções para respostas rápidas e contextualizadas. - Uso de dados para personalizar interações e aumentar fidelização. - Estratégias de storytelling para engajar a comunidade e gerar compartilhamentos"
+          },
+          {
+            "arquivo": "YouTube-Subscribers-Reflections.md",
+            "score": 0.835,
+            "trecho": "Reflexões Finais sobre Inscritos do YouTube Conclusão Ter muitos inscritos é bom, mas **ter inscritos engajados é muito melhor**. O sucesso no YouTube não depende apenas da quantidade de pessoas que clicaram em “inscrever-se”, mas da capacidade de transformar esses inscritos em uma comunidade ativa "
+          }
+        ]
+      },
+      {
+        "pergunta": "Quais ações imediatas e de baixo custo podem ser implementadas para corrigir a falha de coleta de dados SEO e garantir que a página seja corretamente indexada pelos mecanismos de busca?",
+        "recomendacao": "Algumas ações imediatas e de baixo custo para corrigir falhas na coleta de dados SEO e garantir a correta indexação da página incluem:\n\n1. **Verificar e corrigir o arquivo robots.txt**: Certifique-se de que não há bloqueios indevidos que impeçam o rastreamento das páginas importantes.\n2. **Usar o Google Search Console**: Utilize as ferramentas de inspeção de URL e usabilidade móvel para identificar e corrigir problemas de indexação e mobile-friendly.\n3. **Garantir que o site seja rastreável**: Remova barreiras como scripts lentos ou recursos bloqueados que possam dificultar o acesso dos bots.\n4. **Implementar dados estruturados**: Adicione Schema para destacar o conteúdo nos resultados de busca e facilitar a compreensão do site pelos mecanismos de busca.\n5. **Otimizar a velocidade da página**: Comprima imagens, minifique CSS/JS e utilize cache para melhorar o tempo de carregamento, fator importante para indexação.\n6. **Assegurar paridade de conteúdo**: Certifique-se de que o conteúdo apresentado na versão mobile seja idêntico ao da versão desktop, pois o ranking será baseado na versão móvel.\n7. **Declarar viewport corretamente**: Use a declaração viewport para garantir design responsivo e informar ao Google que o site é mobile-friendly.\n8. **Revisar meta titles e descriptions**: Ajuste-os para serem mais curtos e relevantes para buscas em dispositivos móveis.\n9. **Testar com ferramentas gratuitas**: Utilize PageSpeed Insights, Rich Results Test e Lighthouse para identificar e corrigir rapidamente problemas técnicos.\n\nEssas ações ajudam a garantir que a página seja facilmente encontrada, compreendida e indexada pelos mecanismos de busca, melhorando a performance SEO sem grandes investimentos.",
+        "fontes": [
+          "Keywords-Agrupamento.md",
+          "Keywords-Research.md",
+          "SEO-on-Mobile.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8442,
+            "trecho": "O Google continua a incentivar os chamados resultados ricos — muitas vezes impulsionados por dados estruturados — que são mais evidentes no mobile. Pesquisar voos, eventos, empregos, filmes, música, produtos e até fatos simples acionará um resultado rico do Google. Isso se tornará cada vez mais comu"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8374,
+            "trecho": "O que é SEO móvel? SEO móvel significa otimização para motores de busca em dispositivos móveis. SEO móvel trata de oferecer uma experiência excepcional aos visitantes do seu site móvel. Isso inclui fazer seu site carregar rapidamente, sem problemas, e apresentar conteúdo de qualidade que corresponda"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8364,
+            "trecho": "O update Page Experience introduz experiência do usuário como fator de SEO, além da velocidade de site. Core Web Vitals ajuda a priorizar melhorias. Como melhorar o SEO móvel SEO móvel, como o SEO regular, exige que seu site seja rastreadorável e encontrado, além de ter alto desempenho, ótimo conteú"
+          },
+          {
+            "arquivo": "Keywords-Research.md",
+            "score": 0.8305,
+            "trecho": "Pesquisa de Palavras-Chave: O Guia Completo Quando fazer pesquisa de palavras-chave? 1️⃣ SEO A pesquisa de palavras-chave é crucial em três áreas principais: A pesquisa de palavras-chave é fundamental para otimização de sites (SEO), ajudando os mecanismos de busca a indexar seu conteúdo de forma rel"
+          },
+          {
+            "arquivo": "Keywords-Agrupamento.md",
+            "score": 0.8262,
+            "trecho": "Agrupamento de Palavras-Chave: Como Organizar Suas Palavras-Chave 3️⃣ Otimizar seus grupos de palavras-chave Alguns ajustes podem melhorar o desempenho das campanhas: - **Plurais e derivações:** Inclua no grupo pai, sem criar subgrupos separados. - **Erros de digitação:** Não precisam de grupos sepa"
+          }
+        ]
+      },
+      {
+        "pergunta": "Há exemplos de campanhas de cadastro online (fluxo evergreen) bem-sucedidas na região de Cascavel (PR) que possam servir de referência para adaptar a comunicação e o fluxo de captação?",
+        "recomendacao": "Há exemplos de campanhas bem-sucedidas de cadastro online que podem servir de referência, especialmente aquelas que geraram alto engajamento ou conversão por meio de estratégias replicáveis em diferentes segmentos de mercado. Essas campanhas costumam utilizar métricas detalhadas para adaptar táticas conforme o público-alvo, além de aplicar aprendizados práticos na criação e execução dos fluxos de captação. Elementos como segmentação precisa, uso de personas de comprador e personalização das mensagens são fundamentais para aumentar a relevância e a taxa de conversão, podendo ser adaptados para a região de Cascavel (PR) conforme as características locais do público.",
+        "fontes": [
+          "Estrategias-Social-Media-Sprout-Social.md",
+          "Online-Adversiting.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.8148,
+            "trecho": "Insights e Tendências de Mercado Estudos de Caso - Exemplos de campanhas bem-sucedidas que geraram alto engajamento ou conversão. - Lições aprendidas de estratégias que não performaram. - Métricas detalhadas para replicar ou adaptar táticas a diferentes segmentos."
+          },
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.8139,
+            "trecho": "Conteúdos Educacionais e Recursos de Benchmark Estudos de Caso - Casos de campanhas de sucesso com métricas de impacto detalhadas. - Estratégias replicáveis em diferentes segmentos de mercado. - Aprendizado prático aplicado à criação e execução de campanhas sociais."
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.812,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Conclusão Campanhas de publicidade online bem-sucedidas dependem da combinação estratégica de anúncios pagos, segmentação precisa, páginas de destino otimizadas e análise constante de desempenho. Uma abordagem integrada permite maximizar o retorno so"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8089,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Publicidade Online: Redes Sociais Pagas (Paid Social) Redes sociais são um dos principais locais onde os usuários passam seu tempo, e a publicidade paga nessas plataformas permite que anunciantes alcancem usuários de forma segmentada. - Permite segme"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8059,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Elementos de uma Campanha de Publicidade Online Email Marketing - Destinado a ofertas específicas ou para complementar outros canais digitais. - Pode ser altamente eficaz para engajamento e conversão."
+          }
+        ]
+      },
+      {
+        "pergunta": "Considerando a ausência de CTAs comuns nos anúncios concorrentes, quais chamadas para ação têm se mostrado mais eficazes para aumentar a taxa de conversão em campanhas digitais locais?",
+        "recomendacao": "Chamadas para ação que incentivam a interação direta, como solicitar uma ligação ou visitar uma página de destino otimizada, têm se mostrado eficazes para aumentar a taxa de conversão em campanhas digitais locais. Além disso, utilizar estratégias como remarketing para alcançar usuários que já demonstraram interesse, mas ainda não converteram, pode aumentar as oportunidades de conversão futura. Personalizar as mensagens de acordo com os interesses e características do público-alvo, utilizando segmentação detalhada, também contribui para CTAs mais relevantes e eficazes.",
+        "fontes": [
+          "Online-Adversiting.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8536,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Elementos de uma Campanha de Publicidade Online Analytics - Monitoramento do desempenho da campanha. - Métricas importantes: taxa de clique (CTR), custo por conversão, participação de impressões, entre outras. - Ferramentas de analytics ajudam a ente"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8515,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Elementos de uma Campanha de Publicidade Online Rastreamento de Chamadas - Permite monitorar chamadas telefônicas geradas a partir de campanhas online, identificando leads valiosos."
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8502,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Conclusão Campanhas de publicidade online bem-sucedidas dependem da combinação estratégica de anúncios pagos, segmentação precisa, páginas de destino otimizadas e análise constante de desempenho. Uma abordagem integrada permite maximizar o retorno so"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8477,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Elementos de uma Campanha de Publicidade Online Remarketing - Permite exibir anúncios para usuários que visitaram o site mas não converteram. - Aumenta a conscientização da marca e oferece oportunidades de conversão futura. - Pode ser usado em campan"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8427,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Publicidade Online: Redes Sociais Pagas (Paid Social) Redes sociais são um dos principais locais onde os usuários passam seu tempo, e a publicidade paga nessas plataformas permite que anunciantes alcancem usuários de forma segmentada. - Permite segme"
+          }
+        ]
+      }
+    ],
+    "falhas_tratadas": []
+  },
+  "dados_coletados": {
+    "seo": {
+      "url": "https://PREENCHER",
+      "status": "Erro durante a análise: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://preencher/\nCall log:\n  - navigating to \"https://preencher/\", waiting until \"load\"\n",
+      "titulo": "",
+      "meta_description": "",
+      "meta_keywords": "",
+      "tags_cabecalho": {},
+      "contagem_palavras": 0,
+      "imagens_sem_alt": [],
+      "links_internos": 0,
+      "links_externos": 0,
+      "links_quebrados": [],
+      "tempo_carregamento": 0,
+      "mobile_friendly": false,
+      "structured_data": [],
+      "canonical_url": "",
+      "meta_robots": "",
+      "open_graph": {},
+      "twitter_cards": {},
+      "performance_metrics": {}
+    },
+    "anuncios": [
+      {
+        "id": "1162210802202146",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQO_WeTzBHQTlzITTSiI1VNN6ahrHI_nsudrfjE6B6z7LMiAuA06NMuYtVc3M80wVIk1_kie6tlZcg5or9UDLgke.mp4?_nc_cat=105&_nc_oc=AdrFFFLvCpPzvVUVsAvEhBygwk6EAFT0Eo5TOh07K-KVgoZV92xXqrMLlNmsOKr8WPE&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=SPmYpXarc7QQ7kNvwGZJIPh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjoxMTcyNzA4NTgxNTM5NTM3LCJhc3NldF9hZ2VfZGF5cyI6MTU1LCJ2aV91c2VjYXNlX2lkIjoxMDY4MCwiZHVyYXRpb25fcyI6NTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIjYY8bO2dgAaVaB_txil60NZ_NDwJBQAMm64Lpcr0iIg&oe=6AB0CE66",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "27 de jan de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1008326101928692",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPF6dS6cXzSz8lxrb5bE2DWkiUljzrqdYRQ6beyStbQaXINfxvUNRdXtLUD4smDzKgsYeQbOshXLutWv-vGPZsXpfZBdPo7YfyTXJWu8g.mp4?_nc_cat=111&_nc_oc=AdoegOvKSiCjMWzSq3jkrH5_nKpWzqQvdstgYwyTxo4jfqvshM5G1e1PdTous4NjBNY&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=9hB5y73TWQ0Q7kNvwF7JleE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6Nzg1NDYzMzU0NTg5MDk2LCJhc3NldF9hZ2VfZGF5cyI6NzcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjo2OCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQKlfL6La0LeinwrbVsOjuUz7JC8H1p3_zz1mC5bl7f5gA&oe=6AB0CA7F",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "1 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1016552654562745",
+        "texto": "Preencha o QUIZZ e veja se trabalhar na Petrobras é para você",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOXvjsPSQXfwB9ODe9MfcV6DfOFx49xejD7gEl58LDpwjSIg_3sycnJAVVyES74qCxIbvc1bdrmGW39e5z06SF4RkdBkHFjt61dpNRyCw.mp4?_nc_cat=110&_nc_oc=Adq84pnIlF5JZ7gs5qE7ox77ixlHePmDseE-XtFzloMbpKgMRIGtq-5E9diIiNYfMac&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=-XyImhM3qk8Q7kNvwFWLb7H&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTA2NzAzMjQwMjMyODYxNywiYXNzZXRfYWdlX2RheXMiOjU3LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQK9c446otsw4uqldrW0abnpJvpCWWg3tYh9K5pDH9eEZg&oe=6AB0E090",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "22 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1649485749673002",
+        "texto": "Seguindo exatamente o mesmo modelo de fluxo contínuo (evergreen) focado em cadastro online, adaptamos os textos para a região de Cascavel (PR) com o novo valor de remuneração de R$ 3.285,00.\n\nO destaque continua no selo de \"CONTRATAÇÃO DIRETA\" e no excelente pacote de benefícios. Aqui estão as 5 opções de copy para captação de leads:\n\nOpção 1: Foco em Crescimento e Vínculo Direto (Com Emojis - Ideal para Instagram/Facebook)\nQuer trabalhar na logística do Mercado Livre em Cascavel? Cadastre-se hoje mesmo! 🚀📦\n\nO nosso time não para de crescer e estamos sempre em busca de novos talentos para fazer a mágica acontecer na região. Se você quer garantir a sua vaga nas próximas etapas de seleção presencial, o seu primeiro passo é preencher o nosso formulário online. E o melhor de tudo: é CONTRATAÇÃO DIRETA com a gente!\n\nConfira o pacote excelente que espera por você:\n💰 Remuneração Total: R$ 3.285,00\n🤝 Contratação Direta: Vínculo assinado direto com o Mercado Livre.\n👶 Suporte familiar: Auxílio-creche para apoiar quem você ama.\n🏥 Saúde integral: Plano de Saúde e Plano Odontológico completos.\n🚌 Comodidade: Refeição fornecida no local e Transporte Fretado gratuito.\n\n👇 Dê o próximo passo na sua carreira agora mesmo. Clique no link abaixo, preencha seus dados e entre para a nossa lista de convocação!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/724129626_2794852557539898_8044530358788728771_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q82efuQYXJ8Q7kNvwHLnHRi&_nc_oc=AdrB0BS0CdfA_0SqcKYtWU3eeow_v1qBYzBdn6fasWRo636cKjZT7U6A_UsAYvun4jw&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&oh=00_AQLMVqkgyeignDRS_2PWl2eWeb3KjqRkYtHR7Oj8wIKm9w&oe=6AB0B8AD",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "13 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1776835666416683",
+        "texto": "Top 5 creatinas mais puras do mercado, você toma?\nCreatina é um suplemento que vai ajudar em energia, ganho de massa muscular, saúde cerebral, saúde óssea e até no metabolismo.\n\n👇Escreva #creatina para receber um pré diagnóstico médico individual no seu email com seus problemas de saúde junto a um presente 🎁, mas só pra quem comentar #creatina.\n🚀Envie pra suas amigas e siga esse meu novo perfil @[perfil]",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m560/AQNmqAwC3qScnL3XnikNEbsnf84x1nWvmPPq0ECanHhSWHS6KzCx4gzs50CULLuzgj6C0B3vRgRjzxtvv7i13to9i0DRCrpjuKs.mp4?_nc_cat=104&_nc_oc=AdrdQTV4Vayh0MAByTRIXuXQuIhY5BO6S39xncby6sOIhX8T4gR9JXSLKeW9HHttm7M&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=XexROZRchd0Q7kNvwG1RpAq&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjoyOTc3OTE0NDgyNDAzODc5LCJhc3NldF9hZ2VfZGF5cyI6MTQ0LCJ2aV91c2VjYXNlX2lkIjoxMDY4MCwiZHVyYXRpb25fcyI6OTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIkKzRDjr0Up7QYK8BH8NbOmW-2Hmon6Poz8atfI5L_mA&oe=6AACC3E2",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "15 de dez de 2024",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1296092802484312",
+        "texto": "Crie slides instantâneos agora! A Teachy é uma plataforma 100% gratuita criada por professores para professores.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMXrMrF-0vqbk61Ih-xAPHH0u0CReQfP6aliJztzSFRvXC6Afn24eUB9Ime22Ne2idM9O2SLFa-x2bNo2m5ZGNYYIyOU3jJa85xrlNquw.mp4?_nc_cat=111&_nc_oc=Adoa53k0MI-GPN_bSRHdOckGLe2OM5a4I_3jZR4Am3nideypILpGTIPyzMhIwr_NXjE&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=nuKE_FBEC1wQ7kNvwGgy--I&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTYzMjQwNzI4NDY3MDU4OCwiYXNzZXRfYWdlX2RheXMiOjIxMSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjUyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQLkLrIok_9lEgEP41_S6TH5kqvRG606tpCOAkng-0fDZA&oe=6AB0E273",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "22 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1873211206973276",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQNszbP-ugoxaED5BdFLGSrPEubD-sH3J12Lryh4_XiLb2if-qLfJTUDRwYuov2NlMfTQ2oCozrr4s3crGTIpOjxOAwQ61kbNKQEN4eOMA.mp4?_nc_cat=111&_nc_oc=AdrE0SdBMsWkOmUk9oqt8SwGYCB04-hhQ0todNh3aI5DIdy1w860QlVCgEegYxpbvzU&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=P9yIIuKAMNUQ7kNvwHOfHpo&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNzkwMDI5OTQ5MTUyOTk5NCwiYXNzZXRfYWdlX2RheXMiOjYwLCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6MTA1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIpdwTufmYTLqJ7Qf71M8VVPABhIcWwdVCEZEIpiVYa4w&oe=6AB0C467",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "17 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1002772552681243",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOYn4zGNzVCpGJQMsYjxmsmXmmkjPTtKNYtkAbYxqtTMbYymUjw0v-KYAygFhgsP2UMs8uYcHJ4ryJ9nN-0F9TrOVgUvwGQEf3xt3FvZw.mp4?_nc_cat=103&_nc_oc=Adp105-0rl1MEUEUi_OmjPXwjlFDk3Epp1xmeBn5XVuShrcd9zVsvEA2IUaytKn1iUA&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=-7V78rASaLIQ7kNvwE80v-4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTU4NTY0OTM0OTg1OTM5OSwiYXNzZXRfYWdlX2RheXMiOjc3LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQKQrt_TVXPq15hO9r2l0xGecKSGeEMTzbaUamNEYlpv-w&oe=6AB0B3E3",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "1 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1691731572109821",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNvVNYOSYoDDvbf88MK93tUKaBn087JaPEzKCNacnI4PwuIpgsv2qbxLvrzsq86TmeBsQmuudDOAEjXSW1aV2n2zZMW3GzgyCwz9QxObw.mp4?_nc_cat=111&_nc_oc=AdoOwGm0DTbmL8EARM4bxdkYwoNeasZpbLdP0g86kjvPtUe4Oy7SK8t59q9AdQw0APE&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=SWHWbT7p73kQ7kNvwGWVHtQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjcxNzkxNjI2NTgzNzI5MTAsImFzc2V0X2FnZV9kYXlzIjoxMDUsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjo0NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQJOZhz6s2yEKCKLPfVrZ7qyAhjCGTQ9wxFEEv3vm0t0qg&oe=6AB0E4BF",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "12 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1242305311061522",
+        "texto": "Quer preencher quartos com viajantes de negócios que reservam durante a semana? Podemos ajudar.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/696325884_939141295617287_8646899377093307088_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=96Gu5z5xTGQQ7kNvwEZ0KBZ&_nc_oc=AdqTg75n7CA2O-uKlaDhvOhuUs1MQ4crYz8iEbL_DLtZHIWmHvNR5Iyg6iDevvUia5w&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&oh=00_AQKQDVQyEKkGgAc7Dreke5mA4zlIKuJhymjqGfwe4i3URg&oe=6AB0BAC9",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "12 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1929825951019576",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNdp_OHOTDJ5VUZ9aGS1mmr1-sds0dm0-zn-vntEAkVJYY0U0ak-0Wl8vSjEzc6K7Fh3o2z8gfjf_j_IwKPRjp8xqUXNl6UoM1q3k2puQ.mp4?_nc_cat=101&_nc_oc=Ado0gdHRHiKSWVjhUh0BliQJC3C7_lkx9iLXPSlc628ZrKooEsDj4uGsoKwxIiaLjk4&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=jwYC9YKA3S4Q7kNvwH0qI-7&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTAzMzYyOTYxNjExODIzNiwiYXNzZXRfYWdlX2RheXMiOjI5LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NzUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIc8N1FV7FhD0RaTUQg8hORtzmQ4ngm_kVNB7NaDkD6xg&oe=6AB0DFBD",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "18 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1003058842590967",
+        "texto": "Quer trabalhar na logística do Mercado Livre em Nova Santa Rita? Cadastre-se hoje mesmo! 🚀📦\n\nO nosso time não para de crescer e estamos sempre em busca de novos talentos para fazer a mágica acontecer na região. Se você quer garantir a sua vaga nas próximas etapas de seleção presencial, o seu primeiro passo é preencher o nosso formulário online. E o melhor de tudo: é CONTRATAÇÃO DIRETA com a gente!\n\nConfira o pacote excelente que espera por você:\n💰 Remuneração Total: R$ 2.849,00\n🤝 Contratação Direta: Vínculo assinado direto com o Mercado Livre.\n👶 Suporte familiar: Auxílio-creche para apoiar quem você ama.\n🏥 Saúde integral: Plano de Saúde e Plano Odontológico completos.\n🚌 Comodidade: Refeição fornecida no local e Transporte Fretado gratuito.\n\n👇 Dê o próximo passo na sua carreira agora mesmo. Clique no link abaixo, preencha seus dados e entre para a nossa lista de convocação!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/724341439_1738706150876252_1116121289453296370_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XZryIyQhP5UQ7kNvwHJbumC&_nc_oc=Adq0ug_BgOky4WxC-cFslwIni6WoGe0_w9b-auu03bJYOdtKmDWg2qcBlcQxqun7Rsc&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&oh=00_AQIhS0DQ-orXjYj-YXm9wsj1ss4VCo58aF9Voqvkk4O4TA&oe=6AB0E731",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "13 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1722089495014746",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m560/AQMcBL-Kiu6GFYhoEI1Of2r319UqOsTEo__QY6K3GjKvWQyQsUcNC5zaW-m_ih7g1BFooXPkLRDh3uosE8ncq2-5YLQ2BgmmbZs.mp4?_nc_cat=100&_nc_oc=AdptLlN28m4i7-V-7kmEpiCRObmorlQ-ggawVxJmrd3FFMTDOPQzabY4muNxvVuwuP8&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=iFOXA9DWrPkQ7kNvwFLqkIh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjoxMzE4MDY0MTMzNTQ0MTk4LCJhc3NldF9hZ2VfZGF5cyI6MTQ3LCJ2aV91c2VjYXNlX2lkIjoxMDY4MCwiZHVyYXRpb25fcyI6NTUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIVGs5JJu-O-FHdXVS-jAmhYAd-HIMs8H8Bjf6qpx-Ghw&oe=6AACCC3E",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "21 de mar de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1055347633586211",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQNMJkVRS3bWjef-MSgklfBzbZHy5Iefq-Icqcpls7rwUbfZ9C25gT6-i423LeszMkZ_-8K9sYyuEuCEGsi8imVfexm6q7SjSkUdd4JJLw.mp4?_nc_cat=104&_nc_oc=AdoatV_W9QGE9qCwTezw4sbSlIWmA_cDQozwNnIB8b_Io65lGEifT3KQ_yz2U4wB4sE&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=qHD5kzVHHG4Q7kNvwFZK1p4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNzg5NTY2MDg1ODUyOTk5NCwiYXNzZXRfYWdlX2RheXMiOjg2LCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6NjQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQKN9fMll1f-MhV8if1nALcTk64Zpxsz2ZNCxCAqJhymYQ&oe=6AB0CDF2",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "30 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1384149962667101",
+        "texto": "Descubra o segredo para fazer ele correr para os seus braços...\n\nAo usar nossos segredos a mente dele vai ser bombardeada com motivos para te valorizar fazendo ele ter certeza absoluta de que ficar SOMENTE com você e que ficar com você é a melhor decisão que ele poderia tomar em toda a vida.\n\nNa verdade, no momento em que você usar esse poderoso segredo nele, ele vai instantaneamente esquecer qualquer mulher que já cruzou o caminho dele e de uma hora pra outra, vai começar a pensar em você o dia todo.\n\nAlém de valorizar sua presença como nunca e sentir uma profunda falta que na mente dele, só você poderá preencher.\n\nClique no botão e aproveite essa oportunidade 🌻",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/518183524_1256481132547126_165531364877633167_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nIqjt7EmVMwQ7kNvwGGJNUZ&_nc_oc=AdqJkqapxImf0v2QKYOZrrRZ9oaxoPNJ3VnShmElV292StkuvXQt37Ad0A9aGR_PI3A&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&oh=00_AQJwuk7AnCwCbEc4s16UwhHshH3xV605QdrHjFJopZETAg&oe=6AB0CAEA",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "11 de jul de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "925220313799665",
+        "texto": "Mamãe, quanto um SALÁRIO MÍNIMO faria de diferença em suas vidas? Conheça BPC LOAS Autista! \n\nCom ele, desde que haja comprovação das necessidades, é possível receber o valor de um salário mínimo mensal, que sabemos que é de grande ajuda para o sustento do autista e para a garantia uma vida digna.\n\nPara ter acesso a pessoa precisa preencher dois requisitos:\n\n👉 Possuir “deficiência” (pode ser de qualquer natureza) que, em interação com uma ou mais barreiras, pode obstruir sua participação plena e efetiva na sociedade em igualdade de condições com as demais pessoas (art. 3º, inciso IV da Lei 13.146/2015);\n\nFale com uma especialista.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPGyZngMYZDqZvoFKdHuL22-jlHKcZrpiAs_lLJOUhnZuB9rx9HXI5abMSGahqEcW_OI0iN5ACgkP7Ffxx2W7606b5WuvuUREE0nfv83A.mp4?_nc_cat=102&_nc_oc=AdqgcV2FYXZbmRilxer8hovK9LDSGeok9grkCTMkL1LVXHKTjzi9pN8LfOY77xtpR9c&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=uIL_1xVWDBwQ7kNvwFS93lT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NDQwMzA5NDgxNjY3NjcyOCwiYXNzZXRfYWdlX2RheXMiOjE5NCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjU0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQKmxuLhzBP7L2DqYs2Vlpkk-sFVqbm5b3UDODItQQUIDA&oe=6AB0D39C",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "6 de mar de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1680632769266096",
+        "texto": "Qual país você escolheria para estudar com permissão de trabalho?",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/532130246_772562445936566_695538323390841825_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fYwaBKbrQUkQ7kNvwFd2C7X&_nc_oc=Adp6J3t6M0KvHjOA-w2G4FdcQEnIJiK1vV1ooQzePzJQIOS6sxe01rBtj38Nt89zvfg&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&oh=00_AQKNwrihM_t42zusmFy5cgBkNxS-tSWowK17t-9voaS_bQ&oe=6AB0B54A",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "13 de ago de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1668068861136069",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMTa6WZ2Cc9lc-77h-A7mMIjHiONkFzLBS_JWoS3Zw-MF0uIWCPFDaQPwF5ImKLdErStXWwkEteprjWxvsNyVLJN7cSsXhnUEEwNZY.mp4?_nc_cat=102&_nc_oc=AdrAT0i0ork0CjHJufvxd5ywYY2nOKn8folZBC7acr7MVfQ5P9DcHlv0-L3o-nOZUPY&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=LykDMwKD2N0Q7kNvwG40PTN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTc5NjEzNTk4NTkxMDYzMTUsImFzc2V0X2FnZV9kYXlzIjoxNDgsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo3MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=281df2712e9a19f3&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DMzQwNjlDOThCMjJCQjNCNTgwQ0Q2REE1Qzc0MTRCNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0M4NDg3MjIwOThBNkM2NTNFNTM1NTIwRTBCN0Y2NThBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaWiK6h3_DnPxUCKAJDMywXQFJAYk3S8aoYEmRhc2hfYmFzZWxpbmVfM192MREAdQBl5p0BAA&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQJUcZqdPeHuyoUHO7PHumWhzbVDzSz4gNljIO9hbXcHsQ&oe=6AACD977",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "29 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1199845484872336",
+        "texto": "1 a cada 3 pacientes desiste da terapia após a primeira sessão.\n\nE não é porque “não estavam prontos”… É porque não se sentiram acolhidos.\n\nA Psicologia tradicional, a Psi Retrô, ensinou que a primeira sessão precisa ser uma longa entrevista, com formulários, perguntas frias e pouco espaço para o que realmente importa: a escuta.\n\nMas o paciente não quer preencher um questionário.\nEle quer falar. Quer ser ouvido. Quer sentir que pode confiar.\n\nAcolhimento não é sobre seguir um roteiro — é sobre criar um espaço seguro desde o primeiro encontro.\n\nSe você também quer transformar seu atendimento clínico com métodos modernos e comprovados que realmente fidelizam pacientes, clique no link da bio agora mesmo!\n\n#psicologas #psicologia #psicologiaonline #psicologiaclínica #psicoterapia",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOSlXrK5SpnfaJ38r6I4BwIKpn2iXEGY8f-9fQW10fcq916Tt_cT_eMAOeCluUkfRD8gWM3IiVj7tWfzWHZLZ4.mp4?_nc_cat=101&_nc_oc=AdrXIhcIYVzWNeBZ-zQ4rMdeAiCQw3J3zXl6kuQds_kmUD2sgA8YoOp5UoJOjiQzbvE&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=1kYdRfuz0fUQ7kNvwHQSBsP&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjozNjU3NTI0Nzg3NzE2NjkyLCJhc3NldF9hZ2VfZGF5cyI6MzE2LCJ2aV91c2VjYXNlX2lkIjoxMDY4MCwiZHVyYXRpb25fcyI6NjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQJ03_EtYwC_7XwgHwAfbZEGHREeYdBonx3y7ga8GtScxw&oe=6AB0E0D9",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "7 de abr de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2399012384206974",
+        "texto": "Nem sempre o dinheiro acompanha o ritmo do mês.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNFLB4a5nsZb4mQrUmnyL6c5_Rpr0E89IM9f54IMqtSve7JUb3e304LfVu6TYbRfIsYIXRPAafJ0f2KktqtKAUTzkl7AaZB8505B-UxOA.mp4?_nc_cat=103&_nc_oc=Adq0O24sXA72HxTb5fDs-bwAwOllm0Qe3_zOhb-sYmqEJQyqlepHmO_I93W6Cg5YnRk&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=VRnbfsZDUd0Q7kNvwEOxTvo&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTk1Mzk0MTIxODQ5MTgzMSwiYXNzZXRfYWdlX2RheXMiOjIxNiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjE5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQKw8tUZvNrUpefSWEGer_Ee2qj7K2OvkQ0IHrNA3SzKXA&oe=6AB0C0FF",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "30 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1265344757523093",
+        "texto": "✨ COMBO CUIDADO ESPECIAL ✨\n\nBotox 3 regiões + preenchimento 1ml\n\n💰 R$ 998,00 - Só aqui na Huff Life.\n\n📍Canoas - Centro\n📍POA - Barra Shopping Sul\n📍São Leopoldo - Centro\n\nAgende agora a sua avaliação!\n📲 [telefone]\n\n🏆 Temos o menor preço do BRASIL!\n\n#botox #preenchimento #cuidadoespecial #procedimentosesteticos #procedimentos #clinicaestetica #hufflife #canoas #barrasul #saoleopoldo",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQM6OPPbRofmqgTsXgMGI_ECRNyYbXlehfXTuJrfn0PgOmQ1Nf2Upt4RC6oDZcMyJ82yZCjYWhvHOWdtmAj87-aL.mp4?_nc_cat=108&_nc_oc=AdoHxYlJGfiI2RDmqoqmmvQz04InWRozxkMTDBIX9L4g2zq7cKrJfxbzMhPt6EJtFfM&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=aLqa-7fUICUQ7kNvwHSMIs0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjo5NjcwNTA3MTYyNzMzNzMsImFzc2V0X2FnZV9kYXlzIjoxNTcsInZpX3VzZWNhc2VfaWQiOjEwNjgwLCJkdXJhdGlvbl9zIjozMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIlrS_r2CrX7YDHN2OFra6Z4c2DN_5H3sn0zYLqU4kRpg&oe=6AB0B989",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "23 de mar de 2024",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2200161763860614",
+        "texto": "Eu descobri um creme dental que realmente me chamou atenção, não pelo marketing, mas pela ciência por trás da fórmula.\n\nO esmalte dental sofre desgaste todos os dias por ácidos da alimentação, escovação excessiva e hábitos como o bruxismo.\nE o problema é que o esmalte não se regenera sozinho.\n\nA Bioniq é uma marca alemã, desenvolvida pela Dr. Wolff, e trouxe ao Brasil o Bioniq Repair, o único creme dental com 20% de Hidroxiapatita biomimética, o principal mineral que compõe naturalmente o esmalte dental.\n\nEssa tecnologia se deposita fisicamente na superfície do dente, ajudando a preencher microfissuras, reduzir sensibilidade, proteger contra cáries e deixar o esmalte mais liso, dificultando a adesão do biofilme.\n\nÉ um novo conceito de cuidado diário:\nescovar para restaurar, e não para desgastar.\n\nVale a pena conhecer essa tecnologia e conversar com seu dentista.\n\n@[perfil] \n\n#publi #publicidade\n#BioniqRepair #BioniqBrasil #Hidroxiapatita #TecnologiaAlema #SaudeBucal #Odontologia #CIOSP2026",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQOUyCgC1F7kBjml47Hels-TZRNadSoaUdDb0y-AwzMAfoNZCozDyKz5otoQ9Ip0K-q-a2i_hydpzwhzqsEbPS6-YWaqh1wQr1g-3Bk.mp4?_nc_cat=101&_nc_oc=AdrYOk9jlgvnGlzmNVx7_HX8xC12U8RIHJvYXza4z56hHjTPBaf0WUMi9tsZaGRA0c0&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=SZ66qWQhF7oQ7kNvwFsYGOt&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTc5NDU4NDQxOTUxMDIzMDQsImFzc2V0X2FnZV9kYXlzIjoyMTcsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjo4MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=dd291951e3ee98a2&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zRjQ3MDhBNUFGRDM2MjUzQjhBMTZCMUMyMjRFNzk5Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzc4NDhDOTFDNDc4MTRBQzJBNTZDRUJDQUE2QkRCMUE3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbAuYzHzungPxUCKAJDMywXQFTEOVgQYk4YEmRhc2hfYmFzZWxpbmVfM192MREAdQBlrMEBAA&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQInfHGSh2YMwpkeZheRUdnJohLOpmXpaskBEjexOXwZ3A&oe=6AACD15A",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "23 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1078451244111120",
+        "texto": "🫣 E SE EU NÃO GOSTAR DO RESULTADO DA MINHA MAMA SEM PRÓTESE?!\n.\n.\nEstá cada vez mais comum a procura pela mamoplastia SEM uso de prótese. Mas a grande dúvida é: será que eu vou gostar do resultado?!🫤\n.\nSe você já está ciente que o esperado é uma mama mais natural, com colo pouco marcado, possivelmente você vai gostar…❤️\n.\nMas e se eu mudar de ideia depois da cirurgia?! E quiseram colo mais marcado? Tem como?🤔\n.\nA resposta está no final do vídeo… Dúvidas?!\n.\n#minhacirurgiaplastica #cirurgiaplasticabh #cirurgiaplasticasegura #cirurgiaplastica #drajulianamello #mastopexia #mastopexiacomprotese",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOzR84K9fLY4zub_PwNTMOibMOpD7lw5KOooUmk-b0wzW8rOi2PsLSbZS_K5JSlu9G3FoJ4I-snaNJgpfLz0Wi-.mp4?_nc_cat=101&_nc_oc=AdqjIyiP77Y2dHIUs9ydwtM5IpxLjtOdpWwLGORr5O_V9owEj9pnYPd2oBaQGy1sFU8&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=5CSqqSx4vgUQ7kNvwEe6qVu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjoxMzg3MDM5ODY1Njc3Mzc5LCJhc3NldF9hZ2VfZGF5cyI6MjQ4LCJ2aV91c2VjYXNlX2lkIjoxMDY4MCwiZHVyYXRpb25fcyI6MzIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQJcK2aoiEApPvaPMIwBuRq7LjoWN4aXJLSAEtEa0J56dQ&oe=6AB0BEA2",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "7 de mai de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1033526609072389",
+        "texto": "?Ainda baixou animado por propagandas de \"grátis\", só para descobrir que precisa pagar para desbloquear ou que o vídeo para após 3 minutos de prévia?\nNão deixe mais esses truques esgotarem sua paciência!\n?Melolo: totalmente grátis, sem cartão de crédito necessário e sem enrolação.\nTodo o conteúdo é acessível de imediato, sem custos ocultos, sem limites de prévia.\nClique para baixar e assista diretamente o final!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPObvcerR68W50tBJ6UQdDCkhU-28TdwHUwTeXnZrZ0SZUHdzXTSqKfM5o9hDXDOgaSaV0vAEyIJmkmxHc5f8vl1DJRIBE5r4WWGyhaeg.mp4?_nc_cat=107&_nc_oc=AdrzywbQ3AsQmQRlrV6Zt2UKZlTkdRaYIwnRnpLzzlyVVZwPY1EfynXoCwei8-95h0I&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=C_yf8-IHY4oQ7kNvwE23W7v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTQ0MDQxNzczNDUxMjEzMiwiYXNzZXRfYWdlX2RheXMiOjY5LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NzY5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQL2h2LOqK9B_RDHPhKTwThdRoCyCqqgGcFNF2Crek6zTg&oe=6AB0C1EB",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "9 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "873016605627997",
+        "texto": "😣Acredite se quiser, isso é mais “comum” do que vocês imaginam!\n\nArraste para o lado e veja o que um profissional qualificado pode de entregar✅\n\nQuer saber mais?\n\nEscreva: EU QUERO abaixo 👇🏻",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/616025591_1428435408743265_9118093889800810154_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LbB3HLgh5CwQ7kNvwHptWMM&_nc_oc=AdqyxaL4UaXyaza2wrwyFwedtCHd_htrEYSQocgARHzxsbzy5TmmKm2wBqzs1tp8M7E&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&oh=00_AQJ2p4yxVSkhllopJWz_SMK3US9Z0Qr2SnUieSXkTWhvKQ&oe=6AB0E127",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "13 de fev de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "826107770325559",
+        "texto": "Quanto vale seu iPhone usado na troca? Descubra em 30 segundos.\n\nCriamos uma calculadora que simula o upgrade do seu iPhone na hora:\n\n1. Seleciona o modelo que voce tem\n2. Escolhe o iPhone que voce quer\n3. Ve o valor da diferenca na hora\n\nParcele a diferenca em ate 21x no cartao.\niPhones novos e seminovos disponiveis.\nLoja fisica em Niteroi - RJ\n\nClica no link e faz sua simulacao agora!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNA_4vwauzayerm4jM5H0aSxEdX8W6IrL_Q2qTHY_44ymBH6aQZxlKtgZVZobUjCt4xtp0tlmWOGLS4NzeD2wbObEZWF6lDl-e94YjwOA.mp4?_nc_cat=103&_nc_oc=AdpvDUkczJyIQFzW7cZyfz3nU9mPr5RkQseDRMkCp0nrLTlpWKHINIuwc-56SAfMNX0&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=vje1vtV6ebYQ7kNvwF-yD6C&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTcyNjkzMzQ4NTMyODE2OCwiYXNzZXRfYWdlX2RheXMiOjEwMywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjI1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQI3kA6QaxJl_Byv-waY1p9GQmMSttmEmcQhSbpWOX5bjg&oe=6AB0D59B",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "6 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1370485527876152",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMO4UVRNB-AkVo88gULXAT5XVrZidJztRO-KlpA-8rnpXCeXYFOE1hY-bJ1NcYY4Rj-5F2EYZq0kUDOCzt46kuB_AtV-CTLFswWjDJAcA.mp4?_nc_cat=105&_nc_oc=AdqB_FaFKvrYbEnJkH1ARV9uDJ_B-dqdGUI4TOpNdoMAsglVXvxmH4OfzYKO5uz4OJA&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=KVC1tG5Em_sQ7kNvwHzunUR&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTgyNzQ4ODYxNDcyNTI3MiwiYXNzZXRfYWdlX2RheXMiOjMyLCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIB5O11s5KdaKWYATTiC6ZnmdiqI9jjRuRK8XaLRR3VRQ&oe=6AB0D6CD",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "14 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1338067834907084",
+        "texto": "⬇️Me Chame no WHATSAPP para Adquirir\n\nAquela lista de nomes em Anatomia parece impossível de decorar? 🤯\n\nCom nosso Material Completo Ilustrado de Anatomia 🎨 você terá sempre à mão uma forma de estudo que deixa a matéria mais leve, visual e realmente fixa na sua mente. 🧠✨\n\nTudo isso por apenas 10,00\n\n📞Chame no Whatsapp e peça o seu agora mesmo.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPQ-DTuvUruLAF5WOA27gmS8BSIdHXpSy4Zwy4rI2h8R70uWFmN1-28H209mIa7MoOAnR7ArU6HvvTSmU4iUFBUJPzt5dBQX8qLKeBOLA.mp4?_nc_cat=101&_nc_oc=AdoiczmplL74uxVqCFiwtGmKchjV43ohU4lpZjOe6kQHin2R9ZUsa73_r9fgGJSingQ&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=nOpo4EYJCBEQ7kNvwEe4p2r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6OTUzMDU5MjIwNzk1OTc3LCJhc3NldF9hZ2VfZGF5cyI6MTM1LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=NKkBy5X1_JEcNc6wKg9vmA&_nc_ss=78289&_nc_zt=28&oh=00_AQKkPO56MdU3filL1QNE6LxDQR39aOCsUfnG4rjTFVYWYQ&oe=6AB0C96D",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "3 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1602550954571886",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMwUiJWWkOre95STPXPz4HVy4RIOZ71xkUiBKSFbamJKjyXzbrZ1-NBukiBVzt1-L5nyBdBuXNHElxTLn7jWiP2Qml7s2fZT1iRLvUelg.mp4?_nc_cat=108&_nc_oc=Adpz0DX4os0yipI3ksIr29Vvv8VrQIJEyEj7VONxZNYOqL-vkxo5y8MUu6VhOBuYUzM&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=Adi1lLITHyEQ7kNvwEOoCHv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTU3NTM1MDUwNzY0OTUzNSwiYXNzZXRfYWdlX2RheXMiOjI5LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NzUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&_nc_zt=28&oh=00_AQJClqHEY4ZiHwIaTuLT2TXz8KkbZEvWivNJpqY4Q2htSw&oe=6AB0C5C6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "1 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "893810463144001",
+        "texto": "Página do cursinho líder em aprovações em Medicina na região de Santa Bárbara d'Oeste e Americ",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPwpu5JBmIjEnN3kMyG97DH4lqzNbnqHXNZLWgieLUAMgUN65tgoXnsQPdlgpTHwuLBe8oQj5Ne7OL_cSUijxO84oW3gg1MjkKwq-UH_A.mp4?_nc_cat=111&_nc_oc=AdreboM20Dd2K839U1Ed0DckkPFRAQrJv_KcxQzWoixImBU0xFJKVbSZFrxUijrTwgA&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=SBAAQFxITe0Q7kNvwE21TUu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTM0Mjk1NjgyMDk2Njk3OSwiYXNzZXRfYWdlX2RheXMiOjI1MywidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjU5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&_nc_zt=28&oh=00_AQLaBUR3AMMtQAGU0CzDMT5zAPkHwlquxwvYAemMZneyRA&oe=6AB0BE93",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "5 de jan de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "26975734282066841",
+        "texto": "Perdeu alguma atualização? 👀\n\nNas últimas semanas, nós lançamos mais atualizações e recursos no BotConversa e o seu atendimento com IA no WhatsApp ficou ainda mais inteligente e completo!\n\nArrasta para o lado e confira as novidades do BotConversa! 💚\n\nAgora você terá acesso à conexão mais segura do mercado, aos novos recursos da Meta e às nossas ferramentas de IA para criar Assistentes em 5 minutos.\n\n🟢 Comente \"ATUALIZAR\" para ter acesso HOJE a todas as atualizações no WhatsApp da sua empresa.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/696254539_2221815344891434_639445879689866931_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wjAMH0HXzHAQ7kNvwGqAcUT&_nc_oc=AdpSHngPAj_W7pmBBGmiKj1mAVHisxRg3zzPd8j0kwc1josiQedHUFm54ZsCY4xEOqE&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&oh=00_AQLv7ZD7S_rexcf0jEIxLpYQms544emDwoKt7p6Qvv8rjw&oe=6AB0E323",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "12 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2121120671785464",
+        "texto": "Clique em SAIBA MAIS para conferir disponibilidade na sua região.\n\nSimulação Gratuita.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPe1xnZWav3_jhYK2i9sK4n8ElQp-OYhO0TDwluNTkNDNKGyVTkOMsENRl4dh1XU-LQEUONsLwGcmNhMZapYKUF1YnuBm_NEVWBn3nNew.mp4?_nc_cat=106&_nc_oc=AdoiYdkiFb71xpUvurI2PVfrTKbQFNw0VjiWTdZeu9CJXDFDA4Z8DNf9ebLWXJUbuEw&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=FfAbLe1kxQkQ7kNvwEfi5BD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjM4MTk2NDM1ODkxNTYxOSwiYXNzZXRfYWdlX2RheXMiOjE5MSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjMwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&_nc_zt=28&oh=00_AQI_Q6qtWHfDq5789kZFwSxHb4lgXUCtIois1Nt0ITE_qg&oe=6AB0E260",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "29 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "992957472046154",
+        "texto": "Cansada de perder tempo todas as manhãs tentando preencher suas sobrancelhas? Com o nanoblading, você terá sobrancelhas impecáveis em minutos. Desperte com uma aparência pronta para arrasar todos os dias!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPDBJPBwZeIWE29EpmgKdn2IgoubP-6_RESWzCXHBf5KVi0E-tIokisVz85W70JGjD9ZOXMQ-hQMWL1CRwP0xc.mp4?_nc_cat=107&_nc_oc=AdrZ0L8jQvovhTyefnr25deIy7BVKkZjweiasm1Hu8ZKoglNSHaguLNcX023kVJxIxs&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=I01C-Tebia8Q7kNvwHAKTOC&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjo4MTM4ODQ2NTE3MTA2NjYsImFzc2V0X2FnZV9kYXlzIjoyMzIsInZpX3VzZWNhc2VfaWQiOjEwNjgwLCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&_nc_zt=28&oh=00_AQKY6wlbGm7_StO43bY5DxJxP5LuCn-SK-1k9fn4ZAe2IQ&oe=6AB0B91B",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "28 de jul de 2023",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1117202150246651",
+        "texto": "Veja como se inscrever 👇🏼\n\nYale Young Global Scholars (YYGS) é um programa acadêmico da Universidade de Yale, ideal para jovens -18.\n\n🎓 O programa conecta 2 mil jovens de 150 países por 2 semanas em Yale.\n\n📚 Oferece disciplinas em STEM, ciências sociais, humanidades e outras áreas\n\n🏫 Fortalece seu currículo para futuras aplicações de graduação no exterior\n\n💰 Distribui mais de 3 milhões de dólares em bolsas por ano, baseadas na necessidade financeira de cada participante\n\n💰 A bolsa de estudos cobre:\n\n✅ Todas as taxas do programa\n✅ Acomodação\n✅ Refeições (café, almoço e jantar)\n✅ Materiais de estudos\n✅ Quartos climatizados\n\n👩‍🎓 Quem pode participar:\n\n- Estudantes de 16 a 18 anos\n- Alunos internacionais com inglês intermediário\n- Estudantes que estejam no 2º ou 3º ano do Ensino Médio\n\n💻 O que precisa para se inscrever:\n\n- Histórico escolar\n- Lista de extracurriculares\n- Uma redação pessoal (essay)\n- Respostas curtas\n- TOEFL ou Duolingo English Test (opcional)\n- Uma carta de recomendação do Ensino Médio\n- Taxa de inscrição (isenção de taxa disponível)\n- Preencher formulário de bolsa de estudos\n\n📆 Prazo de inscrição: 07 de janeiro de 2026.\n\n🔗 Site para se inscrever: [globalscholars.yale.edu](http://globalscholars.yale.edu/)\n\nVários alunos da Mentoria M60 já foram aprovados no YYGS com bolsa!\n\nEles tiveram passo a passo, acompanhamento do zero, e foram aprovados no exterior!\n\nAinda dá tempo de aplicar, mas precisa correr!\n\nComente “ EU QUERO “ e comece sua preparação na Mentoria M60👇🏼",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQNLe0ajxWAarhh7gKfJZVdQpTI9jyc1owuILj-g8flYrpvelqivgdckYxP4AXGkSe51pd5SkoHkJeDgij37iKxIwOwHx09UG2URVZQ.mp4?_nc_cat=103&_nc_oc=Adq2uX4OChrxOs0nEE9MoUJ4k6Z2NsehzBzewDiWNYb-aXespZy5yIO2RRk-0qQWUJk&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=K9j3VicAniMQ7kNvwH31dYi&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTU1NjI0MzE1MjA1MTEyMCwiYXNzZXRfYWdlX2RheXMiOjMwMCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=ea86e15a370f18d1&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84MDQyREY5QjU5MEY2RDgzOTNERUY0MDRGMkZERTBBRV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84MTA2MzA3OTUxMjIzNThfMjY4ODI5NjgzODc5MDI3NTE5Mi5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm4O6YhKPZwwUVAigCQzMsF0Ag3bItDlYEGBJkYXNoX2Jhc2VsaW5lXzNfdjERAHUAZeadAQA&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&_nc_zt=28&oh=00_AQKlInmA0PVR82ztSEBsrJo3okn73HiqeD0FmXlIogP8Pw&oe=6AACE594",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "20 de nov de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1253620826133898",
+        "texto": "Venha fazer parte do nosso time!\nEstamos contratando.\n#limpsul #AuxiliarDeLimpeza",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/506590914_1768882627030640_4833793482656650779_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Oaf5rzcZX80Q7kNvwE3x2p2&_nc_oc=AdoZ1c7HEPvJuTEZRVd7907Va_MtnZdFsfGw2IhzBL0VQbKeF2xBpAWk-BQlT7Dc-S0&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&oh=00_AQKi1xC_L2JAsMLSGO6Hwpy08R0_4ZSnElc5Ecu6O4uAQg&oe=6AB0CB5E",
+        "tipo_criativo": "Imagem",
+        "plataformas": 4,
+        "data_inicio": "12 de jun de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1614233846759062",
+        "texto": "Quer aumentar as chances de fechar um bom negócio? Use a Calculadora QuintoAndar e anuncie seu imóvel pelo valor ideal.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOTFnY56APGt8ubLIiE0TUx3a9iLPpzZgLLNYCXOlyao-81njdMldJfv3sj6P9Nmo1QYmhinUkFOdXwPM-U-1AOlRsmYZHsdX1WigfYCg.mp4?_nc_cat=100&_nc_oc=Ado_zGEMAwE3wlGxIfu7wizWfKc_nydHzTrxbyrxz-_YoHwIETlCS3FuW1bFHA1SQbc&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=ZTb9JmIasbQQ7kNvwEMDMW8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTYxNDAwMTYyNzAyNTM2MSwiYXNzZXRfYWdlX2RheXMiOjIzLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&_nc_zt=28&oh=00_AQLQq5bZmiHVJrp-HhMgyxMPU-T5QTgcCQtRGurFbjiQqw&oe=6AB0BC42",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "24 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "963330109419279",
+        "texto": "Regularização de imóveis não é só preencher documentos — é entender os procedimentos na prática, saber exatamente como conduzir um caso e destravar problemas que muitos advogados sequer tentam resolver.\nOportunidade tem (e muito!). \n\nO que falta, para a maioria dos advogados, é conhecimento real sobre como atuar na área.\n\nE isso você adquire aqui no meu perfil!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQN44T-Rr8KnYf969-5aP2-hJL7mUDdsdmJEM9E8WIVU0Spj0LNwQpayfQNJUnvyL6t9ZAVaX9Efc4lgTBw0WAbmx-suTltNupuAyc0.mp4?_nc_cat=101&_nc_oc=AdpPiJ43pbxpatYsE5fIg9txpAXpeVTga6t3EZqN8yF0XGY99tK_Bl4sLL2HSbpzoFU&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=v96RZn8N-LMQ7kNvwErC7f1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTMzMDc1MjY3MTY4Mzc1OCwiYXNzZXRfYWdlX2RheXMiOjU4MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=6839e0134e6fd610&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FMzQ1MEYzQjRFQzRFOTQyN0MzMjg0NDZGNDI0MDZBN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85MjcwMzQ3NTQzMDU4ODI3XzcyMjkzOTgwNDc1NDQ4MTc1MzkubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJtzSvISAlN0EFQIoAkMzLBdATAAAAAAAABgSZGFzaF9iYXNlbGluZV8zX3YxEQB1AGXmnQEA&_nc_gid=p6hVrbeqMwIXBoHPlYTmqA&_nc_ss=7b289&_nc_zt=28&oh=00_AQLDzqmCs6-F3Wa3_aACVaIqskZH9jBki7j-xP4S-W0oZw&oe=6AACC322",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "24 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1699273661055758",
+        "texto": "A Maioria dos pacientes teme que o resultado não fique natural. 😕 Essa paciente tinha esse medo e foi fazendo aos poucos os procedimentos e compreendendo que preencher a face é uma arte e que não se trata apenas de volumização. 😉Preencher no local certo pode melhorar o aspecto de “derretimento facial”, ou seja, promove um efeito lifting para a face. 😍Aqui fizemos um tratamento full face , ou seja, em toda a face, com toxina botulínica, preenchimentos com ácido hialurônico, com bioestimuladores de colágeno. Iniciamos em 2019 ( a primeira foto ) e fazemos manutenções periodicamente para manter todaaaaa essa beleza ! (Foto final agora 2023) 😁\nUm muito obrigada para essa paciente linda que deixou a gente postar o seu caso ! 🙌🙏🏻🥳 \n\n⚠️AGENDA⚠️por direct ou 📱zap [telefone]\n.\n📍Asa Sul - Brasília/DF\n.\n@[perfil] 9243CRO/DF e RT @[perfil] 8160CRO/DF",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m82/AQN-FmcN7yfUbS2T8KBUFoeR1LvDCgMoKhUUnHVMnFcTyhnokL1JWMj3brRzgbN7vVPLPe9QY2hLeelRON2tDIE9GKBrFuYrf1SqCoM.mp4?_nc_cat=109&_nc_oc=Adr_V5pYs_3jqyXxpQ2tJoOWcBTUzusMgBSWUoO2bt4GESjOt3j4A4hrJVtd9sbSdoA&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=w31Nft29bYwQ7kNvwEBl_KZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfMl92MSIsInhwdl9hc3NldF9pZCI6ODY2NjY2MjA0OTA5ODEwLCJhc3NldF9hZ2VfZGF5cyI6MTAxNCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjUyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=67b3e860bb8ad321&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC9CRDQ5MzJBQjdDOTRENjI2OTgyQzkxNUU4MDY2QkJBNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HQkZQVlJqSzUzSGRIOGdEQUVMT0pNZTlCb3A1YnFfRUFBQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm5MPCtM6OigMVAigCQzMsF0BKcAAAAAAAGBJkYXNoX2Jhc2VsaW5lXzJfdjERAHUAZeadAQA&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQLRSL81ycOwWTE4ZoqFQHiZKz5NawWg3D96l_5I_P3BdA&oe=6AACCA6A",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "6 de mar de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1025076276903099",
+        "texto": "Tudo começa pela forma como um ambiente faz alguém se sentir.\n\nNa Bel Fiore, cada escolha é pensada para construir espaços com essência, equilíbrio e propósito. Das texturas aos traços das peças, cada elemento contribui para criar composições que refletem estilo de vida, conforto e autenticidade.\n\nNão se trata apenas de preencher ambientes, mas de desenvolver cenários que acolhem a rotina, valorizam momentos e traduzem personalidade de maneira natural.\n\nPorque projetos bem construídos vão além da aparência eles criam experiências que permanecem !",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQMgyyhpjduWvw9DjoOIJFpgP82P1kyrqqzoGWr9FyIFkaMrKOCGsPjtQ7Rav5pwlQfmcw4xZIw5ikAJEE250RMoSWttgaNR8TismFykVg.mp4?_nc_cat=103&_nc_oc=AdohEydSupSG2eKUC9KFc9DMmkAw7Ce8Yr0yO6w7rblqKISv_5R6HSaT-BcQCVBQZ84&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=LaHceuHzbWQQ7kNvwFLkq2k&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNzY1MDQwNDY4MjA4NjY3LCJhc3NldF9hZ2VfZGF5cyI6MTE3LCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6MzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQI3mgiIvggcfzw7iGBKamJYC4L1Qk7wW1TmdDQd4Pbrmg&oe=6AB0CC77",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "3 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "201955092819008",
+        "texto": "🚀💼 Prepare-se para o sucesso nas vendas! 📈💰\n\nNão perca tempo! É hora de se preparar para alcançar o sucesso nas vendas. Antecipe-se e comece a planejar suas estratégias agora mesmo. \n\nLembre-se de que a melhor Black Friday e o Natal mais lucrativo são frutos de um planejamento cuidadoso e antecipado. Avalie suas necessidades, contrate mais funcionários ou vendedores, e deixe tudo organizado para focar nas vendas. \n\nAproveite essa oportunidade única de impulsionar seu faturamento milionário. Receba um diagnóstico 360 graus com nossos especialistas em Varejo. \n\nComente EU QUERO para eu te enviar o link exclusivo para uma sessão estratégica gratuita com meu time de especialista e iniciar uma nova era de faturamentos nas suas lojas! 💪📊💰 \n\n#SucessoNasVendas #BlackFriday #Natal #PlanejamentoEstratégico #FaturamentoMilionário #especialistasemvarejo",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m69/AQMDejQyilM-tsemnh-VAoTuJhpQDWs2cV9RMdFTQjkILOCs-OryR-jyE3eLKW9srZ06jkl-1KWdNU6qZtDYB0io.mp4?strext=1&_nc_cat=103&_nc_oc=AdrLvqT_WtFBsPB3Up8JSJXs92-5hiPRWnDwFHR20yq2x0557MdHNAatYfbNW-mFM7w&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=AKhFDvH9XAUQ7kNvwHC6RXC&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMjM4LnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NjAzMDIyMTE4NTYxODQ4LCJhc3NldF9hZ2VfZGF5cyI6MTE5MSwidmlfdXNlY2FzZV9pZCI6MTAxMDEsImR1cmF0aW9uX3MiOjg1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQK78TskB3X6SwgzmhM_Ln3A1diYdXLAjGjXV3TQo3PVIw&oe=6AB0D44F",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "13 de jun de 2023",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1049617170997439",
+        "texto": "Granito líquido autonivelante  #publi #construcao #piso #reforma",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPFaXYhClVLgsCMbn8fSPvrAxFIkgU2M6ykOX0ygUB5l6zFeKZJZX73GhN1lhtpEuLJxPvu28qyVcro_6cMueV8Ajoc8dtsLzTJrX2Low.mp4?_nc_cat=103&_nc_oc=AdqSGvv1tf22nI5kweXpnLNcZhySyOceU01XRQ0DiGDY_7i11dL5xkpYRqza1KQYQOs&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=9y09KPIN734Q7kNvwFECD8S&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NDU1MzI2MzU5ODI1MzM4NCwiYXNzZXRfYWdlX2RheXMiOjE2LCJ2aV91c2VjYXNlX2lkIjoxMjM3MywiZHVyYXRpb25fcyI6NTEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQI31Bx-pkNN9p-2A3nU0eOAIl01oM6cjdf5tnm7VloHKg&oe=6AB0C95F",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "4 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2239311106587518",
+        "texto": "Você sabia que é possível se APOSENTAR MAIS CEDO e talvez JÁ TENHA esse direito HOJE MESMO e não sabe disso?!\n\nSabe por quê?\n\nPorque a CALCULADORA DO INSS não considera o tempo Rural, o tempo MILITAR, o tempo de pescador, nem o tempo de exposição a agentes nocivos.\n\nTome cuidado, porque também o INSS pode não considerar o tempo dos seus contratos de trabalho que não foram encerrados corretamente pelo seu empregador, mesmo que a baixa conste na sua carteira de trabalho.\n\nMuitas vezes, o tempo aquele que está na carteira de trabalho NÃO É COMPUTADO CORRETAMENTE.\n\nPor isso, você pode até ANTECIPAR sua APOSENTADORIA se você preencher os requisitos de umas das regras de transição.\n\nGostou das dicas?\n\nMeu nome é Dra. Patrícia Salomão e sou Advogada especialista em APOSENTADORIAS.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOuOdUr454ydS1x5g5HZznt9lk0cafD-dZ1JlZ2BQAmYUam-aexAhIJo1jhY2YFTzxyOuVss3t0lUpNtsJOqKm3EVUzSV92OqHOBaCixg.mp4?_nc_cat=101&_nc_oc=AdrKXhpJSDlFUfRfZ-axyJ6wYDfvVGfexoCCZq4T60OwiR_i7YW_T5cz-h8CR3YjHD8&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=CVLZZ7sPSi4Q7kNvwGeWznS&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6Nzc5NjY0Nzk4MTkxNDY2LCJhc3NldF9hZ2VfZGF5cyI6MzUwLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NjgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQKgwB-jhEVCTzOaBXfqqxmjlHX3QnRkvkLOGcGnkAYAKw&oe=6AB0DE7D",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "1 de out de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1287818349875285",
+        "texto": "Na Ásia, as técnicas de rejuvenescimento caminham cada vez mais para procedimentos minimamente invasivos 🤩\n\nUma das mais comentadas neste momento é o 9D Lift, que busca reposicionar as estruturas da face sem cortes extensos ou grandes intervenções.\n\nA lógica é simples: quando o rosto começa a “derreter”, o problema não é falta de volume… é queda das estruturas.\n\nPor isso, o objetivo passa a ser reposicionar, e não preencher.\n\nAqui, utilizo linhas de colágeno que atuam exatamente nesse princípio, ajudando a sustentar músculos e coxins de gordura de forma mais natural.\n\nE um detalhe importante: não tem relação com fios de PDO, que têm duração muito curta.\n\nSe você quer entender melhor como funcionam essas técnicas de reposicionamento facial, escreve EU QUERO aqui nos comentários que eu te explico no direct 👇\n\n——\n\nDR. JARDIS ALBERTIN VOLPE – CRM/SP 116.049 | RQE 116.049\n\nConteúdo exclusivamente informativo e educativo, nos termos do Código de Ética Médica e normas do CFM.\n\nEsta publicação não substitui consulta médica. Todo procedimento exige avaliação individualizada.\n\nResultados variam conforme características pessoais (pele, estrutura, hábitos e demais fatores clínicos) e não constituem promessa ou garantia.\n\nTodo ato médico envolve riscos. Esclareça dúvidas em consulta.\n\nImagens autorizadas conforme Resolução CFM nº 2.336/23.\n\nMenções a técnicas, ativos ou produtos têm caráter informativo, sem finalidade comercial, patrocínio ou conflito de interesse.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQM3nC6Mz2ZhiD_9RrI747KDGYvPgnlHDyg76QGEOd18LbjeiFBPnZoDcJ-6ZuFIhxKZsmbgSY1w2odZaA9bcY2dg_IJ9YiqtUBmmLwtuw.mp4?_nc_cat=101&_nc_oc=AdroVIH56SHaRVYFLar9TaBa0Qxu87M2gE5_jZpP071t326JxJnHPw5NTdZmi80hWg4&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=PJpdmyuezksQ7kNvwFOQVtD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNzk0NzU0ODk0MjExODY1NywiYXNzZXRfYWdlX2RheXMiOjE4OCwidmlfdXNlY2FzZV9pZCI6MTA4MjcsImR1cmF0aW9uX3MiOjU3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQIDwjzwHjqlDyEOYt8REHb0tJ2GHM12U7I0Wtjuu4qUzg&oe=6AB0CCD9",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "19 de mar de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1137851974445089",
+        "texto": "👀👉🏻 Você já sentiu que entender o corpo, o movimento e a emoção poderia revolucionar sua prática pedagógica ou clínica, mas faltam teoria sólida + prática aplicada?\n\n📍Não é culpa sua: muitos profissionais têm a parte emocional da aprendizagem fora do radar, mesmo sabendo que ela é essencial para o desenvolvimento completo da criança.\n\n✅A Pós-Graduação em Psicomotricidade da Valecup vai preencher essa lacuna: formação reconhecida, com base em neurodesenvolvimento, teorias do movimento, expressividade corporal, psicomotricidade relacional, ludicidade, diagnóstico de dificuldades motoras, expressivas e emocionais, tudo disso pensado para aplicação prática em sala de aula, clínicas ou atendimento educativo.\n\n🙂‍↕️Imagine transformar seu trabalho: tornar-se a referência que escolas procuram para lidar com crianças com atrasos de coordenação motora, dificuldades de expressão corporal ou problemas emocionais ligados ao corpo; ver progresso real em crianças que antes pareciam “travadas”; ganhar autoridade, reconhecimento e oportunidades que só especialistas conseguem.\n\n👉 Matricule-se agora, receba acesso rápido e comece a aplicar o que aprender desde os primeiros módulos. Faça do movimento, da expressão e da emoção sua nova força profissional.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/547350553_790138590373751_3071396670374704376_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2ntOsvO_zVgQ7kNvwEWST6V&_nc_oc=AdoamWs4zfV7eQk3f6SPL4q6UCrD--xagxVrO7-ol1If2U5jaWbadWFx-L6U0OkdXSA&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&oh=00_AQLZLOVAhW3Sgl-KM7fTTTnt0Q_HD61avkhQGsjE1lOoiQ&oe=6AB0DDD8",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "18 de set de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1046777444626491",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOwbgqOi5jPyQyYaTKC1MBa3Uv2q1TAibqdNRnC8GXTHV1njm3Rj1_yHyy1Be_KovszlDLay-O4OYB-RWQRWDWKKW0yDyZXyAmfDrWUzg.mp4?_nc_cat=104&_nc_oc=AdqCX9IfR0X4hlzcx1cmeZRszTvThdn0CrMjFdKFPa9mbmfPRNxISVc1XJnHDvP8cwc&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=WFC71Zp2EEgQ7kNvwELz3t0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTQ0OTE0NzI3MzkxMzIzMCwiYXNzZXRfYWdlX2RheXMiOjc1LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQKi2ycdwpMidT2aKc3siaktsr5l1vkCoIdW6yMdl6ecIA&oe=6AB0B4AE",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "7 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1565594001162104",
+        "texto": "Faça suas compras sem sair de casa.\nProdutos frescos, preços justos e entrega rápida direto na sua porta.\nMais praticidade para o seu dia a dia.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/641631617_1240975274197009_5207547815404360568_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9DXt4YE4ElAQ7kNvwHfae1Q&_nc_oc=AdqVrOQK5u5w4oM62jLVuJXk3SH0D7b9D0gzGbRnfAtqTwWo7ufvcin0lCpT_WFyyak&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&oh=00_AQI8v4kwgGUXWJbTt7cKwiGTeiJ1rmt3NTfobFJregliSA&oe=6AB0D84C",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "26 de fev de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1269589328585694",
+        "texto": "✅ Requisitos Obrigatórios:\n\n- Ter conta em banco\n- CPF sem restrições (Nome Limpo)\n- Ser maior de 18 anos\n\nSujeito a análise.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQN7zNdfDkGxBszPQnq2oW59gm1wDEeyXLztOEJVnfEDyaqcIh5tjGP-e9tr0t38ApuCFBPxJ5P8yTp8vfKwUo2SlHjNZkEOcxCyy92yvg.mp4?_nc_cat=102&_nc_oc=AdqwnDGorMeoCMbht7tvSOKVmTODti7ZT8Owtpi6P-keDSoZ3wf2m6TSCankr3h0cmY&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=jM7l4uYwPJAQ7kNvwHTgjGq&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MzkxMzYyNDM2ODk0MjY4OSwiYXNzZXRfYWdlX2RheXMiOjE1NCwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjY3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=ePlVCgH-YxoOV-1GHCI6lw&_nc_ss=7b289&_nc_zt=28&oh=00_AQJUE5K3PkMk971sG5g1yn5jre1g5p6cH5Ky1go8d35hkA&oe=6AB0B500",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "29 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2139376856522826",
+        "texto": "💉Quando o assunto é estética facial, existe uma grande diferença entre apenas preencher uma área e realmente harmonizar o rosto. E é exatamente essa diferença que faz o resultado ser natural, elegante e sofisticado.\n\nNa Sensis, nós acreditamos que o verdadeiro impacto estético está na proporção, na leveza e na naturalidade. Por isso, nosso trabalho vai além de aplicar produtos! ✨ Nós analisamos o rosto como um todo, respeitando sua anatomia única, para realçar o que você já tem de mais bonito!\n\nAgende sua consulta e descubra o poder da harmonização facial com equilíbrio e elegância, do jeito que só a Sensis faz. ✨\n\n📌 Solicite atendimento via direct ou WhatsApp\"\n\nInformações sobre consultas:⠀\n📲(62) 9 9949-1108\n📍Edifício JK - Av. E, 1.470 - sala 207 - Jardim Goiás, Goiânia - GO, 74810-030\n\n#sensis #clinicasensis #drakarinepaniagua #clinicadeestéticagoiania #classemarketingdigital #metodosensis #harmonicaçãofacialgoiania #preenchimentolabialgoiania",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m69/AQNlfwafCi-sV04z8Gq-ZrUpDftmSWZMX3fDywkTltslpznQAhvySyDZqMK7Wsdg9qjDdvGf18LHk4u8tmHKnDi3.mp4?strext=1&_nc_cat=107&_nc_oc=Adpk94wclbaDDClPUpNrxW574ETemCS_h5D3S3Uee8zjEb93SKNL8EZyDGGRS9hf1wE&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=-fW9Jhm5G70Q7kNvwFmBE-c&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTE0NzU3NTkyMzU2ODUzMSwiYXNzZXRfYWdlX2RheXMiOjU3MywidmlfdXNlY2FzZV9pZCI6MTAxMDEsImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&_nc_zt=28&oh=00_AQKW1_XYujTRvHfsv44xFFYU0By6mbaeppuuVVHdIVoyRQ&oe=6AB0DF7B",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "19 de fev de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "794908973221447",
+        "texto": "A gente já tem problema demais, o rímel não pode ser mais um. 👑 \n\nQuem mais cansou de ser enganada por rímel padrãozinho? \n\nComenta FORTE que te mando o link. \n\n#MaxLashes #RainhaNativa #CíliosNaturais #Rimel2x1",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/654747402_2889505824714532_6894066203350561677_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jZgM6fMv1sMQ7kNvwGtR1OL&_nc_oc=AdolNCi9SlXQ1TBJ3tsNCy6YPw31-QyYmVksJylEnnIUcIWCdcONTQAbMQ-FzpE-BK0&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&oh=00_AQK6Q72J8G_CEcJwpM-QWUcntgi6bve6CYvgNn8wBNHX0Q&oe=6AB0D0C1",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "18 de mar de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2008315893187726",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMwUiJWWkOre95STPXPz4HVy4RIOZ71xkUiBKSFbamJKjyXzbrZ1-NBukiBVzt1-L5nyBdBuXNHElxTLn7jWiP2Qml7s2fZT1iRLvUelg.mp4?_nc_cat=108&_nc_oc=Adpz0DX4os0yipI3ksIr29Vvv8VrQIJEyEj7VONxZNYOqL-vkxo5y8MUu6VhOBuYUzM&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=Adi1lLITHyEQ7kNvwEOoCHv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTU3NTM1MDUwNzY0OTUzNSwiYXNzZXRfYWdlX2RheXMiOjI5LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NzUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&_nc_zt=28&oh=00_AQJM0TdA_BL5QdBJYRVZn0jb6HPeQSwuADZoyzEy7hjHMg&oe=6AB0C5C6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "1 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "987320167339751",
+        "texto": "O novo método chegou!! ✨\nTestado e Aprovado ✅",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQO-uh5VEE-x2sTKH-tMpVTYl4ihXSXdmpnCLZ5n6UYBIEVVzjcnxszVexdVkHtTs0i4lFtXPpUV2aZvJnGd8ej_ukxOoKWOwppdm7G5IQ.mp4?_nc_cat=102&_nc_oc=Adp9yEHF-NvyPE_m4oOtEL5JlkMcu39qHccm_IlpmZz4lcOPzerBU87wziVySHCLC6E&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=jEQWLT9RAmMQ7kNvwFN09TX&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTUyNzc5NDUxMjA1OTIxMSwiYXNzZXRfYWdlX2RheXMiOjExNywidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjk3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&_nc_zt=28&oh=00_AQLmSZQd8DGs2qL_yuoes6mFCCiFW9CQqJY4gpSlCRwfZg&oe=6AB0CE88",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "22 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1430297455828958",
+        "texto": "Eu fico mais perto de você no canal do Whatsapp do que em qualquer outra rede social. Sem filtro, sem produção — é só eu.É  só preencher o formulário e entrar no meu canal oficial do WhatsApp.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOvKGEiapetA249a48qWIAT3tYAsW7eRm7In0o01Wfd6POZ6zu_FwLKwlf1_HJY9031O2edGtg5QhfzrKXx2rdVKLNOoK_nagCWRs_C8g.mp4?_nc_cat=101&_nc_oc=Adrii9NSmbtyGep3T2Kw57zSiYwv1r0Vid3qcZnGwVBH0m4D7-PYsWPNkriEQqyOCPE&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=DrhmN4CaMxQQ7kNvwEcInfH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTcwNzI1Mjk5NzIzMDk3NiwiYXNzZXRfYWdlX2RheXMiOjI3LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&_nc_zt=28&oh=00_AQLHOBjE86TH1wGi7Leo4KRJbMep_8S-XgdrEG8SiPhCiQ&oe=6AB0E201",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "19 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "704494519028930",
+        "texto": "H.A. Intensifier da SkinCeuticals é o sérum corretor que amplifica os níveis de ácido hialurônico na pele. Melhora firmeza, suaviza linhas e deixa a pele visivelmente mais preenchida e hidratada.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/514272992_577915795392127_2356900988368440949_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Yx1t8NfBatgQ7kNvwF16jYb&_nc_oc=AdqAwaHz6DJpmaCmTjdasT3RrGLufzWVgRLtSrJYOpJ4ZKOwQMnd2bIxufU87VWJMeQ&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&oh=00_AQL0XXUWhDJN5mkd4w5h9wGJyF-s2oebBIiRiyxtCk-Gtw&oe=6AB0E722",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "1 de jul de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1003343872333719",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPFpalfKOw0oiZe6l-SgpxE8doVavh-nPdMOBs4Nlx6_fozQ5Rsk0LM2OUdQkoEOdglLupz5ebh_BY3qr1I_B-DzWgHouS8U1lffSbnrQ.mp4?_nc_cat=109&_nc_oc=Adp2ants4jZAe2dJJUw52KiFBJKngwr94j290izcGGtUdYCLSvjNdT3SheUFmsHYeY8&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=ux3LMjIENDEQ7kNvwGjgb-b&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTUxMzcwMDkzNjM2OTc4NCwiYXNzZXRfYWdlX2RheXMiOjc1LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&_nc_zt=28&oh=00_AQKS9GJJIrPT0m2DTZYeRhbe3fyEKP9ppMSRV9kdNpNIuw&oe=6AB0E09D",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "7 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1919632405566438",
+        "texto": "Quer preencher quartos com viajantes de negócios que reservam durante a semana? Podemos ajudar.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/696223363_1472039434389299_4418504015920485708_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zeCtbEAJm2sQ7kNvwEOisbb&_nc_oc=AdrBT7a38vCiRAG1juZsOaZ1nlZO_ZwOLu8Yf8yVtcDIH7Anp0RATi2V-iNuphKy0TI&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&oh=00_AQIunaJ-ksHhcY_2sDyoCWTleJQpdMIRCW68IdfzxwrpBg&oe=6AB0E7B5",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "12 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1216938563923525",
+        "texto": "Chega de segredo. Quer saber como elas conseguiram esses resultados? Clica aqui embaixo que eu te mostro o caminho.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMl4UhGO7xS0ueZqcA-JvuF9VgwWYYkEppTqaU-aAZJ9faLxvVDkQdownzIJFKjxUgIr7lGn8CM2mom63Z4Y_FvBs4_wrMbM81ayYTXdQ.mp4?_nc_cat=106&_nc_oc=AdqOhR0Hv1E_Id5K_SO6eMJkz_x_yYgfsydOylZhecbmMAF36a9YZ_czRTC621-WGbA&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=mBsoNBArsckQ7kNvwEFGlXA&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTc0MzEwMTg0MzY3MjI5NywiYXNzZXRfYWdlX2RheXMiOjMyLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=BL1ppk6s2haPq6_0xukIjA&_nc_ss=7b289&_nc_zt=28&oh=00_AQLDoCzZXmRl3xIA0IDNQVNC8OQ26FWrZszJw2dCBjPk8Q&oe=6AB0C238",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "18 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "686096814584148",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMweDsfC5ZKayZHQhvolsiUb1PULKMSlY-TcFwwzgbZu4aZlu1-njKNmR8Y4CGzqth8-P6VtGQDvAmZWnWAeL3PLTjgMrZ1GlZT4GcdJw.mp4?_nc_cat=108&_nc_oc=AdqVkr-8tzNYw7roobNztSr-_S1rzLyZLYOhUfCMc64x3ipVP_QHwC8DL0pCLatkid4&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=gsumcUi8xH4Q7kNvwGROAYm&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NzUwNTQyMDA3NTc1ODUyLCJhc3NldF9hZ2VfZGF5cyI6MjUwLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6ODksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&_nc_zt=28&oh=00_AQIfvzovann4hKFwmLIXL95Ntmdl-qXJuhqtwoZwfe7l8g&oe=6AB0B48A",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "9 de jan de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "933333416332454",
+        "texto": "Um produto que ganhou meu coração!\nTime Secret da @[perfil] \nE nele tem:\n\nBakuchiol: A lendária “planta da juventude”, que ordena à sua pele para voltar a produzir colágeno como antes.\n\nÁcido Hialurônico: Inunda as células com hidratação máxima para preencher as rugas de dentro para fora.\n\nVitamina C & Resveratrol: Um duo antioxidante que devolve o brilho natural e protege contra futuros danos.\n\nProteção Solar: Um escudo diário que blinda sua pele contra os raios UV, a causa nº 1 do envelhecimento.\n\nEntre no site, use meu cupom: THATADANTAS e já garanta o seu!\n\nDepois me conta o que achou\n\n#pelemadura #pelesaudável #autocuidado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMVDww1L9KRDiaVzj4zBhO5b9p19OOUm87vao_g4bGjweO68CnI5tDBnaKZ2ciAaplLfb2WOcX4SNv6_7WBQTtsuMEhhNcICi7Ps_c.mp4?_nc_cat=103&_nc_oc=AdrjANnYCsHckIW_O55aILeamYbbE_0hYCK0GdIb9IaEWw6fcNZ6KdK1mVRfiItz_do&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=vbcqShDWLmsQ7kNvwGCJMH-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6OTYwMzMwMzY5NzE4NTg0LCJhc3NldF9hZ2VfZGF5cyI6MTM4LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=43c728b586c110&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81OTRDOTAwQTBGOERGQjI5Qzg3RUY1NEM5ODc4OTQ5M192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzY3NDYxMDA2RTFCOEFBQzlCQUIyRDAyRUI4NjNENDg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbw5O7oytq0AxUCKAJDMywXQEImZmZmZmYYEmRhc2hfYmFzZWxpbmVfM192MREAdQBl5p0BAA&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&_nc_zt=28&oh=00_AQKplCT9lJRhkGMMq4hDgqBIpotbNdYU6jP4jNlOl6VsoA&oe=6AACD06C",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "22 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1535272957646251",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m69/AQPg1vsCp5X64vozlOvbgrYNclQ3s1fb5qtQ5ucpDDN5hue_NjuXqtBaPvdYOcZM6a4haNDdSA4FndHPXj7lzgdy.mp4?strext=1&_nc_cat=104&_nc_oc=AdoIdhonpfX7bwVFO4qRaA6wamJVGf23DmKWTCXiP1mK105Iqx0nuFFbwZBRgE6mGvw&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=um0gJe_2XjIQ7kNvwGYS85m&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTIyNTc2NDc2OTMzMzM3MCwiYXNzZXRfYWdlX2RheXMiOjQ2MCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&_nc_zt=28&oh=00_AQKT_zO9Zg9BQ3HFmYnburzM4o-wvnD8IdFkS1LYCYJ_2g&oe=6AB0E0E6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "16 de set de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1704008347342431",
+        "texto": "Um evento exclusivo para mulheres empreendedoras, líderes e visionárias!\n\nVenha participar de um encontro exclusivo presencialmente comigo, minha equipe e convidados!\n\nVocê já tem resultados. Agora falta ser percebida como a mulher que realmente é.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQO9Zdhe0OMfPgRkwsM83CnaAGqMBQ7bR8jVOSoZvOzdDKDcWtJGyL7AY_1zjXUEtwTNmk9rcAjYT2ZXO7PcAPatU2oM6TjVHz7y2sAU4g.mp4?_nc_cat=103&_nc_oc=Adr3-rDcxc0JF3IpQ0D-TuShYYM0jKOHH8Zv3hSm0cAakluQxtsXQOViokIYyQgx8Yw&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=vauwkdk4CeoQ7kNvwFALzVO&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTYwNjI5OTMwNDE3MzE3OSwiYXNzZXRfYWdlX2RheXMiOjM2LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NzgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&_nc_zt=28&oh=00_AQJ256l04BFLEf7vMkVBnpGXurH31aZ9huecTFNs_cd_EQ&oe=6AB0E2FB",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "11 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1961998158056910",
+        "texto": "Você é mãe de uma criança autista?\n\nConheça o BPC Loas Autista, um auxílio oferecido pelo governo para apoiar famílias nessa jornada.\n\nCom o BPC Loas Autista, você terá acesso a um salário mínimo mensal para investir no tratamento e bem-estar do seu filho.\n\nPara se qualificar para esse Benefício Assistencial, é necessário atender a dois requisitos:\n\n✅ 1 - Ser diagnosticado com Autismo, que, quando associado a uma ou mais barreiras, pode dificultar sua participação plena e eficaz na sociedade em igualdade de condições com outras pessoas (art. 3º, inciso IV da Lei 13.146/2015);\n\n✅ 2 - Renda familiar per capita por membro familiar inferior 1/4 do salário mínimo.\n\nSe você ou alguém que conhece se enquadra nessa situação, não deixe de entrar em contato conosco\n\nToque em Enviar Mensagem e converse agora mesmo com um Advogado Especialista.✅",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m69/AQMs170jSwcoq-Dd2Roc83zX8EV6H4y5JyEzJjWeyYQLMAugrFCJSFSOXGvuuvWhXEMpoD-HJj_z-Cbhg8y3N4M4.mp4?strext=1&_nc_cat=108&_nc_oc=AdoFteqgbYEqoUHpcPklyEyxD-QG5YkRMkTUHNsEeIOnBFFYuO3744vtkUtpkBnJ8NI&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=zMCPT-PQHb4Q7kNvwFTtS2W&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI0MzkxNjA4MDQ2MzEzNCwiYXNzZXRfYWdlX2RheXMiOjQ4MSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjQ2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&_nc_zt=28&oh=00_AQKSJ8wVz_YMKgHhkvhPiivxkV4RXw3dGqZyWwjpJaJ8Ag&oe=6AB0E64E",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "14 de jan de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1300199018759521",
+        "texto": "Com planos empresariais a partir de 2 vidas, você e seu time têm tranquilidade para cada fase da vida, com um ótimo custo-benefício.\n\nBem-estar e segurança perto de você em todos os momentos.\n\nFale com nossos corretores.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/707678521_2762414740818039_537076039707211147_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4K91kgPNdpQQ7kNvwHOZbjz&_nc_oc=AdoJIH5Z20nBvJfY3ywe5aVjMib36Q8nWMcxAXAJqmPncwKU5Q6FSawrpeKz_SsErk4&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&oh=00_AQIwrXqnPYlsrIygyQjXGR2xlISRR9Q4x5AEkoW4NEpKyg&oe=6AB0CF14",
+        "tipo_criativo": "Imagem",
+        "plataformas": 4,
+        "data_inicio": "25 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "4652772111666578",
+        "texto": "Chega de segredo. Quer saber como elas conseguiram esses resultados? Clica aqui embaixo que eu te mostro o caminho.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/789006360_1657864715947536_2305492690411899062_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8ObBlRyxJO8Q7kNvwEBHTwL&_nc_oc=AdqaQx_skHrpOkO7ceqJvFPSOFO9IF1O5hcGdcLfSQ3lQ6fW6FwESAqFOEZKDa3K0B0&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&oh=00_AQLmZ_XXlKk97z-o2S6sI_HIzbo405KxNWlFNeMdRDxJ1w&oe=6AB0E458",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "27 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1275725671145231",
+        "texto": "🏗️ Reconstruir um rosto desabado é como reformar uma casa: não dá pra começar pela pintura.\n\nCom o tempo, o rosto sofre uma queda lenta e gradual.\nA gente perde estrutura óssea, volume de gordura, firmeza da pele e qualidade da superfície.\n\nE pra rejuvenescer de verdade — sem exagero, sem resultado artificial — é preciso respeitar a ordem das camadas.\n\n1️⃣ Primeiro, a fundação: injetáveis que devolvem estrutura ao osso\n2️⃣ Depois, o volume: entender onde a gordura foi perdida e repor se necessário\n3️⃣ Na sequência, tratar a flacidez: estimular colágeno pra “grudar” essa pele de volta\n4️⃣ E só então trabalhar a superfície: com lasers, skincare, peelings e tecnologia\n\nCada etapa tem sua função.\nE o melhor resultado vem quando a gente combina essas camadas de forma estratégica e personalizada.\n\n🧠 Você já tinha pensado no rejuvenescimento como uma construção por etapas?\n\nMe conta aqui o que achou dessa visão 💬",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/525008158_1289479429274150_9202470009985778278_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ivK_vOeCPFIQ7kNvwFoOFGx&_nc_oc=AdpIqSIg4l8Glo8yMktDfDrAd9tDp0iRNkCyamNA9iZz_e1i6041qYEQgeabr-8OJEo&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&oh=00_AQITgp_wqnTp_KroGLFNq5vYDqyp_JYRW9ekVhs0TMojiQ&oe=6AB0E083",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "27 de fev de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "975064025132712",
+        "texto": "Prof., recupere os seus finais de semana! Com o Ensinei, você cria materiais incríveis para as suas aulas em poucos minutos.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNV6tpGiimnYUFNrZBvtLvU2KAgrSkTpg5g58Yj5A4LaQDQoYKYCaqKY6tk-JmuKPXqkM462EOLXnrQA5vvN2ED_Vh872KNGt02LSg2yw.mp4?_nc_cat=100&_nc_oc=AdqAJVYmksov9cAHF-xW1Y3MbKNbwFgK9eAZrClnlRvQeDVnjrjd_aJq9Bup_i5Ndis&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=V9dyBRm7HmgQ7kNvwG6d41B&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6ODYxMzI5ODUzNTI1ODMyLCJhc3NldF9hZ2VfZGF5cyI6MjUxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NDQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&_nc_zt=28&oh=00_AQLtVA6iislhyif28PXBaRy0FcW-JmE5rB4ks0BfSQU2BA&oe=6AB0CF4A",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "29 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2158536101661990",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOofcNMZewYfU_2AY-jvCHMYTFxuxes8qsp5hl2cfC-Fsh9_H9PGkpDqYwKsej4CkEOlFyPO3DtbngnfEjJo_Fmt_0BfeRr31WXWdWrUg.mp4?_nc_cat=100&_nc_oc=Adr6ufvR8GHGI7H4I_B_qVJbNOiblpbraocF0SSPGtPynT8ric9LwZLOso2jZcc6BKY&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=QdYMiZHZvzEQ7kNvwEqGT_R&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTcwODA0MTEwMDA5NDk0OCwiYXNzZXRfYWdlX2RheXMiOjc1LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=Rg9KNw6euRUYcvwdRGPvzg&_nc_ss=7b289&_nc_zt=28&oh=00_AQJCkv_BQMgWTKtU2Ofpt3GUfwGLfwTr43IkhsTg3wq7pg&oe=6AB0B312",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "7 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1918871485319792",
+        "texto": "Quantos sachês eu preciso tomar por dia?\n\nA verdade é que depende. Quer descobrir qual a quantidade ideal de eletrólitos que você precisa? \n\nComente “CALCULADORA” para descobrir através da nossa Calculadora de Hidratação.\n\nNossa heroína que virou case @[perfil]",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQM07WPEROSTYqKq-YV01DPjiKhhEq8h7C_l1RuZCLivIZYGsHTGmyEJ67q-hj6hEOeKNmJW6cLxYg1uvkyCBkk8iuycfeq15AIeXrI.mp4?_nc_cat=101&_nc_oc=AdrWwn1dLerW6HtHzNyiE4xL0_7uNrB-IYMrpSEzOKqexyDYLxVmsPG2BnDoJnL1qTc&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=pxENm1rD6ScQ7kNvwG2YvQ7&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTIwODA1MjI4Nzc2MzE1NCwiYXNzZXRfYWdlX2RheXMiOjQyNSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQ0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=ec0aec6f3d6aa4a2&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83ODRBQzEyNkE0RkNCMjVEQjE3NDcxN0MwQ0UxOEE5Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMTEyMDk4ODk0MTA3MzgxXzg5OTYyMzM5NDk0ODcyODEyODYubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJqTL2_fyraUEFQIoAkMzLBdARiAAAAAAABgSZGFzaF9iYXNlbGluZV8zX3YxEQB1AGXmnQEA&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQLFBFcpVFTIyPh12AlZfYxSG2YvMUcG9e8vEnhOOLFhbw&oe=6AACD0B2",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "21 de jul de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "983668184348984",
+        "texto": "Com esta parceria, você tem uma rede de agentes de viagens, companhias aéreas e agências corporativas para preencher baixa temporada e dias de semana.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/696491568_1802539600713623_8010881173966313906_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=D34ybkfERBwQ7kNvwFDdpki&_nc_oc=Adrb9mWXcbTSZEnWqOco7tggOrrPOQ3AOxr0rOGzCFfG5oEfE7SWuSToMhTNgjWUbzY&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&oh=00_AQLPDvMw-fm9f_VnQCDkARVNexyWxDODUbkCbYYOULmA8A&oe=6AB0EB4A",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "12 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "171926048993147",
+        "texto": "Aumente seu faturamento com o Calendário Milionário! 🚀💰\n\nUma loja que possui um Calendário Milionário vai além das campanhas de marketing tradicionais. Ela realiza eventos poderosos em sua loja, estabelece parcerias com a indústria para treinamentos e campanhas, e promove ações internas de incentivo para sua equipe de vendas. \n\nEssas estratégias impulsionam as vendas e proporcionam brindes especiais. O Calendário Milionário organiza todas essas ações, permitindo que sua loja conquiste o próximo nível de sucesso. \n\nQuer aprender como alcançar um faturamento milionário em sua rede? Temos um presente especial para você! \n\nComente EU QUERO para eu te enviar o link exclusivo para uma sessão estratégica gratuita com meu time de especialista e iniciar uma nova era de faturamentos nas suas lojas!💪📊💰\n\n #FaturamentoMilionário #CalendárioMilionário #EstratégiasDeVendas #SucessoNoVarejo #especialistasemvarejo",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m69/AQMl38O3RFD362fdhM9uq9TyQhC-UcRRwxUl1AvlRX_b8VmxYCc58ncZEzDmj78SonUHApXuWGdoZ0AqZ9s3xQw8.mp4?strext=1&_nc_cat=104&_nc_oc=AdqO48CzTP5lil5c3ZOdTg0Kclsie3teGYeUYFBx661YipUsRLr968kqFOiAY-eV764&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=1OGPH5kX93UQ7kNvwFrKJWR&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMjM4LnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjI1NTk4NjUzNjE4NTY4LCJhc3NldF9hZ2VfZGF5cyI6MTE4OCwidmlfdXNlY2FzZV9pZCI6MTAxMDEsImR1cmF0aW9uX3MiOjc3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQJpWTPsDNPlmDx9QTqdxbIM3lvzm0ePJGqdl-NHpOWD7A&oe=6AB0E3A6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "16 de jun de 2023",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "4246123722319667",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPtzivzAZBcCDeIyE39yvMGWmI8HuaUG04bi_-bigXT4tsm4dcPA4qBPn1sw3VH3znEm7PZ1Y7lI5tNjoIQOEWHd_O0wi6LISSTMd6ZPQ.mp4?_nc_cat=108&_nc_oc=Adoinb0qrUpjQpYgbMT-78y62bQbFbvOPcDCi-G9pVUBPe7kIg5H6bRHWt3TUNRPMKM&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=_gzUhb3xoIUQ7kNvwHMjbpd&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTQ1Mjg0NDE3OTY2NTc5MiwiYXNzZXRfYWdlX2RheXMiOjE1MiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjk5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQITNLvNNUu7cmKfIt692JBqhVYuDasZX25ASt3uZgvOQQ&oe=6AB0CF0E",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 6,
+        "data_inicio": "17 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1542588437596659",
+        "texto": "Assista até o final e descubra como a Terapia da Alma pode transformar sua vida! \n\nAprenda a lidar com desafios emocionais de forma \neficaz, seja para você mesmo ou para ajudar outras pessoas.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQOoeLPDKjcGA5RDyF7gGZYpvNvzOa2uWis22rJJkOk_-njgmob4W_e7bQHSidNFQLPSmPh2BqyMdqyHqUaqx7yjZ2WkQM1c8dReqYnGcA.mp4?_nc_cat=107&_nc_oc=Adrp_Egi-P0EENm3CriBFnat065kh26uYIXhfVOYD1Uo5xrxyyx6YV7UcCKpdy26dMo&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=Om3gcFurt8AQ7kNvwEq6qYI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6OTc0MjA3OTMyMzExMjk4LCJhc3NldF9hZ2VfZGF5cyI6MzksInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjoxMzAxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQL94VnCa_9DX9CFOxYoy-rN2_pQ69OttxMTDywR7L0VEg&oe=6AB0E6C3",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "8 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1426523575418099",
+        "texto": "Aqui estão algumas dicas práticas:\n\n1. Respire antes de responder\n • Por quê? Esses vícios muitas vezes surgem para preencher silêncios enquanto pensamos. Pratique pausar e respirar antes de falar, ao invés de usar palavras desnecessárias.\n • Como treinar: Faça pequenas pausas conscientes durante conversas, mesmo quando estiver nervoso.\n\n2. Substitua pelo silêncio\n • Por quê? O silêncio pode ser poderoso e demonstra controle e confiança na comunicação.\n • Como treinar: Grave-se falando sobre um tema qualquer e identifique os momentos em que surge um “né” ou “eééé”. Treine substituir esses momentos por uma pausa silenciosa.\n\n3. Planeje o que vai dizer\n • Por quê? Ter clareza sobre o que deseja comunicar ajuda a evitar que você preencha a fala com vícios.\n • Como treinar: Antes de reuniões ou apresentações, pratique mentalmente o que vai dizer e use tópicos para organizar suas ideias.\n\n4. Pratique a autoconsciência\n • Por quê? Reconhecer os próprios vícios de linguagem é o primeiro passo para eliminá-los.\n • Como treinar: Peça feedback de amigos ou colegas para identificar palavras ou expressões que você repete inconscientemente.\n\n5. Fale mais devagar\n • Por quê? Falar rápido demais aumenta a chance de vícios de linguagem.\n • Como treinar: Durante conversas ou apresentações, concentre-se em falar pausadamente, dando mais ênfase e clareza às palavras.\n\n6. Grave e escute suas falas\n • Por quê? Isso ajuda a identificar padrões e monitorar seu progresso.\n • Como treinar: Faça isso regularmente e tente corrigir os vícios aos poucos.\n\nTreinar consistentemente fará com que você elimine os vícios de linguagem e melhore sua comunicação!\n\n#concursopublico #delegadodepolicia #motivacao #oratoria",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m69/AQOycEZDBx2FFlpK5JalZMhNJLNjzIkWO55cXLQSlG_nk7hiwVV6hhYEr6kt0RhPY_wiuuHcq6zOTt3g0L0TZ7x_.mp4?strext=1&_nc_cat=104&_nc_oc=AdpPz5l3dJX5MHMT4RE57lxiK-tjndUHOfkbUAq-g4zf0sJfUGUVU0nBbkv8_rlsg1s&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=J6Cr_0bMwHIQ7kNvwHqSbLL&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MzgyMzY0MDczMTE5NDEwNSwiYXNzZXRfYWdlX2RheXMiOjYxNywidmlfdXNlY2FzZV9pZCI6MTAxMDEsImR1cmF0aW9uX3MiOjc2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQIG89eJpUfth4ag4PZsTnytfGteS4tyCXZ2HRbF_W-CEA&oe=6AB0D686",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "6 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1667402807697450",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQPMB4aGTlX1z4tFVrqgg-hpkK18NA-teBBt_U1eU8nHavhDsRc3iQv70Cv2vGccoobtb7yOJlsI2CG4h1wxDUxP4wE27oK1hIwIy04blg.mp4?_nc_cat=104&_nc_oc=AdqNIvpWzfvskzNahUtHojxk-yJ6EYif_QNjaKbL-meMSTLcHEkGr3emh0zOuFEra_A&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=egKuEJdxpOYQ7kNvwEk5cid&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjozMTMyNDUwMzQzNzYzMjAxLCJhc3NldF9hZ2VfZGF5cyI6NjQsInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjoyMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQJ0INDXn2VT6v4mk5QE9lJVOJU-2cXb5C2sja-SdVyZpA&oe=6AB0BBCE",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "12 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1459467599009881",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMTa6WZ2Cc9lc-77h-A7mMIjHiONkFzLBS_JWoS3Zw-MF0uIWCPFDaQPwF5ImKLdErStXWwkEteprjWxvsNyVLJN7cSsXhnUEEwNZY.mp4?_nc_cat=102&_nc_oc=AdrAT0i0ork0CjHJufvxd5ywYY2nOKn8folZBC7acr7MVfQ5P9DcHlv0-L3o-nOZUPY&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=LykDMwKD2N0Q7kNvwG40PTN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTc5NjEzNTk4NTkxMDYzMTUsImFzc2V0X2FnZV9kYXlzIjoxNDgsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo3MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=281df2712e9a19f3&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DMzQwNjlDOThCMjJCQjNCNTgwQ0Q2REE1Qzc0MTRCNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0M4NDg3MjIwOThBNkM2NTNFNTM1NTIwRTBCN0Y2NThBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaWiK6h3_DnPxUCKAJDMywXQFJAYk3S8aoYEmRhc2hfYmFzZWxpbmVfM192MREAdQBl5p0BAA&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQLQJ8zyuFIWHPrMeHJfTj__oXOKP3_pOeAfUVJpIyygfA&oe=6AACD977",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "29 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1101913389157827",
+        "texto": "Mais autonomia para o trabalho? Essa é por nossa conta.\nCompre R$ 1.000 ou mais em produtos STANLEY®, incluindo pelo menos 1 ferramenta V20, e ganhe¹ uma bateria 20V MAX* 4Ah.\nMais energia. Mais autonomia. Mais trabalho feito.\nAproveite a promoção.\n\n¹Consulte o regulamento completo.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQM6_aCt9Br6fEbHSKdkOvOXbOtJgYixh4Wn_mMUfO3nqZuKmrVS6GECP2n2uuNKheY69jhZg8Sws-OJAzNwAGhQNxqAWcgtsPlQu819VQ.mp4?_nc_cat=107&_nc_oc=Adr5g5m_epJtsXYyJpd6X2bJGI0O1uqxhvyF431oB13hC66ZnEpfSz4YCw3_mA2TGiY&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=XIiad8ooCIsQ7kNvwFXutbd&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NDA1NDU5Mjc4NDg0MjUzMSwiYXNzZXRfYWdlX2RheXMiOjE1LCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NDUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQLPQGj2dKGt19H4KnpJaA13sJ821qyyuVeApT7MoY5-3Q&oe=6AB0C77B",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "1 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1019152180357575",
+        "texto": "Realce sua beleza com o poder dos detalhes.\nO Sérum A-LINE para cílios e sobrancelhas foi criado para quem busca preencher falhas, fortalecer os fios e conquistar um olhar mais marcante — tudo isso com leveza, praticidade e eficácia comprovada.\nUm cuidado diário que transforma a sua autoestima, fio por fio. ✨\n\n#SérumALINE #CrescimentoNatural #CíliosFortes #SobrancelhasDefinidas #OlharMarcante #CuidadoQueTransforma #AutoestimaFeminina #ALINEFeminina #BelezaComTecnologia #BelezaNatural #CuidadosDiários",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPnJcZfgd0JdcCLuqkaX0qN7pFgdwlnOsnWKpb8jr8-P21QDrsXDIrbdsDnRJhbEFh-VYJ1TVC-3rtXgsIe7Dc.mp4?_nc_cat=105&_nc_oc=AdrzG_NJVsTjsM3PGPqpK0L8KMornKHGxOhXhJiQwSHQHnRW60KpkXp4pakXmHPtLW4&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=Jvogh-3e1t4Q7kNvwFa6cIl&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmFzaWNfaHExX3NkX3Byb2dyZXNzaXZlIiwieHB2X2Fzc2V0X2lkIjoxNTgzMDY4ODc2MjEyNzU0LCJhc3NldF9hZ2VfZGF5cyI6MjY3LCJ2aV91c2VjYXNlX2lkIjoxMDY4MCwiZHVyYXRpb25fcyI6MTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=rZqySkYq7kGCYWC9GH1XpQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQL89Y4IztxpSUKXsvzHFyVq_DXCP8HpPDthJaPlO-OhMA&oe=6AB0C819",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "9 de jun de 2025",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      }
+    ]
+  },
+  "relatorio_formatado": "## 1. RESUMO EXECUTIVO\n\nA análise identificou uma falha crítica na coleta de dados SEO, impedindo a correta indexação do site e limitando sua visibilidade nos mecanismos de busca. O panorama dos anúncios concorrentes mostra predominância do formato em vídeo, sugerindo uma tendência clara do mercado local. Não foram encontradas chamadas para ação (CTAs) comuns nos anúncios analisados, o que representa uma oportunidade de diferenciação. As três ações prioritárias recomendadas são: corrigir imediatamente os problemas de indexação SEO, adaptar a comunicação para o formato de vídeo e implementar CTAs mais eficazes nas campanhas digitais.\n\n## 2. PROBLEMAS IDENTIFICADOS\n\n- **Prioridade crítica:** Falha na coleta de dados SEO, com erro de acesso ao site durante a análise (referência: coleta_seo). Isso impede a indexação e prejudica a presença digital.\n  \n## 3. OPORTUNIDADES (Volume de anúncios)\n\nO mercado local apresenta um volume significativo de anúncios, com 76 peças coletadas. Destaca-se que 78% dos anúncios concorrentes utilizam o formato de vídeo, tornando-o o padrão do segmento. Os formatos de imagem são minoritários (22%). Não foram identificadas CTAs comuns nos anúncios analisados, o que indica espaço para inovar nas chamadas para ação. Os temas de destaque nos textos dos anúncios incluem quizzes, adaptações regionais e conteúdos educativos sobre produtos.\n\n## 4. PLANO DE AÇÃO ESTRATÉGICO\n\n### 4.1 Corrigir falhas de indexação SEO\n\n**Ação:** Resolver imediatamente os problemas técnicos que impedem a indexação do site.  \n**Evidência:** Erro crítico de coleta SEO identificado na análise, impossibilitando o rastreamento e indexação.  \n**Como executar:** Verificar e corrigir o arquivo robots.txt, usar o Google Search Console para identificar bloqueios, otimizar velocidade e garantir que o site seja rastreável por mecanismos de busca.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** Keywords-Agrupamento.md, Keywords-Research.md, SEO-on-Mobile.md\n\n### 4.2 Adotar o formato de vídeo nas campanhas\n\n**Ação:** Produzir e veicular anúncios em vídeo, alinhados às práticas do mercado local.  \n**Evidência:** 78% dos anúncios concorrentes utilizam vídeo, indicando maior engajamento e aceitação do público.  \n**Como executar:** Desenvolver vídeos com storytelling, depoimentos de clientes e demonstrações práticas, focando em temas relevantes para o público local.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** Estrategias-Social-Media-Sprout-Social.md, Marketing-Digital-Strategy.md, YouTube-Subscribers-Reflections.md\n\n### 4.3 Implementar CTAs eficazes e personalizadas\n\n**Ação:** Criar chamadas para ação claras e adaptadas ao público local.  \n**Evidência:** Ausência de CTAs comuns nos anúncios concorrentes, abrindo espaço para diferenciação.  \n**Como executar:** Testar CTAs que incentivem ações diretas, como ligações ou visitas a páginas específicas, e personalizar mensagens conforme o perfil do público.  \n**Prioridade:** Média  \n**Esforço:** Baixo  \n**Fontes:** Online-Adversiting.md\n\n### 4.4 Otimizar presença local e conteúdo\n\n**Ação:** Fortalecer a presença digital local e adaptar o conteúdo para a região de Cascavel (PR).  \n**Evidência:** Recomendações de SEO local e exemplos de campanhas regionais bem-sucedidas.  \n**Como executar:** Otimizar o Google Business Profile, criar conteúdo com referências locais e buscar parcerias para obtenção de links regionais.  \n**Prioridade:** Média  \n**Esforço:** Médio  \n**Fontes:** Keywords-Research.md, SEO-on-Mobile.md, Estrategias-Social-Media-Sprout-Social.md, Online-Adversiting.md\n\n### 4.5 Referenciar campanhas de cadastro online bem-sucedidas\n\n**Ação:** Utilizar exemplos de campanhas de cadastro online (fluxo evergreen) como referência para adaptar o fluxo de captação.  \n**Evidência:** Existência de campanhas regionais com alto engajamento e conversão, baseadas em segmentação e personalização.  \n**Como executar:** Analisar campanhas de sucesso, adaptar estratégias de segmentação e personalização para o público de Cascavel, e aplicar aprendizados práticos no fluxo de cadastro.  \n**Prioridade:** Baixa  \n**Esforço:** Médio  \n**Fontes:** Estrategias-Social-Media-Sprout-Social.md, Online-Adversiting.md",
+  "execucao": {
+    "tempos_s": {
+      "interpretacao": 1.57,
+      "coleta": 20.97,
+      "analise": 9.9,
+      "relatorio": 8.95,
+      "total": 41.4
+    },
+    "interprete_status": "sucesso_llm",
+    "seo_status": "Erro durante a análise: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://preencher/\nCall log:\n  - navigating to \"https://preencher/\", waiting until \"load\"\n",
+    "n_anuncios_coletados": 76,
+    "n_problemas": 1,
+    "n_oportunidades": 1,
+    "n_recomendacoes": 5,
+    "n_recomendacoes_com_fontes": 5,
+    "falhas_tratadas": [],
+    "custo_usd": 0.0376
+  }
+}

@@ -1,0 +1,877 @@
+{
+  "metadados": {
+    "url_analisada": "https://www.prolaje.com.br",
+    "termo_busca": "lajes pré-moldadas",
+    "prompt_usuario": "Eles contrataram uma agência de marketing, que funciona, mas faz um trabalho muito ruim. Querem um direcionamento do que melhorar no marketing digital para aumentar branding e conseguir mais clientes.",
+    "diretivas_interpretadas": {
+      "foco_analise": [
+        "conteudo",
+        "seo_geral",
+        "anuncios_geral",
+        "analise_cta",
+        "analise_criativos",
+        "performance"
+      ],
+      "hipoteses_usuario": [
+        "A agência de marketing contratada não está entregando bons resultados.",
+        "Há necessidade de melhorar o branding.",
+        "Desejam aumentar a captação de clientes.",
+        "Precisam de direcionamento sobre o que melhorar no marketing digital."
+      ],
+      "status": "sucesso_llm"
+    },
+    "timestamp_analise": "2026-09-16T16:24:59.080536",
+    "versao_orquestrador": "3.2",
+    "modelo_llm": "openai/gpt-4.1",
+    "modelo_embeddings": "mistralai/mistral-embed-2312",
+    "agentes_utilizados": [
+      "Agente Intérprete",
+      "Agente Coletor Meta",
+      "Agente Arquiteto",
+      "Agente Analista",
+      "Agente Estrategista"
+    ]
+  },
+  "analise_completa": {
+    "resumo_executivo": "Análise concluída. 3 problema(s), 0 oportunidade(s) e 5 recomendação(ões).",
+    "contexto": {
+      "prompt_original": "Eles contrataram uma agência de marketing, que funciona, mas faz um trabalho muito ruim. Querem um direcionamento do que melhorar no marketing digital para aumentar branding e conseguir mais clientes.",
+      "termo_busca": "lajes pré-moldadas",
+      "foco_analise": [
+        "conteudo",
+        "seo_geral",
+        "anuncios_geral",
+        "analise_cta",
+        "analise_criativos",
+        "performance"
+      ],
+      "hipoteses_usuario": [
+        "A agência de marketing contratada não está entregando bons resultados.",
+        "Há necessidade de melhorar o branding.",
+        "Desejam aumentar a captação de clientes.",
+        "Precisam de direcionamento sobre o que melhorar no marketing digital."
+      ]
+    },
+    "problemas_identificados": [
+      {
+        "regra": "titulo_tamanho",
+        "categoria": "SEO",
+        "problema": "Título com 27 caracteres (faixa recomendada: 30–60).",
+        "prioridade": "média",
+        "referencia": "Google Search Central: title links e snippets"
+      },
+      {
+        "regra": "imagens_sem_alt",
+        "categoria": "Acessibilidade/SEO",
+        "problema": "7 imagem(ns) sem atributo alt.",
+        "prioridade": "média",
+        "referencia": "WCAG 2.x 1.1.1"
+      },
+      {
+        "regra": "open_graph_ausente",
+        "categoria": "Redes sociais",
+        "problema": "Sem marcações Open Graph (prévia ao compartilhar links).",
+        "prioridade": "baixa",
+        "referencia": "Open Graph Protocol / Meta Sharing Debugger"
+      }
+    ],
+    "oportunidades_identificadas": [],
+    "panorama_anuncios": {
+      "total_coletado": 42,
+      "criativos": {
+        "Vídeo": 17,
+        "Imagem": 25
+      },
+      "proporcao_video": 0.4,
+      "ctas_mais_comuns": [],
+      "anuncios_com_data_inicio": 42,
+      "amostra_textos": [
+        "Laje e concreto bombeado! Faça o seu orçamento conosco! 🏠  Rua Irineu Pedroso 500 Nova Iguaçu RJ Km 191 da Dutra, depois da Coca-Cola.  #laje #lajedeisopor #concreto #novaiguacu #baixadafluminense",
+        "Somos uma empresa especializada na fabricação de Lajes pré-moldadas tipo Treliçada com isopor; Materiais de qualidade, atendimento diferenciado e pontualidade na entrega; Entre em contato e solicite s",
+        "Sua obra precisa de lajes pré-moldadas e concreto bombeado?  A Concresim tem 30+ anos no mercado, garantindo qualidade! Lajes duráveis Concreto bombeado para eficiência e segurança Parcelamos em até 1",
+        "Pare de comprar material de construção pagando mais caro. 🚨  Direto da fábrica pra sua obra.  ✔ Lajes e ferragens sob medida ✔ Mais de 20 anos de mercado ✔ Qualidade que construtor confia  Se você est",
+        "LAJES PRÉ MOLDADAS | FAÇA SEU ORÇAMENTO!   Há mais de 14 anos, a Luciano Pré Moldados se dedica à fabricação de lajes pré-moldadas, incluindo vigotas convencionais e treliçadas, além de materiais de e"
+      ],
+      "observacao": "Recorte da Biblioteca de Anúncios da Meta para o termo informado; não representa todo o setor."
+    },
+    "recomendacoes_estrategicas": [
+      {
+        "pergunta": "Quais práticas de SEO local e otimização de conteúdo são mais eficazes para empresas de lajes pré-moldadas em Nova Iguaçu e região, considerando a baixa presença de marcações Open Graph e imagens sem alt na página?",
+        "recomendacao": "Para empresas de lajes pré-moldadas em Nova Iguaçu e região, algumas práticas eficazes de SEO local incluem investir em conteúdo local relevante, criar e otimizar um perfil no Google Business Profile, incentivar avaliações de clientes e adicionar fotos de qualidade. É importante também utilizar dados estruturados, como NAP (nome, endereço e telefone), produtos e reviews, para facilitar o destaque nos resultados de busca locais.\n\nNa otimização de conteúdo, recomenda-se escrever textos adaptados para telas pequenas, com frases e parágrafos curtos, listas e títulos claros. Os meta titles e descriptions devem ser mais curtos para mobile. Para compensar a ausência de marcações Open Graph e imagens sem alt, é fundamental adicionar textos alternativos descritivos em todas as imagens, o que melhora a acessibilidade e o ranqueamento. Além disso, a implementação de Schema pode aumentar a visibilidade nos resultados de busca, gerando rich snippets e cards.\n\nPor fim, monitorar o desempenho com ferramentas como Google Search Console e PageSpeed Insights ajuda a identificar oportunidades de melhoria contínua, garantindo que o site seja rápido, rastreável e ofereça uma ótima experiência ao usuário móvel.",
+        "fontes": [
+          "Keywords-Research.md",
+          "Marketing-Digital-Strategy.md",
+          "SEO-on-Mobile.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8259,
+            "trecho": "O update Page Experience introduz experiência do usuário como fator de SEO, além da velocidade de site. Core Web Vitals ajuda a priorizar melhorias. Como melhorar o SEO móvel SEO móvel, como o SEO regular, exige que seu site seja rastreadorável e encontrado, além de ter alto desempenho, ótimo conteú"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8171,
+            "trecho": "O que é SEO móvel? SEO móvel significa otimização para motores de busca em dispositivos móveis. SEO móvel trata de oferecer uma experiência excepcional aos visitantes do seu site móvel. Isso inclui fazer seu site carregar rapidamente, sem problemas, e apresentar conteúdo de qualidade que corresponda"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8152,
+            "trecho": "O Google continua a incentivar os chamados resultados ricos — muitas vezes impulsionados por dados estruturados — que são mais evidentes no mobile. Pesquisar voos, eventos, empregos, filmes, música, produtos e até fatos simples acionará um resultado rico do Google. Isso se tornará cada vez mais comu"
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.803,
+            "trecho": "Estratégia de Marketing Digital 6️⃣ Otimização Contínua **O que é:** Ajustes constantes em anúncios, palavras-chave, segmentação e landing pages com base em desempenho histórico. **Por que é importante:** Permite aumentar ROI ao priorizar estratégias que geram mais cliques, leads ou vendas, enquanto"
+          },
+          {
+            "arquivo": "Keywords-Research.md",
+            "score": 0.8023,
+            "trecho": "Pesquisa de Palavras-Chave: O Guia Completo Quando fazer pesquisa de palavras-chave? 2️⃣ Estratégia de conteúdo SEO e conteúdo caminham juntos. Cada peça de conteúdo deve ser construída em torno de uma palavra-chave com equilíbrio entre volume de busca e competitividade, para atender ao que o públic"
+          }
+        ]
+      },
+      {
+        "pergunta": "Quais estratégias de branding digital, específicas para o setor de construção civil na Baixada Fluminense, têm maior impacto comprovado na diferenciação e reconhecimento de marca para pequenas empresas como a Prolaje?",
+        "recomendacao": "Para pequenas empresas do setor de construção civil na Baixada Fluminense, estratégias de branding digital com maior impacto na diferenciação e reconhecimento de marca incluem:\n\n- Amplificação de brand awareness por meio do desenvolvimento de conteúdos que aumentem a visibilidade e reforcem a imagem da marca, utilizando campanhas multicanal para garantir consistência e reconhecimento.\n- Estruturação e organização da presença da marca em múltiplas plataformas sociais, com planejamento e publicação consistente de conteúdo para manter o engajamento do público.\n- Coordenação de campanhas e interações nas redes sociais com fluxos de trabalho claros, garantindo que a comunicação seja eficiente e alinhada à identidade da empresa.\n\nEssas ações ajudam a destacar a marca no mercado local, tornando-a mais reconhecida e diferenciada perante concorrentes.",
+        "fontes": [
+          "Marketing-Digital-Strategy.md",
+          "Social-Media-Strategy-Sprout-Social.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Social-Media-Strategy-Sprout-Social.md",
+            "score": 0.8325,
+            "trecho": "Estratégias de Social Media Amplificação de Brand Awareness - Maximize o impacto e alcance das ações de marketing social. - Desenvolva conteúdos que aumentem a visibilidade da marca e reforcem sua imagem. - Coordene campanhas multicanal para maior consistência e reconhecimento da marca."
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8218,
+            "trecho": "Estratégia de Marketing Digital 1️⃣ Publicidade Baseada em Intenção Este guia resume os principais conceitos e práticas de marketing digital voltados para publicidade paga e geração de tráfego qualificado. --- **O que é:** Exposição de anúncios pagos no momento exato em que usuários buscam produtos "
+          },
+          {
+            "arquivo": "Social-Media-Strategy-Sprout-Social.md",
+            "score": 0.8183,
+            "trecho": "Estratégias de Social Media Gestão de Redes Sociais - Estruture e organize a presença da marca em múltiplas plataformas sociais. - Planeje, crie e publique conteúdo de forma consistente para manter engajamento. - Utilize fluxos de trabalho claros para coordenar postagens, campanhas e interações."
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8131,
+            "trecho": "Estratégia de Marketing Digital 8️⃣ Métricas Estratégicas de Performance **O que é:** Monitoramento de CTR (click-through rate), CPC, posição do anúncio, impressões e conversões. **Por que é importante:** Fornece dados concretos para tomadas de decisão, permitindo ajustes estratégicos e mensuração c"
+          },
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8122,
+            "trecho": "Estratégia de Marketing Digital 3️⃣ Segmentação por Palavras-Chave **O que é:** Seleção de palavras e expressões que refletem a intenção de busca dos usuários, definindo quando e onde os anúncios aparecem. **Por que é importante:** Garante que o tráfego gerado seja altamente relevante, reduzindo des"
+          }
+        ]
+      },
+      {
+        "pergunta": "Com base no panorama dos anúncios concorrentes, quais formatos de criativos (imagem vs. vídeo) e CTAs têm gerado maior engajamento e conversão para empresas de lajes na região, e como a Prolaje pode adaptar suas campanhas para superar a performance atual?",
+        "recomendacao": "Para empresas de lajes, a diversificação dos formatos de anúncio é fundamental para aumentar o alcance e o reconhecimento da marca. Formatos como anúncios em vídeo e imagem têm potencial para engajar usuários em diferentes pontos de contato online. O uso de vídeos pode ser especialmente eficaz para demonstrar diferenciais do produto e criar narrativas envolventes, enquanto imagens bem produzidas ajudam a destacar características técnicas e visuais das lajes.\n\nCTAs claros e personalizados, alinhados ao perfil do público-alvo, tendem a gerar maior engajamento e conversão. Recomenda-se utilizar CTAs que incentivem ações diretas, como “Solicite um orçamento”, “Veja nossos projetos” ou “Fale com um especialista”. A segmentação detalhada por interesses, comportamento de compra e dados demográficos permite que as campanhas sejam altamente relevantes para quem realmente tem potencial de compra.\n\nPara superar a performance atual, a Prolaje pode:\n- Investir em uma combinação de anúncios em vídeo e imagem, testando diferentes abordagens criativas.\n- Utilizar dados de interações anteriores para personalizar mensagens e CTAs.\n- Monitorar métricas como taxa de clique, custo por conversão e engajamento para ajustar continuamente as campanhas.\n- Implementar estratégias de storytelling para fortalecer o vínculo com a audiência e incentivar compartilhamentos.\n- Explorar programas de advocacy, incentivando clientes satisfeitos a compartilhar suas experiências.\n\nEssas ações permitem que a Prolaje aumente o engajamento e a conversão, destacando-se frente aos concorrentes na região.",
+        "fontes": [
+          "Estrategias-Social-Media-Sprout-Social.md",
+          "Marketing-Digital-Strategy.md",
+          "Online-Adversiting.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.8437,
+            "trecho": "Estratégia de Marketing Digital 2️⃣ Tipos de Campanhas e Formatos de Anúncio **O que é:** Diferentes formatos de anúncios (busca, display, shopping, vídeo) para atingir o público em múltiplos pontos de contato online. **Por que é importante:** Diversificar formatos permite engajar usuários em difere"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8378,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Publicidade Online: Redes Sociais Pagas (Paid Social) Redes sociais são um dos principais locais onde os usuários passam seu tempo, e a publicidade paga nessas plataformas permite que anunciantes alcancem usuários de forma segmentada. - Permite segme"
+          },
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.8287,
+            "trecho": "Estratégias de Social Media Engajamento com a Audiência - Monitoramento de comentários, mensagens e menções para respostas rápidas e contextualizadas. - Uso de dados para personalizar interações e aumentar fidelização. - Estratégias de storytelling para engajar a comunidade e gerar compartilhamentos"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8265,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Conclusão Campanhas de publicidade online bem-sucedidas dependem da combinação estratégica de anúncios pagos, segmentação precisa, páginas de destino otimizadas e análise constante de desempenho. Uma abordagem integrada permite maximizar o retorno so"
+          },
+          {
+            "arquivo": "Online-Adversiting.md",
+            "score": 0.8262,
+            "trecho": "Publicidade Online: Como Criar Campanhas Eficazes Elementos de uma Campanha de Publicidade Online Analytics - Monitoramento do desempenho da campanha. - Métricas importantes: taxa de clique (CTR), custo por conversão, participação de impressões, entre outras. - Ferramentas de analytics ajudam a ente"
+          }
+        ]
+      },
+      {
+        "pergunta": "Quais ajustes práticos e de baixo custo podem ser implementados imediatamente no site da Prolaje para corrigir os principais problemas de SEO e acessibilidade identificados (título curto, imagens sem alt, ausência de Open Graph)?",
+        "recomendacao": "Para corrigir rapidamente os principais problemas de SEO e acessibilidade, algumas ações práticas e de baixo custo podem ser implementadas:\n\n1. **Ajustar o título da página**: Amplie o título para incluir palavras-chave relevantes e descrever melhor o conteúdo da página, tornando-o mais atrativo para buscas móveis e desktop.\n\n2. **Adicionar textos alternativos (alt) nas imagens**: Insira descrições claras e objetivas em todas as imagens do site. Isso melhora a acessibilidade para pessoas com deficiência visual e contribui para o SEO, já que o Google utiliza esses textos para entender o conteúdo visual.\n\n3. **Implementar tags Open Graph**: Adicione as principais tags Open Graph no código HTML (como og:title, og:description e og:image). Isso garante que, ao compartilhar o site em redes sociais, as informações exibidas sejam corretas e atrativas, aumentando o engajamento.\n\nEssas mudanças podem ser feitas rapidamente, geralmente apenas editando o código HTML ou utilizando plugins, caso o site utilize um CMS. Além disso, são ações que não exigem grandes investimentos e já trazem melhorias significativas tanto para SEO quanto para acessibilidade.",
+        "fontes": [
+          "SEO-on-Mobile.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8308,
+            "trecho": "O update Page Experience introduz experiência do usuário como fator de SEO, além da velocidade de site. Core Web Vitals ajuda a priorizar melhorias. Como melhorar o SEO móvel SEO móvel, como o SEO regular, exige que seu site seja rastreadorável e encontrado, além de ter alto desempenho, ótimo conteú"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8156,
+            "trecho": "O Google continua a incentivar os chamados resultados ricos — muitas vezes impulsionados por dados estruturados — que são mais evidentes no mobile. Pesquisar voos, eventos, empregos, filmes, música, produtos e até fatos simples acionará um resultado rico do Google. Isso se tornará cada vez mais comu"
+          },
+          {
+            "arquivo": "SEO-on-Mobile.md",
+            "score": 0.8153,
+            "trecho": "O que é SEO móvel? SEO móvel significa otimização para motores de busca em dispositivos móveis. SEO móvel trata de oferecer uma experiência excepcional aos visitantes do seu site móvel. Isso inclui fazer seu site carregar rapidamente, sem problemas, e apresentar conteúdo de qualidade que corresponda"
+          }
+        ]
+      },
+      {
+        "pergunta": "Considerando a hipótese de que a agência atual não entrega resultados satisfatórios, quais indicadores de performance digital (KPIs) são mais relevantes para monitorar o aumento de captação de clientes e fortalecimento de branding nesse nicho/localidade?",
+        "recomendacao": "Os indicadores de performance digital mais relevantes para monitorar o aumento de captação de clientes e o fortalecimento de branding incluem:\n\n- Taxa de conversão, especialmente leads ou vendas originadas dos canais digitais.\n- Crescimento de seguidores e audiência nas redes sociais.\n- Engajamento médio por postagem, como curtidas, comentários e compartilhamentos.\n- Alcance e impressões das campanhas, para avaliar a exposição da marca.\n- Custo por aquisição ou engajamento, permitindo mensurar a eficiência dos investimentos.\n- Monitoramento de CTR (taxa de cliques), CPC (custo por clique), posição dos anúncios e número de conversões.\n- Análise de padrões de engajamento para identificar conteúdos de maior impacto e ajustar estratégias conforme o comportamento do público.\n\nEsses KPIs permitem avaliar tanto o impacto direto na geração de novos clientes quanto o fortalecimento da presença e percepção da marca no mercado.",
+        "fontes": [
+          "Benchmark-Social-Media-Sprout-Social.md",
+          "Estrategias-Social-Media-Sprout-Social.md",
+          "Marketing-Digital-Strategy.md",
+          "Medicao-ROI-Social-Media.md"
+        ],
+        "fontes_detalhe": [
+          {
+            "arquivo": "Marketing-Digital-Strategy.md",
+            "score": 0.875,
+            "trecho": "Estratégia de Marketing Digital 8️⃣ Métricas Estratégicas de Performance **O que é:** Monitoramento de CTR (click-through rate), CPC, posição do anúncio, impressões e conversões. **Por que é importante:** Fornece dados concretos para tomadas de decisão, permitindo ajustes estratégicos e mensuração c"
+          },
+          {
+            "arquivo": "Medicao-ROI-Social-Media.md",
+            "score": 0.8675,
+            "trecho": "Medição e ROI em Social Media Definição de Métricas Relevantes - Estabeleça KPIs claros alinhados aos objetivos de negócio, como: - Alcance e impressões - Engajamento (curtidas, comentários, compartilhamentos) - Taxa de conversão e leads gerados - Crescimento de seguidores e audiência - Priorize mét"
+          },
+          {
+            "arquivo": "Medicao-ROI-Social-Media.md",
+            "score": 0.8591,
+            "trecho": "Medição e ROI em Social Media Monitoramento de Performance - Utilize dados de interação para acompanhar o desempenho de campanhas. - Analise padrões de engajamento para identificar conteúdo de maior impacto. - Ajuste estratégias com base em dados de comportamento do público."
+          },
+          {
+            "arquivo": "Benchmark-Social-Media-Sprout-Social.md",
+            "score": 0.8591,
+            "trecho": "Conteúdos Educacionais e Benchmarks em Social Media Métricas e Avaliação de Resultados - Avalie indicadores-chave de desempenho (KPIs) para medir eficácia de estratégias. - Estabeleça benchmarks internos com base em dados históricos da marca. - Ajuste abordagens estratégicas usando insights educacio"
+          },
+          {
+            "arquivo": "Estrategias-Social-Media-Sprout-Social.md",
+            "score": 0.85,
+            "trecho": "Métricas e ROI em Social Media KPIs e Benchmarks - Taxa de conversão social: leads ou vendas originadas de canais sociais. - Crescimento de seguidores e engajamento médio por postagem. - Identificação de benchmarks setoriais e práticas do mercado. - Avaliação de custo por engajamento ou aquisição so"
+          }
+        ]
+      }
+    ],
+    "falhas_tratadas": []
+  },
+  "dados_coletados": {
+    "seo": {
+      "url": "https://www.prolaje.com.br",
+      "status": "Sucesso",
+      "titulo": "Prolaje - Lajes Protendidas",
+      "meta_description": "Prolaje - Lajes Protendidas para Construções Rápidas e Eficientes. Economia Real e Estruturas de Alta Resistência. Descubra Agora!",
+      "meta_keywords": "",
+      "tags_cabecalho": {
+        "h1": [
+          "Agency"
+        ],
+        "h2": [
+          "Construtora vê custo 8,4% menor na adoção de laje protendida em vez de treliçada",
+          "Lajes Pré-fabricadas",
+          "Lajes pré-moldadas e protendidas",
+          "Tem um projeto em mente?"
+        ],
+        "h4": [
+          "Obras em Andamento",
+          "Sucesso Garantido",
+          "Obras Realizadas",
+          "Clientes"
+        ]
+      },
+      "contagem_palavras": 402,
+      "imagens_sem_alt": [
+        "https://prolaje.com.br/wp-content/uploads/2017/02/3070-MOGI-DAS-CRUZES-4.jpg",
+        "SRC não encontrado",
+        "SRC não encontrado",
+        "SRC não encontrado",
+        "SRC não encontrado",
+        "SRC não encontrado",
+        "SRC não encontrado"
+      ],
+      "links_internos": 4,
+      "links_externos": 57,
+      "links_quebrados": [],
+      "tempo_carregamento": 1.29,
+      "mobile_friendly": true,
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://prolaje.com.br/",
+              "url": "https://prolaje.com.br/",
+              "name": "Prolaje - Lajes Protendidas",
+              "isPartOf": {
+                "@id": "https://prolaje.com.br/#website"
+              },
+              "about": {
+                "@id": "https://prolaje.com.br/#organization"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://prolaje.com.br/#primaryimage"
+              },
+              "image": {
+                "@id": "https://prolaje.com.br/#primaryimage"
+              },
+              "thumbnailUrl": "https://prolaje.com.br/wp-content/uploads/2017/02/3070-MOGI-DAS-CRUZES-4.jpg",
+              "datePublished": "2022-01-12T07:02:03+00:00",
+              "dateModified": "2024-03-19T14:45:39+00:00",
+              "description": "Prolaje - Lajes Protendidas para Construções Rápidas e Eficientes. Economia Real e Estruturas de Alta Resistência. Descubra Agora!",
+              "breadcrumb": {
+                "@id": "https://prolaje.com.br/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://prolaje.com.br/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "pt-BR",
+              "@id": "https://prolaje.com.br/#primaryimage",
+              "url": "https://prolaje.com.br/wp-content/uploads/2017/02/3070-MOGI-DAS-CRUZES-4.jpg",
+              "contentUrl": "https://prolaje.com.br/wp-content/uploads/2017/02/3070-MOGI-DAS-CRUZES-4.jpg",
+              "width": 1600,
+              "height": 900
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://prolaje.com.br/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://prolaje.com.br/#website",
+              "url": "https://prolaje.com.br/",
+              "name": "Prolaje",
+              "description": "Lajes protendidas",
+              "publisher": {
+                "@id": "https://prolaje.com.br/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://prolaje.com.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://prolaje.com.br/#organization",
+              "name": "Prolaje",
+              "url": "https://prolaje.com.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://prolaje.com.br/#/schema/logo/image/",
+                "url": "https://i2.wp.com/prolaje.com.br/wp-content/uploads/2017/01/LOGO_PROLAJE_500px.png?fit=500%2C85&ssl=1",
+                "contentUrl": "https://i2.wp.com/prolaje.com.br/wp-content/uploads/2017/01/LOGO_PROLAJE_500px.png?fit=500%2C85&ssl=1",
+                "width": 500,
+                "height": 85,
+                "caption": "Prolaje"
+              },
+              "image": {
+                "@id": "https://prolaje.com.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/prolaje",
+                "https://www.linkedin.com/company/prolaje-lajes-protendidas"
+              ]
+            }
+          ]
+        }
+      ],
+      "canonical_url": "https://prolaje.com.br/",
+      "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "open_graph": {},
+      "twitter_cards": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Prolaje - Lajes Protendidas",
+        "twitter:description": "Prolaje - Lajes Protendidas para Construções Rápidas e Eficientes. Economia Real e Estruturas de Alta Resistência. Descubra Agora!",
+        "twitter:image": "https://prolaje.com.br/wp-content/uploads/2017/02/3070-MOGI-DAS-CRUZES-4.jpg"
+      },
+      "performance_metrics": {
+        "dom_content_loaded": 0,
+        "load_complete": 0,
+        "first_paint": 1240,
+        "first_contentful_paint": 1240
+      },
+      "rede_ociosa": true,
+      "tempo_ate_rede_ociosa": 1.99
+    },
+    "anuncios": [
+      {
+        "id": "2264813390714344",
+        "texto": "Laje e concreto bombeado! Faça o seu orçamento conosco! 🏠\n\nRua Irineu Pedroso 500 Nova Iguaçu RJ\nKm 191 da Dutra, depois da Coca-Cola.\n\n#laje #lajedeisopor #concreto #novaiguacu #baixadafluminense",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQP1PtsNQOw205JPBIstbhzRc_MU16FLTRH9DLW1pxfQdY-W0arzN-SyhlIs9UcwM55AcQYvGjD_kJY61TtkyRnn.mp4?_nc_cat=109&_nc_oc=Ado5RGuk5REqkwTJH9l6U3mUWi0a4VfcDwW_8Ck2V4QtUgEc_dKg2TDu-C4_Mla6B88&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=haduL3SRpB0Q7kNvwGw7gg4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTgxNTU4NTQyMDQ0NDI2MzksImFzc2V0X2FnZV9kYXlzIjoxOTMsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1MiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=e60b7014c0afb8d0&_nc_vs=HBksFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yMTMzNTU0NTY3NDA5NTE4XzU0ODE4OTU3MTI4NTEyNTQzMzcubXA0FQACyAESABUCGFFpZ194cHZfcGxhY2VtZW50X3Blcm1hbmVudF92Mi8xMjQ0MDUzNjI5ODRFNkVBQUNBREYzMzNDRUM2QzQ5NF9hdWRpb19kYXNoaW5pdC5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmnuCYh-epwEAVAigCQzMsF0BKFT987ZFoGBJkYXNoX2Jhc2VsaW5lXzNfdjERAHUAZeadAQA&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQKC9xGnNveIeXMO-8mrvgqJo8NgRbcSqGHJSJ-aC9qQ8A&oe=6AACC1DD",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "9 de mar de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1213191539781008",
+        "texto": "Somos uma empresa especializada na fabricação de Lajes pré-moldadas tipo Treliçada com isopor;\nMateriais de qualidade, atendimento diferenciado e pontualidade na entrega;\nEntre em contato e solicite seu orçamento;",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/434721259_956913659365140_8235142000334818024_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZK2SkYuPTR8Q7kNvwFKXjeh&_nc_oc=Adpbff_Dy-uOF7xI1FxtJyuWmPKQJ8XdPNTC0ybbGwKwgiTMDL42zPXs6HeFLDkHZ8g&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&oh=00_AQLBEE3-kpl3aL6wCrEk_ejXOJyiJOo_TfmJJBcZ2CauSA&oe=6AB0B347",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "5 de dez de 2024",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2167560737335779",
+        "texto": "Sua obra precisa de lajes pré-moldadas e concreto bombeado? \nA Concresim tem 30+ anos no mercado, garantindo qualidade!\nLajes duráveis\nConcreto bombeado para eficiência e segurança\nParcelamos em até 12x\nAtendimento rápido\n\nPrecisa de um orçamento? Clique aqui!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMMLvvy3wSzEIO7z_1k_ppvdTrjEJ-dJCoe-4pVdKeYu3snamj54X7oYjYvZJ3nd9ePhJ6spdFRXBPpPYRH6eHD1wZ79PYU1FtcGsfdeA.mp4?_nc_cat=110&_nc_oc=AdowFXaEGhBUZT67qmGBCooddpyE-P3kk0JLx99WUdy_a6BzrKRXQwzeQqPfmysqW00&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=DzYlXFVqgi8Q7kNvwGVT7bF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTExNjE3MDA1Mzc3MTA1NSwiYXNzZXRfYWdlX2RheXMiOjQyMSwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjYwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQI-TxfwhBDWvW8keIxFp8-Bvp0PHfiWy6dy55aMQj-FKA&oe=6AB0D2E8",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "8 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1891638391544813",
+        "texto": "Pare de comprar material de construção pagando mais caro. 🚨\n\nDireto da fábrica pra sua obra.\n\n✔ Lajes e ferragens sob medida\n✔ Mais de 20 anos de mercado\n✔ Qualidade que construtor confia\n\nSe você está construindo ou reformando, precisa ver isso 👇\n👉 Acesse nosso perfil e conheça",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNNxuQsgWOee_MHjy1U5OuSGPBMA30eld_U_fStn_D_QAJkBPhDeGmv8M-UIaLJzUncOJi8pMBGkOTw6t7HW9iPrC5TSgLucwK22WUlVw.mp4?_nc_cat=111&_nc_oc=AdoOyQ4JqJgMFHkBtKYdDez9z2ohLC6qe-jb2gL4u6ysk63bX6XffC_cJqLYSlB9zjU&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=SvtsVe7PEH0Q7kNvwHkoPOI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjcyNDg5ODQxMTIxNDQ2MiwiYXNzZXRfYWdlX2RheXMiOjE1MywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjkxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQJrT9J3h4vt3ni9qe1mlNFZOHjbzb0eeNlXkxCFrOh7FA&oe=6AB0C793",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "16 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1037420085565081",
+        "texto": "LAJES PRÉ MOLDADAS | FAÇA SEU ORÇAMENTO! \n\nHá mais de 14 anos, a Luciano Pré Moldados se dedica à fabricação de lajes pré-moldadas, incluindo vigotas convencionais e treliçadas, além de materiais de enchimento em cerâmica e EPS.\n\nToque no botão e faça seu orçamento.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/780445244_910409118320821_2897321535414780213_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4aHh6zYHi9IQ7kNvwGwu7Al&_nc_oc=Adr0igFO_ErB0j9Y5qIVj3ECgiG6lJLtBx04U5Txf216vZ5FTc1ndKDEaXUJKUaemBA&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&oh=00_AQLKV_QtGFIGzTnV9xdUVtKQDGPKmZWr312cfgPUWPUUFg&oe=6AB0CD3D",
+        "tipo_criativo": "Imagem",
+        "plataformas": 2,
+        "data_inicio": "19 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "855373054297957",
+        "texto": "Vai construir ou reformar? 🏗️\n\nCompre direto da fábrica e economize de verdade.\n\n✔ Lajes pré-moldadas\n✔ Ferragens sob medida\n✔ Entrega rápida\n\n📲 Clique no botão e peça seu orçamento agora",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQM27hI3Xa8-0i4bvwiycFV3oWJxOFQcxRsno-P7V155AU55kZVyLFPPC2AmTizTK9XMbR-GEd-yhu-egE6aIjnSBNDH91dzV2fpyvqVlg.mp4?_nc_cat=110&_nc_oc=AdojfnnmeWRiA8UFK3uHV83458iiJomE1lfJmDWh9x8SNcCN8MEgC-I7wY21eBAnuSc&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=QWqLdhg_LgcQ7kNvwFPnQbN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTM1MDc4NDkyMzU0NTg4MCwiYXNzZXRfYWdlX2RheXMiOjE1MywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjQyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQJTeUIUgeqePiVTI7S7dbvOxy6f1g4MQPdV-iOZO8NThQ&oe=6AB0B33C",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "8 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2717787815287330",
+        "texto": "🏗️ Vai construir e precisa de lajes pré-moldadas de confiança em Manaus?\nA J&R MIX entrega qualidade, rapidez e o melhor custo-benefício para sua obra!\n\n✨ Por que nossas lajes fazem a diferença?\n✔️ Resistência e durabilidade comprovadas\n✔️ Padrão técnico que garante segurança\n✔️ Entrega ágil direto para sua obra\n✔️ Atendimento profissional do início ao fim\n\n📞 Peça seu orçamento agora: [telefone]\n📍 Av. Elias Ramiro Bentes, 918B – Colônia Terra Nova\n\n🔥 Não corra riscos na sua construção. Escolha lajes pré-moldadas feitas por quem entende!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/681831690_897423506661863_6844922692689319352_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B1naIBEfS-QQ7kNvwHCVWlb&_nc_oc=AdoBLacBVTA2AdLy5O4xhsHLspfKr_YUfevCELItu-qjN5R9ti3EIHaen1V41_tBeP4&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&oh=00_AQLXEYaGP_ZNagYzmyYWMs_jhWebJkcK05cexdJH08u9ww&oe=6AB0B8FD",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "29 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "800545743024503",
+        "texto": "Concreto Usinado e Lajes Pré-Moldadas em Manaus com qualidade e confiança para sua obra!\n\nA J&R MIX oferece soluções completas para quem busca segurança, resistência e agilidade na construção.\n\n✨ Por que escolher a J&R MIX?\n✔️ Lajes pré-moldadas com alto padrão de qualidade\n✔️ Concreto usinado com resistência e dosagem controlada\n✔️ Mais rapidez e eficiência na execução da obra\n✔️ Entrega pontual direto no seu canteiro\n✔️ Atendimento especializado para orientar seu projeto\n\n🚧 Seja para pequenas, médias ou grandes construções, temos a solução ideal para você!\n\n📞 Solicite seu orçamento: [telefone]\n📍 Av. Elias Ramiro Bentes, 918B – Colônia Terra Nova\n\n🔥 Construa com mais segurança, economia e qualidade. Escolha quem entende de concreto usinado e lajes pré-moldadas!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMA0xaHhBZDOTJExZUJfzy1H-4eCHZUnR88JdskAhK_1DlsWzmPrO9kCtpw7hCF1uMiUV-tjoG0swaHf5TqGGJi_nTdzuQmnVAmYmOWuQ.mp4?_nc_cat=105&_nc_oc=Adp7UvgZu2kopiz1zqPbiqyL6K4nTz_z9tFPEh9Oqs6Rvbds-9WMbcTxu8wPp_yc_B0&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=LXcLCcXZ2yAQ7kNvwE1vGLn&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTkxMjQ0MTUwNjgwOTI2NSwiYXNzZXRfYWdlX2RheXMiOjkzLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6NjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQJeo3Twh48GRy6JvwEVN9JuFPXcZq4xcbkvm69FK62SdA&oe=6AB0DD89",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "15 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "4198238517091608",
+        "texto": "🚧 Sua obra precisa de lajes pré-moldadas e concreto bombeado? Agora ficou ainda mais fácil!\n\nA Concresim tem mais de 30 anos no mercado, garantindo qualidade e resistência para a sua construção.\n\n✅ Lajes pré-moldadas feitas com matéria-prima de alta durabilidade\n✅ Concreto bombeado para mais eficiência e segurança na sua obra\n✅ Parcelamos em até 12x no cartão para facilitar seu pagamento!\n✅ Atendimento especializado e orçamento rápido\n\n📩 Solicite seu orçamento agora!\n📞 Chame no WhatsApp e fale com nossa equipe.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQOYSy7ZZkZZeeOCeo1otGyYBOPC9TPeDcMMsolA5UwAG3NgFU35H31ev7LCBQhmmKZ0wp-YWhzRD3G7TVsOR_hFpoCcRBkC88IdxWQ.mp4?_nc_cat=110&_nc_oc=AdqJmIWs6XBMjgPo_vNUGulRh4D6GRcycEugBHtV8fZF2TIr0Tq5RM2BRaQm8bo8L2E&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=Kvm7T5CF_DYQ7kNvwEJR33s&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTgwMzA4MDYwNTQ3OTU4NzksImFzc2V0X2FnZV9kYXlzIjoxNjksInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjozNSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=146178533821ed33&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9BNzQzQjZFRDZEQTJFQ0U4NzQzMTg4MDE5MDE5ODVCRl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzY2NDY0NDYzRTZBQTY5QjU3RUNGRDk2REY1QTkyOUI3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbO6cfehbuHQBUCKAJDMywXQEHEOVgQYk4YEmRhc2hfYmFzZWxpbmVfM192MREAdQBlrMEBAA&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQLZCZHiCRUUKJ0Ia3iHgrhU8q--Iv0wzlDTcv_Y0P5KKg&oe=6AACF2D3",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "16 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1999353967312174",
+        "texto": "Sua obra precisa de lajes pré-moldadas e concreto bombeado? \nConheça a Matheus Laje, especialista há mais de 30 anos!\nLajes duráveis e concreto seguro para sua construção.\n✅ Alta qualidade\n✅ Eficiência garantida\n\nPrecisa de um orçamento rápido?\nChame agora no WhatsApp!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQO2HWNtJ_FrR-zMr9hloXk8QI3PBhU3snPQ-J-489vCHnYGFM7jUTv7JrCsUZ_pGr2sHt8E8saCiKYxxBbF-skbOOAaEF0foa8wZI1pcQ.mp4?_nc_cat=110&_nc_oc=AdosF0CNt136L6XeoaWxHCkSs4YjGDs4ZJ65prUDgR_mALAcNIVk5PwAlCI7NO7bv9Q&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=DMuoQryz3JIQ7kNvwGn3oU9&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTIwNDE0NDY5MTgwMjQ3NiwiYXNzZXRfYWdlX2RheXMiOjE4MSwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjUzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQI87J34_wuXTs0FvCOf_NK2QQ6WOYqenXr85j21Cdt8NQ&oe=6AB0C710",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 4,
+        "data_inicio": "19 de mar de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1361172932856407",
+        "texto": "A laje básica da Montreal está em promoção. Resistência, precisão de fábrica e entrega garantida em toda a região metropolitana de Belém. Fale agora com nossa equipe pelo WhatsApp e solicite seu orçamento.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQN-A2sfymflo_94gMj8rvAolX-5m5vhXHIupQggI24d-K_1DKF2tLGxWmRM_nEtM51cDNWXzE6O9BqQ8_tcMQQG0ppQOhPTpRUfGfu02w.mp4?_nc_cat=107&_nc_oc=AdqA2lqEIWirgShVu2VwX5sik6Os7oQbJVkXllCZZSgekzMSaw2QxIQ4gnYyQ8Lvmng&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=MgzEmpwSPYIQ7kNvwHfVeit&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTAyMTg4NDQyMDc0MzAwMywiYXNzZXRfYWdlX2RheXMiOjU5LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6MTYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQJELy19YNrbLqOfTe82skmDoQ_KHsyy302NnYbNdVVtfQ&oe=6AB0C183",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "5 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2120091821901268",
+        "texto": "Soluções completas para quem não abre mão da segurança! 🧱✨\n\nVocê sabia que a Delpra vai muito além dos blocos de concreto? 🤔🏗️\n\nNosso portfólio foi desenhado para atender desde o grande construtor até quem está reformando o quintal de casa. 🏘️💎\n\nArraste para o lado e conheça o Padrão Delpra em cada detalhe: 👉\n\n1. Placas e Postes: Muros com instalação rápida, obra limpa e a economia que seu lote ou chácara precisa. 🏃💨\n\n2. Pavers (Intertravados): Alta resistência e drenagem superior. A beleza que valoriza sua calçada na hora! 🛣️✨\n\n3. Bloco Curvo:\n Exclusividade e design para projetos que pedem formas inovadoras e acabamento impecável. 📐🎨\n\n4. Blocos e Canaletas: A base sólida da sua construção. Peças com medidas precisas e traço de engenharia para evitar desperdícios. 🧱💪\n\n5. Tijolo Aparente:\n O clássico rústico com durabilidade máxima. Ideal para quem busca estética e baixa manutenção. 🏠🌟\n\n6. Lajes Treliçadas: Rapidez e segurança estrutural com sistemas que reduzem o consumo de aço e concreto. 🏗️✅\n\n7. Alambrados: Fechamento seguro e duradouro para áreas rurais e industriais. 🛡️🌾\n\n———————————————————————————\nPor que escolher a Delpra? 🧐\n\nAqui, o pré-moldado não é uma “comódite”, é um item de confiança. Trabalhamos com laudos MPA/ABNT para garantir que você nunca passe pelo pesadelo do “barato que sai caro”. 📄🛑\n\nSua obra em Uberaba e região merece o melhor!📍🏘️\n👇\n\nQual desses produtos você precisa para o seu projeto hoje? \n\nComenta aqui embaixo ou chama nossa equipe agora no WhatsApp! 📲🚀\n\n📞 (34) 9 9912-2128 \n📍 Rua Clara Alves de Mello, 461 — Laranjeiras I",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/704697684_1472533100812898_8280659006273086673_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E5EdHzhZ9UQQ7kNvwHHOXyB&_nc_oc=AdoLACqXEWyOI4t2oGfAefb6g8S_g8m2PChk8Q4yh6B4L543vd3TSqv0hL0gNXl778Q&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&oh=00_AQL_hQtS8Ag7hV9WCGDYxNBeZ8uUsjb-5wXoT_KjgofBtg&oe=6AB0DE7C",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "20 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "838764122632695",
+        "texto": " ",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/654831611_1632812474734688_847748572012289399_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q1s6UqUT81kQ7kNvwHre_RI&_nc_oc=AdoT5d_mXhss0FdCkNxL24PjylhpzUMsnzdSekSYqwm4PFBMqMnrXIT-XE_2L7Hq0lU&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&oh=00_AQI9SnWZznqSFUAAblfIC7ftDd6XE9xggx8wwIdQKVMHSw&oe=6AB0E64C",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "27 de mai de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1231976748969759",
+        "texto": "🏗️ Lajes Pré-Moldadas com Qualidade e Economia!\n\nSua obra mais rápida, segura e com excelente acabamento. Solicite seu orçamento e garanta a melhor solução em lajes pré-moldadas para construção residencial e comercial.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNJx6Sn6tsAe2Xe7xv_qo7DqSGxjHmN1AneytwdXnYSjWcclQ-s60cSzjTu1cOOzs4s24TatCAY0yhTXAf_DDte8QSBzMfrkrRnu6XXqg.mp4?_nc_cat=100&_nc_oc=Adry_ksnrR5iHan5xf3pgJsbLwze3KmBZ7CqnE1ndhi0OM2pqhtPKjWVCGRyKNkiMWM&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=8-YNUR8GJpUQ7kNvwFtYsC9&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6Mjc0MTI0NzI1MjUwMzE4MTgsImFzc2V0X2FnZV9kYXlzIjoxMDMsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjo1MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQJZEVOaDMMxsZiZkJUjtcp7dxmP-RwDF8obHG5yNn169g&oe=6AB0BBB6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "9 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "4169700873321559",
+        "texto": "#vôarmandoconstruções #vôarmando #construçãosegura #construçãocivil #obrabemfeita #obrasegura #lajedofuturo #arcelormittal",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQNElYivvQ-rNo9MyjjotzRfw0w0VRTWs3EaPQs6N65eE233kUqsPwiZig-2AyW3gzLuvdbA0eJNuAFoIIgLOXF4Wu7dIvnBBkR8Z-k.mp4?_nc_cat=105&_nc_oc=AdoYNDbCrlnvVKICaXSAEvmpyH4zE16l8o3K7OXCFLe9RTImrBaPdJmbaxPsZ9eXXrY&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=2itCkFofaIkQ7kNvwHwzicQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTgwMDAxNDY4NzIzNDI2MywiYXNzZXRfYWdlX2RheXMiOjQ3NiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjIxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=f30f2a0717983883&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EOTQ4MDcwQTM3RjdCNEM0QjMwNEY4NzU5QUZFRDVCRV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMDMzMjI1NTc1NTAwMzI5XzUxMTA3NTgwNDMwMTA5Mjc3NzMubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJq6jr8DSxrIGFQIoAkMzLBdANbMzMzMzMxgSZGFzaF9iYXNlbGluZV8zX3YxEQB1AGXmnQEA&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&_nc_zt=28&oh=00_AQLaJ_vPOVKALKpSc6CPICoAqX6veOjdtE6htVVuibYBQw&oe=6AACBDF6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "17 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1335778718490128",
+        "texto": "🏗️ Vai fazer laje?\n\nNa Forte Pré-Moldados você tem o melhor custo-benefício do mercado:\n\n💰 Laje H8 com isopor \n\n🔥 Cobrimos ofertas da concorrência!\n\n✔️ Mais leve\n✔️ Mais rápida\n✔️ Excelente resistência\n\n🚚 Frete grátis (consulte condições)\n\n📲 Chama agora no WhatsApp:\n👉 [telefone]",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/721119436_1605295354315041_6429349812453305775_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iAHGEu7qdBcQ7kNvwGKNs0l&_nc_oc=Adpzbw1_xenhOEzmouMRQ-nq9hoyYBT-pbgR-Euh6ke6rLmms3GnJeto_ikiwWcSBKk&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=7U_t1tNWRREMSMOvCOIrbg&_nc_ss=7b289&oh=00_AQJZzR1FH3BCJy-ua-CUCKGaFD1wr53AUaJAQOZwZzPkJw&oe=6AB0CE74",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "12 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1587031669769600",
+        "texto": "🙋ECONOMIZE SEM PERDER A QUALIDADE‼️\nOPORTUNIDADE COM PREÇO DE FÁBRICA\nFAÇA UM ORÇAMENTO AGORA👇🏻\n \nNossas lajes estão com uma promoção absurda,  não perca esta oportunidade!!\n\nE o melhor tudo isso com a melhor qualidade da região🔥",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/792235759_972207848612709_220188050373438269_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S2K7KF42_v8Q7kNvwEN04sX&_nc_oc=AdrEG1_u1h3fcgCdkZaMZTl7Fo2GDVCA8K7QTQhqEwEb9SYkOLbalzsmUpOXxg98lmk&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=qu5KdUaHzKCLHlMZwCBYYA&_nc_ss=7b289&oh=00_AQK7kK52beIsCX9jGBEdXTQorUSOfhTchfq8mSEgEWo5oQ&oe=6AB0CCA6",
+        "tipo_criativo": "Imagem",
+        "plataformas": 2,
+        "data_inicio": "1 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2793846851000459",
+        "texto": "Não encontrado",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/746528244_1523783202562286_6601989592674888895_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H8Vu5GNT4-oQ7kNvwG3ju9K&_nc_oc=AdpJOW310hAVxpBuK__Z5sScPySR23ke3QD74_DgcawluxM_2UIrx6jpIQ5g__GmZCo&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=qu5KdUaHzKCLHlMZwCBYYA&_nc_ss=7b289&oh=00_AQJVKq3WrT9Y4q8G1K00nOgmmO_Co05cwtlTCGH6B9qZgA&oe=6AB0E67A",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "12 de ago de 2026 · Tempo total ativo: 13h",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1650612739767513",
+        "texto": "🚧 Compre mais e pague menos na QualyLaje! 🏗️\n\n✅ A partir de R$ 38,90 à vista\n💳 Parcele em até 18x no cartão\n🚚 Frete grátis (consulte as condições)\n📍 Atendimento rápido e produtos de alta qualidade.\n📲 Solicite seu orçamento agora mesmo pelo WhatsApp: [telefone]",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQMfF0nhHCxebnKXu3oek54VJ9leLsc4ibzShh3tMi3HF1ffYFZMmo0yUxCKloM8ANfBlgVd8vcCIGHsOR0UYzWaUr4HArgYN2-pK57hlA.mp4?_nc_cat=110&_nc_oc=AdpyhYFaluTFPhYNFBP8Fs5yW1WWZAS7OKPVLcUIDiFLEyS8XObMZwSJvhOvlU3rr6c&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=BrZSagOWAU4Q7kNvwGceE3P&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxOTgzODg2ODgyMzMxNjAwLCJhc3NldF9hZ2VfZGF5cyI6NTksInZpX3VzZWNhc2VfaWQiOjEyMzc0LCJkdXJhdGlvbl9zIjo5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=qu5KdUaHzKCLHlMZwCBYYA&_nc_ss=7b289&_nc_zt=28&oh=00_AQLM_SchOKokUecCOANQu4ew8hRg88Fc_nFhp5lUj8O7sg&oe=6AB0B474",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "6 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2644430032638870",
+        "texto": "Laje básica a partir de R$ 44,90 o metro quadrado, direto da fábrica.\n\nManda a medida da sua laje no WhatsApp — o vão e a largura — que a gente calcula e responde com a proposta.\n\n26 anos fabricando em Belém.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNtSr8kizmiAVJNl0kw6w8_6ax7-HDnpkZi7-PZmSWo8El0BSQtRErGKi50ir3O70MdAHEoCb0w_eUvZ7qYx3I8nfzaMGwpPKbuRHuqVA.mp4?_nc_cat=100&_nc_oc=Adr29G9-EKCXOBPptsnoFFxZa81zm3EtYUvjvmAcvvVFCdxCTA9cxUa4hSDhKZouf10&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=-2EAwNPCaJoQ7kNvwHTHtxz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjE2MDU5NTA1ODIwODI4NCwiYXNzZXRfYWdlX2RheXMiOjgsInZpX3VzZWNhc2VfaWQiOjEwMTM5LCJkdXJhdGlvbl9zIjoxNiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=qu5KdUaHzKCLHlMZwCBYYA&_nc_ss=7b289&_nc_zt=28&oh=00_AQJDbd_VfRE4Ip5dLahE_njhxqlY-pBcv9A6hsMxYdCMNA&oe=6AB0CAA6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 5,
+        "data_inicio": "8 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1912151869496987",
+        "texto": "🏗️ Vai fazer laje?\n\nNa Forte Pré-Moldados você tem o melhor custo-benefício do mercado:\n\n💰 Laje H8 com isopor \n\n🔥 Cobrimos ofertas da concorrência!\n\n✔️ Mais leve\n✔️ Mais rápida\n✔️ Excelente resistência\n\n🚚 Frete grátis (consulte condições)\n\n📲 Chama agora no WhatsApp:\n👉 [telefone]",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/722769305_1998558087438234_3627435706253815065_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R1JFrwPOcBwQ7kNvwGJxGyy&_nc_oc=AdrHEqiu7qfElpMoFkviYLUbPNgNolsgxR9zKRFXfu6WrcWDiyFWAmidifhjqf2dPRE&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=qu5KdUaHzKCLHlMZwCBYYA&_nc_ss=7b289&oh=00_AQKuWOg8rWkdLP4eg8w5p8Aongwx1QiR5neZa8R2pi-StQ&oe=6AB0C804",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "12 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1491357255722414",
+        "texto": "Chegou na etapa da laje da sua obra em Alagoinhas?\nCom a Japão Pré Moldados, você não precisa se preocupar: nossa equipe especializada vai até a sua obra para fazer todas as medições e acompanhar o projeto de perto.\n\n👉 Assim, garantimos que cada laje seja produzida sob medida, atendendo exatamente ao que o seu projeto exige, com segurança e qualidade.\n\n📍 Av. Saulo Colle, 331 - Qd 17 Lote 14 - Bosque dos Girassóis, Luís Eduardo Magalhães - BA\n📞 [telefone]\n\n💬 Fale agora mesmo com a gente e solicite seu orçamento personalizado!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/550222604_1780428562839494_1994897589914119035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TbvKtSDc7xUQ7kNvwFUy4GY&_nc_oc=AdpCrW7rnOwKdGC1ytYryVHKF_TKpsiu4goPppqKunauaKLXr9IAuWAxzTNw5o1pj8Y&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=qu5KdUaHzKCLHlMZwCBYYA&_nc_ss=7b289&oh=00_AQKkBPASAuDIzY5zoV_IBm3EOGJNpXRl7XXEdy3sgByGUw&oe=6AB0C9ED",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "17 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2457515298057001",
+        "texto": "| LAJE PRÉ-MOLDADA | 👷🏼‍♂️\nAs lajes pré-moldadas oferecem soluções eficientes na construção, otimizando o tempo e garantindo resistência estrutural. Nossa empresa destaca-se não apenas pela excelência das lajes, mas também pelo compromisso com a qualidade e atendimento ao cliente. \nPriorizamos materiais de procedência certificada e equipes especializadas para assegurar a satisfação do cliente, tornando cada projeto uma experiência confiável, satisfatória e bem-sucedida.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/740486709_1020783727226289_6880378047709069162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=K6Z5c7yHYe4Q7kNvwGeGcbf&_nc_oc=AdpghmFdFStPqvZlCI8mr1W-Zdr_ymP8mLaxus2e9oF4LHPadUiscpZvOjMmKZv9JaM&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=mZLmYpz_b0Ml1yh4DCZqaQ&_nc_ss=7b289&oh=00_AQJEH7otDePP0CeH9sNbR0hJVGEwGLYBYTvhjgP1fG8RUg&oe=6AB0E5DD",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "20 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "893369433781370",
+        "texto": "APROVEITE ESSA SUPER PROMOÇÃO CONSTRUSANTOS!\n\nEstá planejando construir ou reformar?\n\n• Lajes pré-moldadas\n• Materiais brutos\n• Ferragens\n\nQuer um orçamento personalizado?\nEnvie uma mensagem para [telefone] (WhatsApp) \nou visite nossa loja em Rua Dr. Jurumenha, 5353 - Santa Catarina, São Gonçalo!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/725436091_1053269187363503_4441099769865737014_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u2Ubwn5WkV8Q7kNvwFvHqP_&_nc_oc=AdpdbNcTAwgkjmel5fO7H8PYPpyWzqnXN2m0Rg8SSF9KFZKHgNciucYAls8wSF07bLM&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=mZLmYpz_b0Ml1yh4DCZqaQ&_nc_ss=7b289&oh=00_AQLNkwWeomaWbAdYAs1R-oDCVg1jSTZw3K1VoKRzyvVVdA&oe=6AB0E35D",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "16 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "4345569185657087",
+        "texto": "Boa tarde a todos amigos e Clientes da @[perfil] sexta feira abençoada a todos! \nJá estamos com o equipamento preparado pra mais um piso polido amanhã um galpão em Guarapari, o sentimento de hoje só gratidão a papai do céu por sempre tá abrindo portas pra nós! Sem ele nem tente! Um final de semana abençoado a todos! 🚀🙏👷‍♂️ Faça já o seu orçamento sem compromisso! 📲 [telefone] Falar direto comigo! PS: Galera eu errei a data amanhã é dia 31/01 ainda mais tá show vamos pra cima obrigado a todos pela parceria de sempre!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQO7AVytDm3_BYZjS-UNbvZyWkB-2zlkKtxYm2yjfYhouO8tZVMEDQvqp2gqkzhhUHokfLDwb1LzFRt09oA65rKpP1rK4M8Ihz4cK-I.mp4?_nc_cat=109&_nc_oc=AdpuQM8-hb0isHwPx3JfOco6g0a2V-QyPX4QLDeu9WYfNVeIuLUzyqNAgeldax7NPqw&_nc_sid=b66105&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=B5E9PK7HyLoQ7kNvwFXrqt0&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTgzMDI0MjYxMTkyODU0MjMsImFzc2V0X2FnZV9kYXlzIjoyMjksInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo3NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=22274d00e9c84fac&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82NDQ5RkUzNDgxNTRBM0Q1QkE0NTg1OTZFNDBCN0M5M192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzQ2NDI4REVFQTRFODU2MjU4QTIzMDk5NjMyMkE2MEIyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbeqvH1tP2CQRUCKAJDMywXQFNszMzMzM0YEmRhc2hfYmFzZWxpbmVfM192MREAdQBl5p0BAA&_nc_gid=mZLmYpz_b0Ml1yh4DCZqaQ&_nc_ss=7b289&_nc_zt=28&oh=00_AQIrcd37VKKA8ihrw5RcBRPJHeKDTqVQfHZVHaPPNs3RXQ&oe=6AACBF6E",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "3 de fev de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2015780115976505",
+        "texto": "Não encontrado",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/726565607_2566848227068195_324934783687910750_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JnMwtgmS2kkQ7kNvwGNy4oZ&_nc_oc=AdqIVgAdAm8BbyJRjqB1CD7A9N_oVosTqDAltKUIDfVBkEri9BD1x8JA-SnC0V-mvVg&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=mZLmYpz_b0Ml1yh4DCZqaQ&_nc_ss=7b289&oh=00_AQJoWocuZcjzjIMC_8mA8A9QKOrHoxsLglc8kKLX4vD-YQ&oe=6AB0DB39",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "14 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1101739186142527",
+        "texto": "Top 1 do Brasil com mais de 1.000 avaliações positivas no Google, a Rubraz é a fábrica de lajes que sua obra precisa! 🏗️\n\nForam mais de 1 milhão de m² entregues e milhares de clientes satisfeitos em todo o Rio de Janeiro, entregamos muito mais que uma laje. 🧱\n\nVeja o que você tem ao fechar com a gente:\n\n✅ Lajes para pronta entrega assinadas por engenheiros\n\n✅ +1 Milhão de m² entregues +8.000 clientes satisfeitos\n\n✅ Resistência testada e aprovada em laboratório\n\n✅ Pagamento facilitado em até 12x no cartão\n\n✅ Visita técnica para otimizar sua obra\n\n✅ Unidades Espalhadas em Todo RJ\n\n🏭 Melhor laje com o menor preço direto da fábrica\n\n🚛 Frete rápido e grátis para todo o Rio de Janeiro\n\nFaça como nossos mais de 8.000 clientes satisfeitos e garanta a sua laje com quem entende do assunto.\n\nFale agora com um consultor pelo WhatsApp e solicite seu orçamento sem compromisso. É online e grátis, aproveite!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/793378164_1129297462954179_7849545963199897422_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wNPqwqOUTJIQ7kNvwETnXM3&_nc_oc=AdoF85b_aShLv2m5sV9Q2-6CPjsyt7SqBntvukaJP9CzqxKIwhYBI_kWio6Z7MimEYQ&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=mZLmYpz_b0Ml1yh4DCZqaQ&_nc_ss=7b289&oh=00_AQLB2Lzqw7_QH240fTuIvEkHx-KjwSctf8sZILBnIPvP6Q&oe=6AB0D3A2",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "4 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "28270330982658146",
+        "texto": "Confira o andamento das principais obras em execução pela VN Pré-Moldados no momento:\n• Pavilhão Comercial Benvenutti – 2.744 m²\n• Pavilhão Logístico MadeiraMadeira – 7.800 m² (parceria Lex Empreendimentos)\n• Novo Pavilhão Industrial VN Pré-Moldados\n\nEstruturas pré-moldadas com pilares, vigas, lajes alveolares e fechamentos executados com precisão técnica, qualidade e cumprimento de prazos.\n\nEficiência industrializada aplicada em diferentes segmentos: comercial, logístico e industrial.\n\nVN Pré-Moldados. Construindo com escala, qualidade e confiança.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQPT53vSmpF9YEZSTbeLmw4xUu_SS8ToJAJJUbr-mn61d6C6_eANd6iAGrV_Z2m6QwlrdaRaxeCw6IKurhH2bDeYsELu17hvPidqepDbzw.mp4?_nc_cat=107&_nc_oc=AdqwtyLAxMlPTDtsPy-3fCZRzvZ6gCJnq1wdno4vQrPuxrHqgXzOZV_q9BUYGaZd28U&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=6v_F5wPlh2kQ7kNvwESp6wz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxODA5MTIwMzk0NDY0NDQ0NSwiYXNzZXRfYWdlX2RheXMiOjMzLCJ2aV91c2VjYXNlX2lkIjoxMjM3NCwiZHVyYXRpb25fcyI6MjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=4_cNRC_IJ7CkNWDFKgw61A&_nc_ss=7b289&_nc_zt=28&oh=00_AQLM2ygAZRE2PscHGQYn5sskB0W5TXY73RYWl_EgrVtAYg&oe=6AB0D9BB",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "28 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1076843158038373",
+        "texto": "Top 1 do Brasil com mais de 1.000 avaliações positivas no Google, a Rubraz é a fábrica de lajes que sua obra precisa! 🏗️\n\nForam mais de 1 milhão de m² entregues e milhares de clientes satisfeitos em todo o Rio de Janeiro, entregamos muito mais que uma laje. 🧱\n\nVeja o que você tem ao fechar com a gente:\n\n✅ Lajes para pronta entrega assinadas por engenheiros\n\n✅ +1 Milhão de m² entregues +8.000 clientes satisfeitos\n\n✅ Resistência testada e aprovada em laboratório\n\n✅ Pagamento facilitado em até 12x no cartão\n\n✅ Visita técnica para otimizar sua obra\n\n✅ Unidades Espalhadas em Todo RJ\n\n🏭 Melhor laje com o menor preço direto da fábrica\n\n🚛 Frete rápido e grátis para todo o Rio de Janeiro\n\nFaça como nossos mais de 8.000 clientes satisfeitos e garanta a sua laje com quem entende do assunto.\n\nFale agora com um consultor pelo WhatsApp e solicite seu orçamento sem compromisso. É online e grátis, aproveite!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/793378164_1129297462954179_7849545963199897422_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wNPqwqOUTJIQ7kNvwETnXM3&_nc_oc=AdoF85b_aShLv2m5sV9Q2-6CPjsyt7SqBntvukaJP9CzqxKIwhYBI_kWio6Z7MimEYQ&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=4_cNRC_IJ7CkNWDFKgw61A&_nc_ss=7b289&oh=00_AQLRA-sh_C7JAyYealZ16wM-ZM9mnI9csEthxOgeyeudzA&oe=6AB0D3A2",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "4 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1112249711328181",
+        "texto": "🏗️ Vai construir ou reformar e quer materiais com qualidade, resistência e entrega rápida?\n\nA PremoldAço é para quem busca lajes pré-moldadas, ferragens e soluções estruturais com segurança e confiança para sua obra.\n\n✅ Lajes pré-moldadas sob medida\n✅ Ferragens de alta qualidade\n✅ Atendimento especializado\n✅ Entrega em Fortaleza e região\n✅ Agilidade para sua obra não parar\n\nQuem é exigente compra com quem entende do assunto. Nossa equipe está pronta para ajudar você a encontrar a melhor solução para seu projeto.\n\n📲 Solicite seu orçamento agora e fale com um especialista!\n\nPremoldAço\nQualidade, confiança e estrutura para sua construção.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/749269425_1214952085033534_7904843936537774139_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9j7AVWlMuRsQ7kNvwFpgYXx&_nc_oc=Adok7ViH-1RjZ7kPCoJYHuaP2ziRMxdxdzYJ1YFFlQo_Q0punftRbCM_WwhqapouLHg&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=4_cNRC_IJ7CkNWDFKgw61A&_nc_ss=7b289&oh=00_AQJVQUpxqu4lagliItwHJlRmRJkAdQa6JchC4XtcCydftg&oe=6AB0CB3B",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "18 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "4604839259841316",
+        "texto": "Não encontrado",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNx4rPvAPoqVSnZLtSXPwlJp3ZHaSr_R8K3Ii9Cd4wfLQdg89GaKMZpALekjMeAnp-aH-O8sZvaU92TdQlrec_PXfag3cHGX_wqIJZzDg.mp4?_nc_cat=109&_nc_oc=Adp5RExyXW4UvEkG_1clDRK4qi7RX0cocT2zDNfYF4w3VMl3yDGmX9YISanBm7OP0Xs&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=mzQKh8zlwcEQ7kNvwHFvbNB&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTc2Nzk3MDQ0Nzc0NDQyMSwiYXNzZXRfYWdlX2RheXMiOjI4LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=4_cNRC_IJ7CkNWDFKgw61A&_nc_ss=7b289&_nc_zt=28&oh=00_AQJb52UhakS_KNOVFolvESOmddiZ9rWzS5dK3OQlE7eYqQ&oe=6AB0BFE5",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 3,
+        "data_inicio": "19 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1893447588445829",
+        "texto": "FABRICA DE ISOPOR EPS ENVIO PARA TODO BRASIL - R$0,00\n\nElementos Estruturais e de Laje\n * Lajotas para laje treliçada\n * Painéis monolíticos autoportantes\n * Blocos de Geofoam para aterro leve\n * Formas perdas para vigas de fundação\n * Formas perdas para estacas e blocos de coroamento\n * Blocos para elevação e nivelamento de pisos\n * Lajotas para lajes bidirecionais\n * Painéis divisórios termoacústicos\n * Formas perdas para colunas redondas\n * Formas perdas para colunas quadradas\n * Blocos de EPS para preenchimento de degraus de arquibancadas\n * Núcleos para lajes alveolares\n * Formas para vigas protendidas\n * Blocos para alívio de peso em pontes e viadutos\n * Painéis monolíticos para muros de divisa\n * Formas para abóbadas e cupulas de concreto\n * Enchimento para encontro de pontes e encontros rodoviários\n * Formas para vigas baldrame\n * Blocos de alívio para tubulações enterradas\n * Elementos vazados para lajes nervuradas\nIsolamento Térmico e Acústico\n * Placas de EPS para sistema EIFS (fachadas)\n * Núcleo para telha sanduíche trapezoidal\n * Núcleo para telha sanduíche ondulada\n * Placas de isolamento para drywall\n * Placas de isolamento para Light Steel Framing\n * Placas de isolamento sob contrapiso\n * Placas para piso aquecido com encaixes\n * Painéis isolantes para câmaras frigoríficas\n * Placas para isolamento de dutos de ar-condicionado\n * Placas para isolamento de telhados cerâmicos\n * Placas para isolamento de telhados fibrocimento\n * Manta de EPS para subcoberta\n * Painéis para isolamento acústico entre apartamentos\n * Placas para isolamento de caixas-d'água\n * Revestimento térmico interno para paredes de concreto\n * Painéis térmicos para galpões industriais\n * Placas de EPS alta densidade para juntas térmicas\n * Revestimento para tubulações de água fria\n * Revestimento para tubulações de refrigeração\n * Painéis de isolamento térmico para containers habitacionais\nAcabamento, Molduras e Decoração\n * Sancas de teto internas\n * Molduras para janelas externas\n * Molduras para portas externas\n * Rodapés de EPS\n * Guarnições de portas\n * Capitéis para colunas decorativas\n * Bases para colunas decorativas\n * Placas de revestimento 3D para paredes\n * Cornijas arquitetônicas\n * Roda-forros\n * Rosaces para teto (centro de iluminação)\n * Painéis ripados de EPS\n * Cantoneiras decorativas para fachada\n * Vedações ornamentais de platibanda\n * Pingadeiras decorativas sob parapeito\n * Revestimentos imitando tijolo à vista\n * Revestimentos imitando pedra natural\n * Vigas decorativas imitando madeira\n * Placas decorativas para forro suspenso\n * Elementos vazados decorativos (cobogós de EPS para fôrma)\nAgregados e Artefatos Cimentícios\n * EPS moído para concreto leve\n * EPS triturado para argamassa termoacústica\n * Pérolas de EPS aditivadas para contrapiso leve\n * Blocos cimentícios leves com EPS\n * Tijolos ecológicos com miolo de EPS\n * Painéis pré-moldados cimentícios com núcleo de EPS\n * Pingadeiras cimentícias leves com núcleo de EPS\n * Elementos pré-fabricados para drenagem com EPS\n * Manilhas e canais leves com EPS incorporado\n * Artefatos de cimento para paisagismo com EPS\nProteção, Impermeabilização e Drenagem\n * Juntas de dilatação em placas\n * Juntas de dilatação em tiras\n * Proteção mecânica de mantas impermeabilizantes\n * Placas perfuradas para drenagem de jardineiras\n * Placas para drenagem de telhados verdes\n * Espaçadores de EPS para alinhamento de armaduras\n * Calços de EPS para transporte de pré-moldados\n * Cantoneiras de proteção para esquadrias no canteiro\n * Proteção para pisos acabados durante a obra\n * Tampos de EPS para proteção de tubulações abertas\nInfraestrutura e Obras Especiais\n * Blocos de flutuação para píeres e marinas\n * Formas para piscinas de concreto\n * Moldes para escadas espirais de concreto\n * Moldes para escadas pré-fabricadas\n * Formas para pistas de skate e rampas de concreto\n * Núcleos leves para portas pautadas\n * Caixas de passagem pré-moldadas com EPS\n * Enchimento leve para caixas de inspeção\n * Moldes para nichos de banheiro em concreto\n * Formas para balcões e bancadas de concreto moldado no local\nAcessórios, Sinalização e Instalações\n * Caixas térmicas para transporte de amostras de concreto\n * Marcadores e gabaritos de cortes para tubulações\n * Passagens de tubulação pré-formadas em lajes\n * Enchimento para vedações de shaft hidráulico\n * Enchimento para vedações de shaft elétrico\n * Blocos de EPS para teste de carga em estruturas\n * Moldes para peças decorativas urbanas (bancos e floreiras)\n * Painéis acústicos para estúdios e auditórios integrados à obra\n * Baffles acústicos suspensos para galpões\n * Perfis de EPS para vedação de ondas em telhas metálicas\n\nFacebook Marketplace",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/795582543_1402831548645144_4977519127316905550_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1UEXadwsYF4Q7kNvwHXOjJI&_nc_oc=Adpqnj_pOgXdxF0FYpFa6X73haByTqc4Rlb7Op79h0wBdl1g3nSpQyYLyUyXg0VDAxc&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=8LUK7GJeDMXdWuzLTp7HtQ&_nc_ss=7b289&oh=00_AQKMNCN1xqLl_RmkiRrxEb_DHxQCr2FxPJ_TKY6MTYUUhg&oe=6AB0B91E",
+        "tipo_criativo": "Imagem",
+        "plataformas": 2,
+        "data_inicio": "4 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "27982016688163858",
+        "texto": "🏗️ Vai construir ou reformar e quer materiais com qualidade, resistência e entrega rápida?\n\nA PremoldAço é para quem busca lajes pré-moldadas, ferragens e soluções estruturais com segurança e confiança para sua obra.\n\n✅ Lajes pré-moldadas sob medida\n✅ Ferragens de alta qualidade\n✅ Atendimento especializado\n✅ Entrega em Fortaleza e região\n✅ Agilidade para sua obra não parar\n\nQuem é exigente compra com quem entende do assunto. Nossa equipe está pronta para ajudar você a encontrar a melhor solução para seu projeto.\n\n📲 Solicite seu orçamento agora e fale com um especialista!\n\nPremoldAço\nQualidade, confiança e estrutura para sua construção.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/794152887_1042200051911200_442911927960994737_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Uvj-vyfzvi4Q7kNvwEPJVCs&_nc_oc=Adosq_OPZ7Cy89tAqu0m9-FuW6trsZomRiOm4w0wns2kExt9oJuyeydbs51FYrrWwxY&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=8LUK7GJeDMXdWuzLTp7HtQ&_nc_ss=7b289&oh=00_AQIQRkILvx__RX3PjmURtGdJNwacMDxIRiYt8TWRLvgOlA&oe=6AB0DCE0",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "4 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "27480304074996234",
+        "texto": "Não encontrado",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/747029858_1828057181683130_2573626953364532476_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5HdhlejR-ggQ7kNvwE4R1pC&_nc_oc=AdrfhFo36GjIQBdDK270qNkwSe2MHisf23CJFz3zqrRHg3ow0nsdDhSbs0d9sSOC-7w&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=8LUK7GJeDMXdWuzLTp7HtQ&_nc_ss=7b289&oh=00_AQKut0iCpin0kFY4rC0xzLAlgbYOMP8p3wtyhC51vgbKcw&oe=6AB0D32B",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "14 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2191046161815630",
+        "texto": "A sua obra merece a laje mais bem avaliada do Brasil 🇧🇷\n\nA Rubraz é a maior fábrica do Rio de Janeiro, com mais de 1 milhão de m² entregues e a nota mais alta do Google no segmento de lajes pré-moldadas! ⭐⭐⭐⭐⭐\n\nAlém de fornecer as lajes, te ajudamos a reduzir custos tornando sua construção mais segura e eficiente 🧱\n\n✅ Lajes para pronta entrega assinadas por engenheiros\n\n✅ +1 Milhão de m² entregues +8.000 clientes satisfeitos\n\n✅ Resistência testada e aprovada em laboratório\n\n✅ Pagamento facilitado em até 12x no cartão\n\n✅ Visita técnica para otimizar sua obra\n\n✅ Unidades Espalhadas em Todo RJ\n\n🏭 Melhor laje com o menor preço direto da fábrica\n\n🚛 Frete rápido e grátis para todo o Rio de Janeiro\n\nFaça como nossos mais de 8.000 clientes satisfeitos e garanta a sua laje com quem entende do assunto.\n\nFale agora com um consultor pelo WhatsApp e solicite seu orçamento sem compromisso. É online e grátis, aproveite!",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/789694689_1061330593173492_2844895284138217657_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6OuULhT_Vy4Q7kNvwFcQl2u&_nc_oc=Ado9xMB7JP_TOLIbTlh6Id_sZ0YxgjUp9X-jkO6HMZ_NkHqHQkXzt8V8_6pqxqdYeFY&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=8LUK7GJeDMXdWuzLTp7HtQ&_nc_ss=7b289&oh=00_AQJykMmk_3LZWyq9Uf_N2kS_KJjY_F_QBa9bw5KzJYEmfw&oe=6AB0DC3D",
+        "tipo_criativo": "Imagem",
+        "plataformas": 1,
+        "data_inicio": "29 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1324781189544512",
+        "texto": "🚨OPORTUNIDADE R$30.000,00🚨\nVENDO FABRICA DE LAJES - R$30.000,00\n\nVENDO FABRICA DE LAJES PRÉ-MOLDADAS.\nFABRICA COM ALTA CAPACIDADE DE PRODUÇÃO, PODENDO PRODUZIR ATÉ 5.000-MT2 DE LAJES POR MÊS.\nNEGÓCIO ALTAMENTE LUCRATIVO, QUE EXIGE POUCA MÃO-DE-OBRA (SÓ PRECISA DE 02-AJUDANTES)\nUM PRODUTO DE ALTA DEMANDA NO MERCADO, TUDO QUE PRODUZIR VENDE E SÓ VENDE AVISTA, NÃO EXISTE INADIMPLÊNCIA.\nOBS:\nVENDO SÓ AS INSTALAÇÕES COMO TAMBÉM PASSO O PONTO JÁ EM FUNCIONAMENTO, O ALUGUEL É BARATO E A LOCALIZAÇÃO É ÓTIMA.\nFacebook Marketplace",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/809813441_1658031985888890_2530357649414670163_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QI7IiupoWjQQ7kNvwEAca6J&_nc_oc=AdriUx_fLz4DkvUG4FTw5ksLmro3JeQgRQ3PpJWxaURTl_sRW3qCXls7BmX4tYcEE_k&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=8LUK7GJeDMXdWuzLTp7HtQ&_nc_ss=7b289&oh=00_AQKf4FSN0sAm9z0-8A1Pc9ZAsRImRRIokoyvzXXaoMy2tA&oe=6AB0D961",
+        "tipo_criativo": "Imagem",
+        "plataformas": 2,
+        "data_inicio": "13 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "4230641040581878",
+        "texto": "Vai construir ou reformar? 🏗️\n\nCompre direto da fábrica e economize de verdade.\n\n✔ Lajes pré-moldadas\n✔ Ferragens sob medida\n✔ Entrega rápida\n\n📲 Clique no botão e peça seu orçamento agora",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNNxuQsgWOee_MHjy1U5OuSGPBMA30eld_U_fStn_D_QAJkBPhDeGmv8M-UIaLJzUncOJi8pMBGkOTw6t7HW9iPrC5TSgLucwK22WUlVw.mp4?_nc_cat=111&_nc_oc=AdoOyQ4JqJgMFHkBtKYdDez9z2ohLC6qe-jb2gL4u6ysk63bX6XffC_cJqLYSlB9zjU&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=SvtsVe7PEH0Q7kNvwHkoPOI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjcyNDg5ODQxMTIxNDQ2MiwiYXNzZXRfYWdlX2RheXMiOjE1MywidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjkxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=aWxjbawDVMoeA9Wenfjn3w&_nc_ss=7b289&_nc_zt=28&oh=00_AQJ5Qwtp5QKoGt-YfTquEDihh_17cl7T0oVxYAz1jAvA7w&oe=6AB0C793",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 2,
+        "data_inicio": "8 de jun de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1016225401000016",
+        "texto": "🏗️ Vai construir ou reformar e quer materiais com qualidade, resistência e entrega rápida?\n\nA PremoldAço é para quem busca lajes pré-moldadas, ferragens e soluções estruturais com segurança e confiança para sua obra.\n\n✅ Lajes pré-moldadas sob medida\n✅ Ferragens de alta qualidade\n✅ Atendimento especializado\n✅ Entrega em Fortaleza e região\n✅ Agilidade para sua obra não parar\n\nQuem é exigente compra com quem entende do assunto. Nossa equipe está pronta para ajudar você a encontrar a melhor solução para seu projeto.\n\n📲 Solicite seu orçamento agora e fale com um especialista!\n\nPremoldAço\nQualidade, confiança e estrutura para sua construção.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/741627402_1344321394499975_1738589517245515902_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1tRYr9WTpBQQ7kNvwHhv4Mp&_nc_oc=AdoO62Jb79cps3pqXpIREaVHOvbwEsjmomEPhpvjyJF4_dRbdgNDplHhGGNeXCmt9Ws&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=aWxjbawDVMoeA9Wenfjn3w&_nc_ss=7b289&oh=00_AQKS7lDUni_aqH4KP5IpjkvFDiUBTpz7eoQmfXB_oa7w6A&oe=6AB0E55F",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "13 de jul de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1788899475793740",
+        "texto": "🏗️ Vai construir ou reformar e quer materiais com qualidade, resistência e entrega rápida?\n\nA PremoldAço é para quem busca lajes pré-moldadas, ferragens e soluções estruturais com segurança e confiança para sua obra.\n\n✅ Lajes pré-moldadas sob medida\n✅ Ferragens de alta qualidade\n✅ Atendimento especializado\n✅ Entrega em Fortaleza e região\n✅ Agilidade para sua obra não parar\n\nQuem é exigente compra com quem entende do assunto. Nossa equipe está pronta para ajudar você a encontrar a melhor solução para seu projeto.\n\n📲 Solicite seu orçamento agora e fale com um especialista!\n\nPremoldAço\nQualidade, confiança e estrutura para sua construção.",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/741057261_864367353042725_8108919028448238572_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KjGGjNxjyDwQ7kNvwFaSbxq&_nc_oc=AdoSFVS1c6WK-Gy2RKVzg6gfcVC9fB_FPP-wCqiAsK_jsxqbjmR72eQ7Yc8Qkdziqkw&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=aWxjbawDVMoeA9Wenfjn3w&_nc_ss=7b289&oh=00_AQK8mOr1-KiJUHnx_Eq5gUnLh9NuGei6uNHE8aKumE_1xQ&oe=6AB0B489",
+        "tipo_criativo": "Imagem",
+        "plataformas": 3,
+        "data_inicio": "9 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "2129991527595993",
+        "texto": "A sua obra merece a laje mais bem avaliada do Brasil 🇧🇷\n\nA Rubraz é a maior fábrica do Rio de Janeiro, com mais de 1 milhão de m² entregues e a nota mais alta do Google no segmento de lajes pré-moldadas! ⭐⭐⭐⭐⭐\n\nAlém de fornecer as lajes, te ajudamos a reduzir custos tornando sua construção mais segura e eficiente 🧱\n\n✅ Lajes para pronta entrega assinadas por engenheiros\n\n✅ +1 Milhão de m² entregues +8.000 clientes satisfeitos\n\n✅ Resistência testada e aprovada em laboratório\n\n✅ Pagamento facilitado em até 12x no cartão\n\n✅ Visita técnica para otimizar sua obra\n\n✅ Unidades Espalhadas em Todo RJ\n\n🏭 Melhor laje com o menor preço direto da fábrica\n\n🚛 Frete rápido e grátis para todo o Rio de Janeiro\n\nFaça como nossos mais de 8.000 clientes satisfeitos e garanta a sua laje com quem entende do assunto.\n\nFale agora com um consultor pelo WhatsApp e solicite seu orçamento sem compromisso. É online e grátis, aproveite!",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQNC_GbKhgCqSG9-Ea4t_K-fXSjB98AFY8fzlXLXSXUTFW7WXRYaCCSWQaW0drrF91tXolS4S8Sd1rx6YLHC1dItg9bcZbhNys4M1AqeGw.mp4?_nc_cat=104&_nc_oc=AdpCVZMwA8DsWgoCUOOfoneNJYJOedtQWAO1-qom8YpLNwp-yyAhIXesTX6ykSaNpMY&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=mefvzxLspuQQ7kNvwHTrD4r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTA4NTU4NzM3NzIyMDU5OCwiYXNzZXRfYWdlX2RheXMiOjE2LCJ2aV91c2VjYXNlX2lkIjoxMDEzOSwiZHVyYXRpb25fcyI6NTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=aWxjbawDVMoeA9Wenfjn3w&_nc_ss=7b289&_nc_zt=28&oh=00_AQI1EMsrWJze6IhU61Q0r3s8NQDGgCNlPGqMGj3gVezY9Q&oe=6AB0B2B6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "31 de ago de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1313949540622930",
+        "texto": "Chegou na etapa da laje da sua construção?\nNa Japão Pré-Moldados, você encontra lajes sob medida com qualidade, agilidade e segurança — tudo preparado conforme o seu projeto.\n\n📏 Nossa equipe vai até a sua obra para realizar as medições, garantindo que cada longarina e EPS atendam perfeitamente à estrutura da sua construção.\n💪 Com experiência e técnica, indicamos os reforços necessários de acordo com o vão livre da obra, evitando desperdícios e garantindo segurança.\n\n🚚 Produção própria, entrega rápida e compromisso com a qualidade.\n\n💬 Entre em contato agora mesmo pelo WhatsApp e solicite seu orçamento!\n📍 Av. Saulo Colle, 331 – Bosque dos Girassóis, Luís Eduardo Magalhães – BA\n📞 [telefone]",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/570080034_1153468320132017_1966272552124595717_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JiZCSKm497EQ7kNvwFkBCfx&_nc_oc=Adr7H3Jaoos-KoQLfry81i_DN_NKyIAfqx4M--3BQ5SCzGjifWY17rdnDBMhSrvEJQo&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=aWxjbawDVMoeA9Wenfjn3w&_nc_ss=7b289&oh=00_AQLTw0B-VTASnIgwkUK_Awf07N0CahEE7ttlWraHZ-mv6g&oe=6AB0BFB4",
+        "tipo_criativo": "Imagem",
+        "plataformas": 5,
+        "data_inicio": "17 de abr de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1611345047245505",
+        "texto": "Lajes e concreto usinado - R$4,00\n\n🏗️ SUA LAJE MERECE QUALIDADE, SEGURANÇA E RESISTÊNCIA!\n\nNa Central das Lajes, você encontra tudo para garantir uma estrutura forte e confiável para sua Laje! 💪\n\n✅ Lajes Pré de Alto Padrão \nCom Treliça Reforçada no\nTIJOLO OU ISOPOR!\n✅ Malha POP\n✅ Escoras \n✅ Preço de atacado para construtoras, empreiteiros.\n✅ Concreto Bombeado \n\nOrçamentos: 📲 clique no link abaixo 👇🏽 \n\nhttps://wa.me/5521993077423?text=Chameaqui\nFacebook Marketplace",
+        "criativo_url": "https://scontent.fbsb9-1.fna.fbcdn.net/v/t39.35426-6/809107198_1851879419135968_3411489746144655753_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SMiHOUhUraUQ7kNvwHHB4Ww&_nc_oc=AdoL46IdNAvJ0sRJdPlWGVol2bPn7vMCalo_HeiNTkAx2fglWblTSg_TovkJG9kBaLM&_nc_zt=14&_nc_ht=scontent.fbsb9-1.fna&_nc_gid=aWxjbawDVMoeA9Wenfjn3w&_nc_ss=7b289&oh=00_AQIwTlSmbPfUXyPZZIuQHz-paWszSMRuGjwgDaLFC3SDLA&oe=6AB0D90C",
+        "tipo_criativo": "Imagem",
+        "plataformas": 2,
+        "data_inicio": "13 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      }
+    ]
+  },
+  "relatorio_formatado": "## 1. RESUMO EXECUTIVO\n\nA análise do marketing digital da Prolaje, focada em lajes pré-moldadas, identificou pontos de melhoria em SEO, acessibilidade e presença digital, especialmente em branding e captação de clientes. Foram encontrados problemas técnicos no site, como título curto, imagens sem texto alternativo e ausência de marcações Open Graph, que prejudicam a visibilidade e acessibilidade. O panorama dos anúncios concorrentes mostra uso equilibrado de vídeos e imagens, mas há espaço para diferenciação criativa e CTAs mais claros. As três ações prioritárias são: corrigir rapidamente os problemas técnicos do site, investir em branding digital consistente e diversificar os formatos e abordagens dos anúncios. Essas medidas são essenciais para fortalecer a marca e aumentar a geração de novos clientes.\n\n## 2. PROBLEMAS IDENTIFICADOS\n\n- **Título da página curto** (Prioridade: média)  \n  O título do site possui apenas 27 caracteres, abaixo da faixa recomendada de 30–60, o que pode limitar o desempenho nos resultados de busca.  \n  Referência: Google Search Central: title links e snippets\n\n- **Imagens sem texto alternativo (alt)** (Prioridade: média)  \n  Sete imagens do site não possuem atributo alt, prejudicando a acessibilidade e o SEO.  \n  Referência: WCAG 2.x 1.1.1\n\n- **Ausência de marcações Open Graph** (Prioridade: baixa)  \n  O site não possui tags Open Graph, o que impacta negativamente a apresentação dos links ao serem compartilhados em redes sociais.  \n  Referência: Open Graph Protocol / Meta Sharing Debugger\n\n## 3. OPORTUNIDADES (Volume de anúncios)\n\nO levantamento identificou 42 anúncios concorrentes para o termo “lajes pré-moldadas”, com 40% em vídeo (17) e 60% em imagem (25). Os anúncios utilizam formatos variados, mas predominam textos que destacam diferenciais como experiência, qualidade, atendimento e condições de pagamento. Os CTAs mais comuns não foram explicitados, mas exemplos de textos sugerem chamadas como “Faça seu orçamento”, “Entre em contato” e “Solicite um orçamento”. O uso de vídeos é relevante para demonstrar produtos e diferenciais, enquanto imagens reforçam aspectos técnicos e visuais. O cenário indica espaço para explorar CTAs mais personalizados e criativos, além de storytelling para engajamento.\n\n## 4. PLANO DE AÇÃO ESTRATÉGICO\n\n### 4.1 Corrigir problemas técnicos de SEO e acessibilidade\n\n**Ação:** Ajustar o título da página, adicionar textos alternativos em todas as imagens e implementar tags Open Graph no site.  \n**Evidência:** Foram identificados título curto, imagens sem alt e ausência de Open Graph, impactando SEO, acessibilidade e compartilhamento.  \n**Como executar:** Editar o HTML do site para ampliar o título, inserir descrições claras nas imagens e adicionar as principais tags Open Graph (og:title, og:description, og:image). Plugins podem ser usados se o site for em CMS.  \n**Prioridade:** Alta  \n**Esforço:** Baixo  \n**Fontes:** SEO-on-Mobile.md\n\n### 4.2 Fortalecer o branding digital e presença nas redes sociais\n\n**Ação:** Estruturar e organizar a presença da marca em múltiplas plataformas sociais, com planejamento e publicação consistente de conteúdo.  \n**Evidência:** O contexto aponta necessidade de melhorar o branding e diferenciação, e a análise recomenda amplificação de brand awareness.  \n**Como executar:** Definir identidade visual, criar calendário editorial, publicar conteúdos relevantes e coordenar campanhas e interações com fluxos claros.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** Marketing-Digital-Strategy.md, Social-Media-Strategy-Sprout-Social.md\n\n### 4.3 Diversificar formatos e abordagens dos anúncios\n\n**Ação:** Investir em uma combinação de anúncios em vídeo e imagem, testando diferentes criativos e CTAs personalizados.  \n**Evidência:** O panorama mostra equilíbrio entre vídeos e imagens, mas há espaço para diferenciação e uso de CTAs mais claros.  \n**Como executar:** Produzir vídeos demonstrando diferenciais, criar imagens de qualidade, testar CTAs como “Solicite um orçamento” e monitorar métricas de engajamento e conversão.  \n**Prioridade:** Média  \n**Esforço:** Médio  \n**Fontes:** Estrategias-Social-Media-Sprout-Social.md, Marketing-Digital-Strategy.md, Online-Adversiting.md\n\n### 4.4 Implementar práticas de SEO local e conteúdo relevante\n\n**Ação:** Investir em conteúdo local, otimizar perfil no Google Business Profile e utilizar dados estruturados (NAP, produtos, reviews).  \n**Evidência:** A recomendação destaca a importância do SEO local para empresas regionais e a necessidade de conteúdo adaptado para mobile.  \n**Como executar:** Criar textos focados em Nova Iguaçu e região, incentivar avaliações, adicionar fotos e implementar Schema para produtos e reviews.  \n**Prioridade:** Média  \n**Esforço:** Médio  \n**Fontes:** Keywords-Research.md, Marketing-Digital-Strategy.md, SEO-on-Mobile.md\n\n### 4.5 Monitorar KPIs relevantes para captação e branding\n\n**Ação:** Definir e acompanhar indicadores como taxa de conversão, engajamento, alcance, custo por aquisição e crescimento de seguidores.  \n**Evidência:** A hipótese do gestor é que a agência não entrega resultados; recomenda-se monitorar KPIs para avaliar impacto real das ações.  \n**Como executar:** Configurar ferramentas de análise (Google Analytics, Facebook Insights), criar relatórios mensais e ajustar estratégias conforme resultados.  \n**Prioridade:** Média  \n**Esforço:** Baixo  \n**Fontes:** Benchmark-Social-Media-Sprout-Social.md, Estrategias-Social-Media-Sprout-Social.md, Marketing-Digital-Strategy.md, Medicao-ROI-Social-Media.md",
+  "execucao": {
+    "tempos_s": {
+      "interpretacao": 1.61,
+      "coleta": 19.82,
+      "analise": 10.72,
+      "relatorio": 11.36,
+      "total": 43.51
+    },
+    "interprete_status": "sucesso_llm",
+    "seo_status": "Sucesso",
+    "n_anuncios_coletados": 42,
+    "n_problemas": 3,
+    "n_oportunidades": 0,
+    "n_recomendacoes": 5,
+    "n_recomendacoes_com_fontes": 5,
+    "falhas_tratadas": [],
+    "custo_usd": 0.047
+  }
+}

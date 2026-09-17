@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A demonstra compreensão clara do contexto: identifica que a agência atual 'funciona, mas faz trabalho ruim' e propõe melhorias específicas para branding e captação. Menciona o mercado competitivo de lajes e adapta recomendações ao setor de construção civil. O Relatório B é mais genérico, tratando problemas técnicos sem conectá-los claramente à necessidade de 'melhorar o que a agência faz' ou ao contexto específico de PME em construção civil."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A oferece ações concretas e executáveis: 'criar páginas específicas para cada tipo de laje', 'adicionar botões de WhatsApp', 'publicar regularmente nas redes sociais'. O Relatório B é mais vago: 'revisar e reescrever títulos', 'estruturar perfis', 'testar diferentes CTAs' sem especificar como ou o quê exatamente fazer. A priorização no A (Alta/Média com esforço Baixo/Médio) é mais clara e útil para execução."
+    },
+    "fundamentacao": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 5,
+      "justificativa": "O Relatório B fundamenta cada problema com referências técnicas específicas (Google Core Web Vitals, WCAG 2.x 1.1.1, Open Graph Protocol) e cita fontes documentais. O Relatório A baseia-se nos dados coletados (402 palavras, 42 anúncios, links externos) mas usa fontes genéricas ('práticas recomendadas', 'Moz SEO Guide') sem especificidade. Ambos usam os dados corretamente, mas B é mais rigoroso na fundamentação técnica."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 4,
+      "nota_B": 4,
+      "justificativa": "Ambos os relatórios apresentam informações tecnicamente corretas. O A identifica corretamente problemas de SEO (402 palavras, falta de alt, links externos) e o cenário competitivo (42 anúncios). O B identifica FCP de 3,5s (coerente com tempo de carregamento de 3,77s nos dados), título curto e imagens sem alt. Nenhum inventa dados. Pequena imprecisão no B ao mencionar 'diagnóstico aponta baixa presença nas redes sociais' sem dados coletados que comprovem isso diretamente."
+    },
+    "adequacao_pme": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A usa linguagem acessível, explica o 'porquê' de cada ação e oferece passos práticos que uma PME pode executar com recursos limitados. O Relatório B usa jargão técnico excessivo (FCP, WCAG 2.x 1.1.1, Schema, Open Graph) sem explicar o impacto no negócio, tornando-o menos compreensível para um gestor sem formação em marketing. O A equilibra melhor técnica e praticidade."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A vence por melhor aderência ao contexto da empresa (melhorar trabalho da agência atual), maior acionabilidade das recomendações e linguagem mais adequada para PME. Embora o Relatório B seja mais rigoroso na fundamentação técnica, peca na aplicabilidade prática e na conexão com as necessidades reais do cliente. Para uma PME que quer 'direcionamento do que melhorar', o A oferece um plano mais claro, executável e alinhado ao objetivo de aumentar branding e captar clientes no setor de construção civil."
+  }
+}

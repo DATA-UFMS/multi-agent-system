@@ -1,0 +1,319 @@
+{
+  "metadados": {
+    "condicao": "B1_llm_unico",
+    "url_analisada": "https://www.harmoniemed.com.br/",
+    "termo_busca": "clinica dermatologica Brasilia",
+    "prompt_usuario": "A Empresa A é uma clínica dermatológica localizada em Brasília. Possuem um Instagram e fazem publicações de conteúdo, mas gostariam de avaliar outras estratégias com o intuito de atrair mais clientes. Embora melhorar o SEO seja algo que possuam interesse, a maior necessidade é de definir um plano de ação de marketing digital prático para aplicação.",
+    "modelo_llm": "openai/gpt-4.1",
+    "timestamp_analise": "2026-09-16T16:23:30.400273"
+  },
+  "dados_coletados": {
+    "seo": {
+      "url": "https://www.harmoniemed.com.br/",
+      "status": "Sucesso",
+      "titulo": "Harmonie Medicina Integrada | Dermatologia Clínica, Oncológica e Estética em Brasília",
+      "meta_description": "Clínica de dermatologia em Brasília especializada em prevenção ao câncer de pele, mapeamento corporal digital, laser íntimo e estética avançada. Dra. Clarissa Borges e equipe. Agende pelo WhatsApp.",
+      "meta_keywords": "dermatologia brasília, dermatologista asa norte, câncer de pele, mapeamento corporal, fotofinder, laser íntimo, bioestimulador, botox, preenchimento, dra clarissa borges, harmonie medicina, clínica dermatológica brasília, oncologia cutânea, melanoma, estética facial",
+      "tags_cabecalho": {
+        "h1": [
+          "Referência em Estética\ne Saúde"
+        ],
+        "h2": [
+          "Nosso Corpo Clínico de Excelência",
+          "O que você quer transformar?",
+          "Nossas Tecnologias",
+          "Você na sua melhor versão",
+          "Nossos Vídeos",
+          "Histórias que nos inspiram",
+          "Agende sua consulta"
+        ],
+        "h3": [
+          "Quem cuida de você",
+          "Dra. Fábia Vasconcellos",
+          "Dra. Clarissa Borges",
+          "Dra. Victória Gontijo",
+          "Encontre o tratamento ideal",
+          "Papada",
+          "Rugas",
+          "Manchas na Pele",
+          "Prevenção de Doenças",
+          "Queda de Cabelo",
+          "Poros Dilatados",
+          "Laser Íntimo",
+          "FotoFinder",
+          "ATRIA II",
+          "Plataforma Etherea",
+          "Lavieen",
+          "Punto DEKA",
+          "Accent",
+          "T-Sculptor",
+          "Mapeamento Corporal Digital",
+          "Laser Íntimo",
+          "Clube do Botox",
+          "Clube do Colágeno",
+          "Endereço",
+          "Horário de Atendimento",
+          "WhatsApp"
+        ],
+        "h4": [
+          "NAVEGAÇÃO",
+          "CONTATO"
+        ]
+      },
+      "contagem_palavras": 1086,
+      "imagens_sem_alt": [],
+      "links_internos": 24,
+      "links_externos": 15,
+      "links_quebrados": [],
+      "tempo_carregamento": 0.52,
+      "mobile_friendly": true,
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "MedicalClinic",
+          "name": "Harmonie Medicina Integrada",
+          "description": "Clínica de dermatologia especializada em prevenção ao câncer de pele, mapeamento corporal digital, laser íntimo e estética avançada em Brasília.",
+          "url": "https://harmoniemed.lovable.app",
+          "logo": "https://harmoniemed.lovable.app/logo-harmonie.png",
+          "image": "https://harmoniemed.lovable.app/og-image.jpg",
+          "telephone": "+55-61-99379-7092",
+          "email": "contato@harmoniemed.com.br",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "SMHN Quadra 2, Bloco A, Edifício de Clínicas II",
+            "addressLocality": "Brasília",
+            "addressRegion": "DF",
+            "postalCode": "70710-904",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -15.793478,
+            "longitude": -47.883778
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "08:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://instagram.com/harmonie.med",
+            "https://instagram.com/clarissaborgesdermato"
+          ],
+          "medicalSpecialty": [
+            "Dermatology",
+            "Cosmetic Dermatology",
+            "Dermatologic Surgery"
+          ],
+          "availableService": [
+            {
+              "@type": "MedicalProcedure",
+              "name": "Mapeamento Corporal Digital",
+              "description": "Exame completo com FotoFinder para diagnóstico precoce do câncer de pele"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Dermatoscopia Digital",
+              "description": "Análise detalhada de lesões cutâneas com ampliação de 20x"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Laser Íntimo",
+              "description": "Tratamento para saúde íntima feminina com Laser Etherea"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Bioestimuladores de Colágeno",
+              "description": "Tratamento para rejuvenescimento e estímulo natural de colágeno"
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Toxina Botulínica",
+              "description": "Tratamento para rugas e linhas de expressão"
+            }
+          ],
+          "priceRange": "$$$"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Physician",
+          "name": "Dra. Clarissa Borges",
+          "description": "Dermatologista especializada em Oncologia Cutânea, Dermatologia Clínica e Estética. Médica responsável pela Harmonie Medicina Integrada.",
+          "url": "https://harmoniemed.lovable.app/dra-clarissa-borges",
+          "image": "https://harmoniemed.lovable.app/dra-clarissa.jpg",
+          "telephone": "+55-61-99379-7092",
+          "medicalSpecialty": {
+            "@type": "MedicalSpecialty",
+            "name": "Dermatology"
+          },
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universidade Federal de Santa Catarina (UFSC)"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Hospital Albert Einstein"
+            }
+          ],
+          "memberOf": [
+            {
+              "@type": "Organization",
+              "name": "Sociedade Brasileira de Dermatologia (SBD)"
+            },
+            {
+              "@type": "Organization",
+              "name": "Associação de Dermatologia do Distrito Federal (ADD)"
+            }
+          ],
+          "worksFor": {
+            "@type": "MedicalClinic",
+            "name": "Harmonie Medicina Integrada"
+          },
+          "sameAs": [
+            "https://instagram.com/clarissaborgesdermato"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://harmoniemed.lovable.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Corpo Clínico",
+              "item": "https://harmoniemed.lovable.app/#sobre"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Procedimentos",
+              "item": "https://harmoniemed.lovable.app/#procedimentos"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Contato",
+              "item": "https://harmoniemed.lovable.app/#contato"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O que é o Mapeamento Corporal Digital?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Mapeamento Corporal Digital é um exame completo que analisa todas as lesões do corpo utilizando o FotoFinder, tecnologia alemã com lentes de ampliação mínima de 20x. Gera um laudo detalhado para acompanhamento ao longo do tempo, sendo essencial para a prevenção do câncer de pele."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre Mapeamento Corporal e Dermatoscopia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Mapeamento Corporal Digital analisa TODAS as lesões do corpo com registro fotográfico para comparação temporal. Já a Dermatoscopia Digital é uma análise pontual de até 5 lesões específicas. Ambos são importantes para o diagnóstico precoce do câncer de pele."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é o Laser Íntimo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O Laser Íntimo é um procedimento realizado com o Laser Etherea para tratar condições como incontinência urinária leve, síndrome geniturinária da menopausa, atrofia vaginal e melhora da lubrificação. É um tratamento minimamente invasivo para a saúde íntima feminina."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quem são as médicas da Harmonie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A Harmonie conta com três especialistas: Dra. Clarissa Borges (Dermatologia Clínica, Oncológica e Estética), Dra. Fábia Vasconcellos (Oncologia Cutânea e Mapeamento Corporal) e Dra. Victória Gontijo (Ginecologia e Saúde Íntima)."
+              }
+            }
+          ]
+        }
+      ],
+      "canonical_url": "https://harmoniemed.lovable.app/",
+      "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "open_graph": {
+        "og:type": "website",
+        "og:url": "https://harmoniemed.lovable.app/",
+        "og:title": "Harmonie Medicina Integrada | Dermatologia em Brasília",
+        "og:description": "Referência em estética e saúde da pele. Prevenção ao câncer de pele, mapeamento corporal digital com FotoFinder, laser íntimo e procedimentos estéticos avançados.",
+        "og:image": "https://harmoniemed.lovable.app/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Harmonie Medicina Integrada - Clínica de Dermatologia em Brasília",
+        "og:locale": "pt_BR",
+        "og:site_name": "Harmonie Medicina Integrada"
+      },
+      "twitter_cards": {
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://harmoniemed.lovable.app/",
+        "twitter:title": "Harmonie Medicina Integrada | Dermatologia em Brasília",
+        "twitter:description": "Referência em estética e saúde da pele. Prevenção ao câncer de pele, mapeamento corporal digital e procedimentos estéticos avançados.",
+        "twitter:image": "https://harmoniemed.lovable.app/og-image.jpg",
+        "twitter:site": "@harmoniemed",
+        "twitter:creator": "@harmoniemed"
+      },
+      "performance_metrics": {
+        "dom_content_loaded": 0,
+        "load_complete": 0,
+        "first_paint": 396,
+        "first_contentful_paint": 584
+      },
+      "rede_ociosa": false,
+      "tempo_ate_rede_ociosa": null
+    },
+    "anuncios": [
+      {
+        "id": "1401406484724386",
+        "texto": "Você faz careta durante o treino? 👇- @[perfil]\n\nO vídeo da atriz Cláudia Raia treinando com o rosto totalmente relaxado chamou a atenção da internet. E ela está coberta de razão, sabia?\n\nMuitas mulheres treinam pesado, mas descarregam toda a força no pescoço e no rosto, contraindo toda a musculatura.\n\nEu afirmo com total segurança: essa tensão facial reduz a durabilidade dos seus procedimentos estéticos.\n\nQuando você faz careta levantando peso, você acelera o consumo do seu Botox e do seu preenchimento.\n\nAlém disso, você desgasta o seu próprio banco de colágeno, forçando a criação de rugas dinâmicas que logo se tornam marcas estáticas e profundas.\n\nO segredo que eu sempre ensino no consultório é concentrar a força na sua respiração e no abdômen (core), blindando a sua face.\n\nAtividades de alto gasto metabólico, como a corrida, são maravilhosas para a saúde, mas também exigem um estímulo de colágeno ainda maior.\n\nPara que os seus resultados estéticos durem, você precisa dormir bem, bater a sua meta diária de proteínas, ter uma alimentação balanceada e fazer uma manutenção dermatológica adequada.\n\nAqui na minha clínica, eu realizo o planejamento contínuo da sua pele para que a sua beleza acompanhe o seu ritmo e estilo de vida.\n\nVocê não precisa parar de treinar. Você só precisa da estratégia médica certa e de hábitos inteligentes.\n\nVocê quer alinhar a qualidade da sua pele à sua rotina esportiva e envelhecer com um rosto mais firme, elegante e descansado?\n\n👉 Digite a palavra “QUERO” aqui nos comentários.\n\nEu vou te enviar um link exclusivo no direct para agendarmos a sua consulta.\n\n🔸 Dra. Fernanda Duran\nMédica Dermatologista em Brasília\nCRM-DF 22199 | RQE 15123\n.\n.\n.\n#botoxbrasilia #rejuvenescimentofacial #treino #famosos #claudiaraia",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQNYxZ0BfvFF-9fUOmCGBAkpj9MtZNsdOdzHegdvECrCwfWgBRPVK_cydVS5FBIT9czWeJHtqRelvWDMT7VbDVT4FIuobsRENqk6l1L9nw.mp4?_nc_cat=108&_nc_oc=AdrNflkFfb2NgWPVgM3l9BozF6kVWCqvYmQ9uU-0sLBCVOM6uJJaa3uQp-cz-sEdeA8&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=93dobaZg3gcQ7kNvwEjEE_N&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnByb2dyZXNzaXZlX2gyNjQtYmFzaWMtZ2VuMl8zNjBwIiwieHB2X2Fzc2V0X2lkIjoxNjM1OTAwMzQ0OTIwNzc5LCJhc3NldF9hZ2VfZGF5cyI6NiwidmlfdXNlY2FzZV9pZCI6MTIzNzQsImR1cmF0aW9uX3MiOjk4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=29GsWg8MP22FGnEbp7WFmA&_nc_ss=78289&_nc_zt=28&oh=00_AQIY1jmnERX_LSInaBIX7PMAtaqvVporBWyjrGUOxTbU5w&oe=6AB0BEE6",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "10 de set de 2026",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      },
+      {
+        "id": "1701107220992990",
+        "texto": "Cada pele é única, e o seu tratamento também deve ser.\n\nA Curadoria de Identidade de Pele, conduzida pelo Dr. Wesley Ferreira, já faz parte dos atendimentos da Nomos. Uma abordagem personalizada para compreender as necessidades da sua pele e indicar o melhor caminho para resultados naturais e duradouros.\n\n📍 Nomos Medicina Avançada\nAv. Nove de Julho, 4984 – Jardim Europa\n\nAgende sua avaliação pelo link da bio.",
+        "criativo_url": "https://video.fbsb9-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQMwbtvOyWI3E8lLB0bpFnIxpMVQuXnPiw1JjHbjPZ7tjXUhFkM7pK0CnowMr-uQL3_HlrUwA3OSVb7xzvWmyyeTf0afLYxWvmjC00BJ6Q.mp4?_nc_cat=105&_nc_oc=AdrAEjxtjHa31zefJ2IqeV8nakUBBfZU1FNmMbc59K3WTFV3ZhsYLVPc0rtJ3XrgwRA&_nc_sid=ef5aa3&_nc_ht=video.fbsb9-1.fna.fbcdn.net&_nc_ohc=MoTm62yfJrQQ7kNvwEdE3t-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6ODg0ODkyMDk0NTU5MTI2LCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjQzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=29GsWg8MP22FGnEbp7WFmA&_nc_ss=78289&_nc_zt=28&oh=00_AQKVsjLIZEq8xH-Ond6DK95-P0WnkThgUkt5ncj4YcX4YQ&oe=6AB0CD35",
+        "tipo_criativo": "Vídeo",
+        "plataformas": 1,
+        "data_inicio": "15 de set de 2026 · Tempo total ativo: 23h",
+        "cta": "Não encontrado",
+        "link_destino": "Não encontrado"
+      }
+    ]
+  },
+  "relatorio_formatado": "## 1. RESUMO EXECUTIVO\n\nA Harmonie Medicina Integrada é uma clínica dermatológica em Brasília com presença ativa no Instagram e um site bem estruturado, mas busca ampliar a atração de clientes por meio de novas estratégias digitais. A análise mostra que o site está tecnicamente adequado, mas há baixa concorrência em anúncios pagos e oportunidades de diferenciação. As três ações prioritárias recomendadas são: iniciar campanhas de anúncios pagos segmentados, fortalecer o conteúdo educativo em múltiplos canais e implementar captação ativa de leads via WhatsApp e formulários. O cenário é favorável para crescimento rápido com ações práticas e de baixo a médio esforço.\n\n## 2. PROBLEMAS IDENTIFICADOS\n\n- **Baixa presença em anúncios pagos:** Apenas dois anúncios ativos de concorrentes foram encontrados, indicando pouca competição, mas também pouca visibilidade paga do segmento.\n- **Dependência do Instagram:** A clínica utiliza principalmente o Instagram, limitando o alcance a públicos que não estão na rede social.\n- **Captação passiva de leads:** O site incentiva contato via WhatsApp, mas não há mecanismos ativos de captação de leads (ex: formulários, iscas digitais).\n- **Conteúdo pouco explorado em outros canais:** O conteúdo educativo está restrito ao Instagram e ao site, sem presença em outras plataformas relevantes (ex: YouTube, Google Meu Negócio).\n- **SEO em estágio inicial:** Apesar do interesse, o SEO ainda pode ser melhor explorado para aumentar o tráfego orgânico.\n\n## 3. OPORTUNIDADES (Volume de anúncios)\n\nO volume de anúncios pagos de concorrentes é muito baixo, com apenas dois anúncios ativos identificados, ambos em formato de vídeo e com abordagem educativa/personalizada. Isso indica uma oportunidade clara para a Harmonie se destacar rapidamente com campanhas pagas bem segmentadas, aproveitando o baixo custo e a baixa concorrência para conquistar visibilidade e novos clientes.\n\n## 4. PLANO DE AÇÃO ESTRATÉGICO\n\n### 4.1 Iniciar campanhas de anúncios pagos segmentados\n\n**Ação:** Lançar campanhas de anúncios pagos no Instagram e Facebook, focando em procedimentos de maior valor e diferenciais da clínica.  \n**Evidência:** Baixo volume de anúncios concorrentes e interesse da empresa em atrair mais clientes.  \n**Como executar:** Criar anúncios em vídeo e imagem destacando tratamentos exclusivos, depoimentos e diferenciais médicos, segmentando para mulheres de 25 a 55 anos em Brasília.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** Biblioteca de Anúncios da Meta, práticas recomendadas de marketing local.\n\n### 4.2 Fortalecer conteúdo educativo em múltiplos canais\n\n**Ação:** Expandir a produção de conteúdo educativo para YouTube, Google Meu Negócio e blog do site.  \n**Evidência:** Conteúdo atual restrito ao Instagram e site; concorrentes usam vídeos educativos.  \n**Como executar:** Adaptar vídeos e posts do Instagram para YouTube Shorts, criar artigos de blog e responder perguntas frequentes no Google Meu Negócio.  \n**Prioridade:** Alta  \n**Esforço:** Médio  \n**Fontes:** Experiência de mercado, práticas de inbound marketing.\n\n### 4.3 Implementar captação ativa de leads\n\n**Ação:** Adicionar formulários de contato e iscas digitais (ex: e-book sobre prevenção do câncer de pele) no site.  \n**Evidência:** Captação atual é passiva, apenas via WhatsApp; ausência de mecanismos ativos.  \n**Como executar:** Inserir formulários simples no site e oferecer materiais gratuitos em troca do contato, integrando com o WhatsApp para agendamento rápido.  \n**Prioridade:** Alta  \n**Esforço:** Baixo  \n**Fontes:** Práticas de captação de leads em saúde, inbound marketing.\n\n### 4.4 Otimizar SEO local e técnico\n\n**Ação:** Melhorar o SEO local e técnico do site para aumentar o tráfego orgânico qualificado.  \n**Evidência:** Interesse declarado em SEO e potencial de crescimento orgânico; site já tem estrutura básica adequada.  \n**Como executar:** Atualizar e otimizar páginas de serviços com palavras-chave locais, incentivar avaliações no Google Meu Negócio e monitorar desempenho com Google Search Console.  \n**Prioridade:** Média  \n**Esforço:** Médio  \n**Fontes:** Moz, Neil Patel, Google Search Central.\n\n### 4.5 Estimular depoimentos e provas sociais\n\n**Ação:** Coletar e divulgar depoimentos de pacientes satisfeitos em todos os canais digitais.  \n**Evidência:** Concorrentes utilizam depoimentos e histórias; provas sociais aumentam confiança.  \n**Como executar:** Solicitar depoimentos após consultas, publicar no site, Instagram e Google Meu Negócio, e utilizar vídeos curtos de pacientes (com autorização).  \n**Prioridade:** Média  \n**Esforço:** Baixo  \n**Fontes:** Práticas de marketing de serviços, HubSpot.",
+  "execucao": {
+    "tempos_s": {
+      "total": 12.71
+    },
+    "tokens_prompt": 3763,
+    "tokens_resposta": 1044,
+    "custo_usd": 0.0221
+  }
+}

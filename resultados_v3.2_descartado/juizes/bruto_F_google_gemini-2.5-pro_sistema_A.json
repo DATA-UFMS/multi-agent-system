@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 2,
+      "justificativa": "O Relatório A, mesmo com o campo de contexto em branco, identificou e utilizou a localidade 'Cascavel (PR)' para fornecer recomendações específicas de SEO local. O Relatório B permaneceu totalmente genérico, perdendo uma oportunidade crucial de personalização."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A apresenta um plano de ação superior, com passos claros em 'Como executar', priorização e, crucialmente, uma estimativa de 'Esforço'. Essa estimativa é vital para uma PME planejar a alocação de recursos. O Relatório B é acionável, mas suas ações são mais genéricas e carecem da dimensão de esforço."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 4,
+      "justificativa": "Ambos os relatórios identificaram corretamente o erro de DNS e o volume de anúncios. No entanto, o Relatório A extraiu um insight quantitativo e mais profundo dos dados dos anúncios ('78% dos criativos utilizando esse recurso [vídeo]'), enquanto o Relatório B se limitou a uma observação mais superficial ('grande diversidade de segmentos e formatos')."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 5,
+      "nota_B": 5,
+      "justificativa": "Ambos os relatórios são tecnicamente corretos. Eles identificaram com precisão o erro 'net::ERR_NAME_NOT_RESOLVED' como um problema de DNS, não inventaram dados de SEO e basearam suas recomendações nos dados disponíveis (erro no site e 77 anúncios)."
+    },
+    "adequacao_pme": {
+      "vencedor": "A",
+      "nota_A": 5,
+      "nota_B": 3,
+      "justificativa": "O Relatório A é exemplarmente adequado para uma PME. A linguagem é clara, e a estrutura do plano de ação (com prioridade e esforço) permite que um gestor sem expertise em marketing tome decisões informadas rapidamente. O Relatório B é compreensível, mas sua falta de detalhamento e priorização por esforço o torna menos prático."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A é conclusivamente superior. Ele transforma a limitação severa (site inacessível) no ponto de partida para um plano de ação claro, priorizado e contextualizado. Sua capacidade de extrair insights específicos dos dados disponíveis (78% de vídeos nos anúncios) e de aplicar um contexto geográfico (Cascavel-PR) o torna muito mais valioso e imediatamente útil para uma PME do que o Relatório B, que, embora correto, permaneceu genérico e menos detalhado em suas recomendações."
+  }
+}

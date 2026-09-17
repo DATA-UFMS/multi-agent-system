@@ -29,6 +29,10 @@ REF_WCAG = "WCAG 2.x 1.1.1"
 REF_CANONICAL = "Google Search Central: rel=canonical"
 REF_SCHEMA = "Google Search Central: structured data"
 REF_OG = "Open Graph Protocol / Meta Sharing Debugger"
+REF_HTTPS = "Google Search Central: HTTPS como sinal de ranqueamento"
+REF_ROBOTS = "Google Search Central: robots.txt e sitemaps"
+REF_CANAIS = "prática de mercado para PMEs (WhatsApp Business / Meta for Business)"
+REF_LH = "Google Lighthouse / PageSpeed Insights"
 
 
 class AgenteAnalista:
@@ -57,7 +61,7 @@ class AgenteAnalista:
     # ------------------------------------------------------------------ fluxo
     async def analisar_dados_marketing(self, dados_seo: Dict, dados_anuncios: List[Dict],
                                        diretivas_usuario: Dict, prompt_original: str,
-                                       termo_busca: str = "") -> Dict[str, Any]:
+                                       termo_busca: str = "", dados_pagespeed: Dict = None) -> Dict[str, Any]:
         print("\nAgente Analista")
         self.problemas_identificados, self.oportunidades_identificadas = [], []
         self.recomendacoes_estrategicas, self.falhas = [], []
@@ -68,7 +72,9 @@ class AgenteAnalista:
             "hipoteses_usuario": diretivas_usuario.get("hipoteses_usuario", []),
         }
 
+        self.pagespeed = dados_pagespeed or {}
         self._analise_primaria_seo(dados_seo)
+        self._analise_pagespeed(self.pagespeed)
         self._analise_primaria_anuncios(dados_anuncios)
         await self._raciocinar_e_consultar_estrategista(dados_seo, dados_anuncios, diretivas_usuario, prompt_original)
 
@@ -82,11 +88,54 @@ class AgenteAnalista:
             "prioridade": prioridade, "referencia": referencia,
         })
 
+    def _analise_perfil_social(self, dados_seo: Dict):
+        """Regras para empresas sem site próprio (presença apenas em perfil de rede social)."""
+        perfil = dados_seo.get("perfil_social") or {}
+        self._problema("sem_site_proprio", "Presença digital",
+                       "A empresa não possui site próprio; a presença digital depende integralmente de uma "
+                       "plataforma de terceiros, sem indexação orgânica própria nem controle sobre o canal.",
+                       "alta", REF_GOOGLE_SNIPPETS)
+        if dados_seo.get("status") != "Sucesso":
+            self._problema("coleta_perfil", "Presença digital",
+                           f"Não foi possível ler os metadados públicos do perfil: {dados_seo.get('status')}",
+                           "crítica", "-")
+            return
+        if not perfil.get("bio"):
+            self._problema("bio_ausente", "Conteúdo", "Perfil sem biografia legível nos metadados públicos.",
+                           "média", REF_CANAIS)
+        pubs = perfil.get("publicacoes")
+        if pubs is not None and pubs < 30:
+            self._problema("poucas_publicacoes", "Conteúdo",
+                           f"Perfil com {pubs} publicações; volume baixo para sustentar presença orgânica.",
+                           "média", REF_CANAIS)
+        seg = perfil.get("seguidores")
+        if seg is not None and seg < 500:
+            self._problema("audiencia_pequena", "Alcance",
+                           f"Perfil com {seg} seguidores; alcance orgânico limitado.", "baixa", REF_CANAIS)
+
     def _analise_primaria_seo(self, dados_seo: Dict):
+        if dados_seo.get("tipo_presenca") == "perfil_instagram":
+            self._analise_perfil_social(dados_seo)
+            return
         if dados_seo.get("status") != "Sucesso":
             self._problema("coleta_seo", "SEO", f"Falha na coleta de dados SEO: {dados_seo.get('status')}",
                            "crítica", "-")
             return
+
+        if dados_seo.get("https") is False:
+            self._problema("sem_https", "Segurança/SEO", "Site servido sem HTTPS.", "alta", REF_HTTPS)
+        if dados_seo.get("robots_txt") is False:
+            self._problema("sem_robots", "SEO", "Arquivo robots.txt ausente.", "baixa", REF_ROBOTS)
+        if dados_seo.get("sitemap_xml") is False:
+            self._problema("sem_sitemap", "SEO", "Sitemap XML ausente em /sitemap.xml.", "baixa", REF_ROBOTS)
+        redes = dados_seo.get("redes_sociais_no_site") or {}
+        if redes is not None and "whatsapp" not in redes:
+            self._problema("sem_link_whatsapp", "Conversão",
+                           "O site não oferece contato por WhatsApp, principal canal de conversão de PMEs no Brasil.",
+                           "média", REF_CANAIS)
+        if redes is not None and "instagram" not in redes:
+            self._problema("sem_link_instagram", "Integração de canais",
+                           "O site não aponta para o perfil no Instagram (canais desconectados).", "baixa", REF_CANAIS)
 
         titulo = (dados_seo.get("titulo") or "").strip()
         if not titulo:
@@ -139,7 +188,9 @@ class AgenteAnalista:
 
         perf = dados_seo.get("performance_metrics") or {}
         fcp_ms = perf.get("first_contentful_paint") or 0
-        if fcp_ms > 1800:
+        if getattr(self, "pagespeed", {}).get("status") == "Sucesso":
+            pass  # desempenho avaliado pelo PageSpeed (dados padronizados); medição local fica só registrada
+        elif fcp_ms > 1800:
             self._problema("fcp_lento", "Performance",
                            f"First Contentful Paint de {fcp_ms / 1000:.1f} s (limiar 'bom': 1,8 s).", "alta", REF_CWV)
         elif dados_seo.get("tempo_carregamento", 0) > 3:
@@ -149,6 +200,46 @@ class AgenteAnalista:
         if not dados_seo.get("mobile_friendly"):
             self._problema("sem_viewport_mobile", "Usabilidade",
                            "Sem meta viewport (indício de página não adaptada a dispositivos móveis).", "alta", REF_CWV)
+
+    def _analise_pagespeed(self, ps: Dict):
+        """Regras a partir do Lighthouse (laboratório) e do Chrome UX Report (campo), quando disponíveis."""
+        if not ps or ps.get("status") != "Sucesso":
+            return
+        cats = ps.get("categorias") or {}
+        nomes = {"desempenho": "Performance", "seo": "SEO", "acessibilidade": "Acessibilidade",
+                 "boas_praticas": "Boas práticas"}
+        for chave, nota in cats.items():
+            if nota is None:
+                continue
+            if nota < 50:
+                self._problema(f"lighthouse_{chave}", nomes[chave],
+                               f"Nota Lighthouse de {nomes[chave].lower()} {nota}/100 ({ps.get('estrategia')}).", "alta", REF_LH)
+            elif nota < 90 and chave in ("desempenho", "seo"):
+                self._problema(f"lighthouse_{chave}", nomes[chave],
+                               f"Nota Lighthouse de {nomes[chave].lower()} {nota}/100 ({ps.get('estrategia')}), abaixo da faixa 'boa' (>= 90).",
+                               "média", REF_LH)
+        campo = ps.get("campo")
+        if campo:
+            rotulo = {"lcp_ms": "LCP", "inp_ms": "INP", "cls": "CLS"}
+            for m, r in rotulo.items():
+                item = campo.get(m) or {}
+                cat = item.get("categoria")
+                if cat == "slow":
+                    self._problema(f"cwv_{m}_campo", "Performance",
+                                   f"{r} em usuários reais classificado como ruim (p75 = {item.get('p75')}).", "alta", REF_CWV)
+                elif cat == "average":
+                    self._problema(f"cwv_{m}_campo", "Performance",
+                                   f"{r} em usuários reais precisa melhorar (p75 = {item.get('p75')}).", "média", REF_CWV)
+        else:
+            lab = ps.get("laboratorio") or {}
+            for m, r in (("lcp_ms", "LCP"), ("cls", "CLS"), ("tbt_ms", "TBT")):
+                cls_ = (lab.get("classificacao") or {}).get(m)
+                if cls_ == "ruim":
+                    self._problema(f"cwv_{m}_lab", "Performance",
+                                   f"{r} de laboratório classificado como ruim ({lab.get(m)}).", "alta", REF_CWV)
+                elif cls_ == "precisa_melhorar":
+                    self._problema(f"cwv_{m}_lab", "Performance",
+                                   f"{r} de laboratório precisa melhorar ({lab.get(m)}).", "média", REF_CWV)
 
     def _analise_primaria_anuncios(self, dados_anuncios: List[Dict]):
         anuncios = dados_anuncios if isinstance(dados_anuncios, list) else []
@@ -198,7 +289,10 @@ class AgenteAnalista:
         hipoteses = diretivas_usuario.get("hipoteses_usuario") or []
         resumo_caso = textwrap.dedent(f"""
             Resumo do caso
-            - URL analisada: {dados_seo.get('url')}
+            - URL analisada: {dados_seo.get('url')} (tipo de presença: {dados_seo.get('tipo_presenca', 'site')})
+            - Perfil social lido (se aplicável): {dados_seo.get('perfil_social') or 'n/a'}
+            - Redes/canais referenciados pelo site: {list((dados_seo.get('redes_sociais_no_site') or {}).keys()) or 'nenhum'}
+            - PageSpeed/Lighthouse: {json.dumps({k: self.pagespeed.get(k) for k in ('status', 'categorias', 'campo')}, ensure_ascii=False) if self.pagespeed else 'não coletado'}
             - Contexto informado pelo gestor: "{prompt_original}"
             - Foco identificado pelo Intérprete: {diretivas_usuario.get('foco_analise', [])}
             - Hipóteses/dúvidas do gestor (extraídas pelo Intérprete): {hipoteses or 'nenhuma'}
@@ -284,6 +378,8 @@ class AgenteAnalista:
 
         dados = self._gerar_relatorio_final()
         dados_prompt = {k: v for k, v in dados.items() if k not in ("falhas_tratadas", "resumo_executivo")}
+        if getattr(self, "pagespeed", None):
+            dados_prompt["pagespeed"] = {k: self.pagespeed.get(k) for k in ("status", "estrategia", "categorias", "campo")}
         dados_prompt["recomendacoes_estrategicas"] = [
             {k: v for k, v in r.items() if k != "fontes_detalhe"} for r in dados["recomendacoes_estrategicas"]]
 
@@ -328,8 +424,8 @@ class AgenteAnalista:
 
 async def analisar_marketing_digital(dados_seo: Dict, dados_anuncios: List[Dict],
                                      diretivas_usuario: Dict, prompt_original: str,
-                                     termo_busca: str = "") -> Tuple[Dict[str, Any], "AgenteAnalista"]:
+                                     termo_busca: str = "", dados_pagespeed: Dict = None) -> Tuple[Dict[str, Any], "AgenteAnalista"]:
     analista = AgenteAnalista(rag_query_func=configurar_rag_e_consultar)
     resultado = await analista.analisar_dados_marketing(dados_seo, dados_anuncios, diretivas_usuario,
-                                                        prompt_original, termo_busca)
+                                                        prompt_original, termo_busca, dados_pagespeed)
     return resultado, analista

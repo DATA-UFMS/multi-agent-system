@@ -1,0 +1,7 @@
+condicao,recomendacao,evidencia_dados,evidencia_numero,evidencia_contexto,evidencia_vazia,n_fontes_citadas,fontes_verificaveis,prioridade,esforco,evidencia,empresa
+sistema,4.1 Corrigir a URL Canônica do Site,1,0,0,0,3,1.0,Alta,Médio,"O diagnóstico apontou que a URL canônica está direcionando para outro domínio, o que pode prejudicar a indexação.",teste_v3
+sistema,4.2 Iniciar Campanhas de Anúncios Pagos em Canais de Baixa Concorrência,1,1,0,0,4,1.0,Alta,Médio,"O panorama mostra apenas 2 anúncios ativos no segmento, indicando espaço para destaque rápido.",teste_v3
+sistema,4.3 Ajustar Títulos e Meta Descrições do Site,0,0,0,0,3,1.0,Média,Baixo,"Os textos atuais estão acima do tamanho recomendado, o que pode prejudicar a exibição nos resultados de busca.",teste_v3
+sistema,4.4 Diversificar Formatos e CTAs nos Anúncios,1,0,0,0,3,1.0,Média,Médio,"Todos os concorrentes usam apenas vídeos e não há CTAs predominantes, abrindo espaço para diferenciação.",teste_v3
+sistema,4.5 Melhorar a Performance de Carregamento do Site,0,0,0,0,2,1.0,Alta,Médio,"O First Contentful Paint está acima do ideal, impactando a experiência do usuário.",teste_v3
+sistema,4.6 Implementar Ações Práticas de Baixo Custo para Geração de Leads,0,0,0,0,4,1.0,Média,Baixo,O contexto e as recomendações apontam para a necessidade de diversificar canais e ações de baixo custo.,teste_v3

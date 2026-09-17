@@ -53,6 +53,9 @@ def montar_prompt(url: str, termo: str, prompt_usuario: str, dados: Dict[str, An
         ANÚNCIOS ATIVOS ENCONTRADOS PARA O TERMO:
         {json.dumps(anuncios, indent=2, ensure_ascii=False)}
 
+        PAGESPEED INSIGHTS / LIGHTHOUSE (notas 0-100 e Core Web Vitals; "campo" = usuários reais):
+        {json.dumps({k: (dados.get("pagespeed") or {}).get(k) for k in ("status", "estrategia", "categorias", "laboratorio", "campo")}, indent=2, ensure_ascii=False)}
+
         Escreva um relatório em Markdown, em português, para um gestor sem formação em marketing,
         com exatamente estas seções:
         {ESTRUTURA}

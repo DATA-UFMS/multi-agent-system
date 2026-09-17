@@ -1,0 +1,38 @@
+{
+  "dimensoes": {
+    "contexto": {
+      "vencedor": "empate",
+      "nota_A": 1,
+      "nota_B": 1,
+      "justificativa": "Ambos os relatórios falham completamente nesta dimensão. O campo 'CONTEXTO INFORMADO PELA EMPRESA' está vazio ('PREENCHER'), impossibilitando qualquer avaliação de aderência ao setor, localidade ou necessidade específica. Ambos tratam o caso de forma genérica, sem considerar o contexto empresarial porque ele não foi fornecido. Apenas o Relatório A menciona Cascavel (PR) extraído dos anúncios, mas sem conectar ao contexto da empresa cliente."
+    },
+    "acionabilidade": {
+      "vencedor": "A",
+      "nota_A": 4,
+      "nota_B": 3,
+      "justificativa": "O Relatório A oferece ações mais específicas e detalhadas. Por exemplo, em 4.1 menciona 'revisar robots.txt', 'usar Google Search Console', 'testar com PageSpeed Insights'. Em 4.3, detalha 'planejar roteiros simples, gravar com recursos acessíveis'. O Relatório B é mais genérico: 'revisar configurações de domínio, hospedagem e certificados SSL' sem especificar como. Ambos priorizam adequadamente, mas A fornece passos mais concretos para execução por uma PME."
+    },
+    "fundamentacao": {
+      "vencedor": "A",
+      "nota_A": 4,
+      "nota_B": 3,
+      "justificativa": "O Relatório A fundamenta melhor suas recomendações nos dados coletados e cita fontes específicas (SEO-on-Mobile.md, Keywords-Research.md, Marketing-Digital-Strategy.md, Quality-Score.md). Conecta explicitamente os 78% de vídeos nos anúncios à recomendação de produzir vídeos. O Relatório B também se baseia nos dados, mas as fontes são mais genéricas ('Diretrizes do Google Search Central', 'Práticas recomendadas') e uma ação (4.1) não tem fonte informada."
+    },
+    "correcao": {
+      "vencedor": "empate",
+      "nota_A": 5,
+      "nota_B": 5,
+      "justificativa": "Ambos os relatórios são tecnicamente corretos. Identificam corretamente o erro ERR_NAME_NOT_RESOLVED, reconhecem a impossibilidade de análise SEO, reportam adequadamente os 77 anúncios coletados e a predominância de vídeo. Não há afirmações incorretas, dados inventados ou incoerências com os dados fornecidos. Ambos lidam apropriadamente com a limitação dos dados."
+    },
+    "adequacao_pme": {
+      "vencedor": "B",
+      "nota_A": 4,
+      "nota_B": 4,
+      "justificativa": "Empate técnico com leve vantagem para B na clareza estrutural. Ambos usam linguagem acessível e propõem ações viáveis para PMEs (esforço baixo/médio). O Relatório B é mais direto e objetivo na apresentação dos problemas (lista clara em tópicos). O Relatório A, embora detalhado, pode ser ligeiramente mais denso. Ambos classificam prioridade e esforço adequadamente, facilitando a tomada de decisão por gestores sem formação técnica."
+    }
+  },
+  "geral": {
+    "vencedor": "A",
+    "justificativa": "O Relatório A vence por margem estreita devido à maior acionabilidade e melhor fundamentação. Oferece passos mais específicos e executáveis, cita fontes documentais concretas e conecta melhor os dados coletados (especialmente os 78% de vídeos) às recomendações estratégicas. Ambos lidam bem com a limitação crítica (site inacessível), mas A extrai mais valor dos dados disponíveis (anúncios) e fornece orientações mais detalhadas. A principal fraqueza de ambos é a impossibilidade de avaliar contexto, mas isso decorre da ausência de informação, não de falha dos relatórios. Para uma PME, A oferece um roteiro ligeiramente mais claro para ação imediata."
+  }
+}
